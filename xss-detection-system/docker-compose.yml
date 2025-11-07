@@ -1,0 +1,148 @@
+version: '3.8'
+
+services:
+  # bWAPP - Vulnerable Web Application
+  bwapp:
+    image: raesene/bwapp
+    container_name: bwapp
+    ports:
+      - "8080:80"
+    networks:
+      - xss_network
+    restart: unless-stopped
+
+  # Elasticsearch
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - xss_network
+    restart: unless-stopped
+
+  # Logstash
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.11.0
+    container_name: logstash
+    volumes:
+      - ./logstash/pipeline:/usr/share/logstash/pipeline
+      - ./logs:/logs
+    ports:
+      - "5000:5000"
+      - "9600:9600"
+    environment:
+      - "LS_JAVA_OPTS=-Xms256m -Xmx256m"
+      - "xpack.monitoring.enabled=false"
+    depends_on:
+      - elasticsearch
+    networks:
+      - xss_network
+    restart: unless-stopped
+
+  # Kibana
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.0
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      - xss_network
+    restart: unless-stopped
+
+  # Neo4j
+  neo4j:
+    image: neo4j:5.13.0
+    container_name: neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/password123
+      - NEO4J_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+    networks:
+      - xss_network
+    restart: unless-stopped
+
+  # ModSecurity with Apache (WAF)
+  modsecurity:
+    build:
+      context: ./modsecurity
+      dockerfile: Dockerfile
+    container_name: modsecurity
+    ports:
+      - "8081:80"
+    volumes:
+      - ./logs:/var/log/apache2
+    depends_on:
+      - bwapp
+      - xss_detection_api
+    networks:
+      - xss_network
+    restart: unless-stopped
+
+
+  # XSS Detection API (ML + Coordination)
+  xss_detection_api:
+    build:
+      context: ./ml_api
+      dockerfile: Dockerfile
+    container_name: xss_detection_api
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./ml_api:/app
+      - ./logs:/logs
+      - ./models:/models
+    environment:
+      - FLASK_ENV=development
+      - ELASTICSEARCH_HOST=elasticsearch:9200
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=password123
+      - LOGSTASH_HOST=logstash
+      - LOGSTASH_PORT=5000
+    depends_on:
+      - elasticsearch
+      - neo4j
+      - logstash
+    networks:
+      - xss_network
+    restart: unless-stopped
+
+  # Training Script (Run once to train model)
+  ml_trainer:
+    build:
+      context: ./ml_trainer
+      dockerfile: Dockerfile
+    container_name: ml_trainer
+    volumes:
+      - ./models:/models
+      - ./datasets:/datasets
+    networks:
+      - xss_network
+    command: python train_model.py
+
+networks:
+  xss_network:
+    driver: bridge
+
+volumes:
+  elasticsearch_data:
+  neo4j_data:
+  neo4j_logs:

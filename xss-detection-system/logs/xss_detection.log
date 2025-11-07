@@ -1,0 +1,104 @@
+2025-10-17 06:43:51,685 - __main__ - INFO - ML models loaded successfully
+2025-10-17 06:43:51,687 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 06:43:51,688 - __main__ - INFO - Connected to Neo4j
+2025-10-17 06:43:51,743 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 06:43:51,744 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 06:43:51,747 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 06:43:59,819 - __main__ - INFO - ML models loaded successfully
+2025-10-17 06:43:59,821 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 06:43:59,826 - __main__ - INFO - Connected to Neo4j
+2025-10-17 06:43:59,875 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 06:43:59,885 - werkzeug - INFO -  * Debugger PIN: 637-683-185
+2025-10-17 06:47:26,504 - __main__ - INFO - ML models loaded successfully
+2025-10-17 06:47:26,509 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 06:47:26,510 - __main__ - INFO - Connected to Neo4j
+2025-10-17 06:47:26,583 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 06:47:26,583 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 06:47:26,587 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 06:47:29,283 - __main__ - INFO - ML models loaded successfully
+2025-10-17 06:47:29,286 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 06:47:29,294 - __main__ - INFO - Connected to Neo4j
+2025-10-17 06:47:29,318 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 06:47:29,325 - werkzeug - INFO -  * Debugger PIN: 138-879-317
+2025-10-17 07:02:19,803 - __main__ - INFO - ML models loaded successfully
+2025-10-17 07:02:19,835 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 07:02:19,851 - __main__ - INFO - Connected to Neo4j
+2025-10-17 07:02:19,916 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 07:02:19,916 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 07:02:19,919 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 07:02:23,523 - __main__ - INFO - ML models loaded successfully
+2025-10-17 07:02:23,524 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 07:02:23,545 - __main__ - INFO - Connected to Neo4j
+2025-10-17 07:02:23,630 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 07:02:23,639 - werkzeug - INFO -  * Debugger PIN: 561-674-262
+2025-10-17 07:15:06,087 - __main__ - INFO - ML models loaded successfully
+2025-10-17 07:15:06,092 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 07:15:06,093 - __main__ - INFO - Connected to Neo4j
+2025-10-17 07:15:06,198 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 07:15:06,199 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 07:15:06,201 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 07:15:08,337 - __main__ - INFO - ML models loaded successfully
+2025-10-17 07:15:08,339 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 07:15:08,342 - __main__ - INFO - Connected to Neo4j
+2025-10-17 07:15:08,355 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 07:15:08,395 - werkzeug - INFO -  * Debugger PIN: 392-722-444
+2025-10-17 07:19:08,703 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:19:08] "GET /health HTTP/1.1" 200 -
+2025-10-17 07:30:49,542 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:30:49] "GET /health HTTP/1.1" 200 -
+2025-10-17 07:30:49,693 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:30:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 07:35:37,475 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:35:37] "GET /health HTTP/1.1" 200 -
+2025-10-17 07:35:37,573 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:35:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 07:38:18,624 - __main__ - ERROR - Detection error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-10-17 07:38:18,629 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:38:18] "[35m[1mPOST /detect HTTP/1.1[0m" 500 -
+2025-10-17 07:38:36,186 - __main__ - ERROR - Detection error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-10-17 07:38:36,187 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:38:36] "[35m[1mPOST /detect HTTP/1.1[0m" 500 -
+2025-10-17 07:38:41,196 - __main__ - ERROR - Detection error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-10-17 07:38:41,197 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:38:41] "[35m[1mPOST /detect HTTP/1.1[0m" 500 -
+2025-10-17 07:38:52,364 - __main__ - ERROR - Detection error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-10-17 07:38:52,366 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:38:52] "[35m[1mPOST /detect HTTP/1.1[0m" 500 -
+2025-10-17 07:39:20,729 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:39:20] "[31m[1mGET /detect HTTP/1.1[0m" 405 -
+2025-10-17 07:39:21,049 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:39:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 07:39:43,000 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:39:43] "GET /health HTTP/1.1" 200 -
+2025-10-17 10:35:52,855 - __main__ - INFO - ML models loaded successfully
+2025-10-17 10:35:52,868 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 10:35:52,881 - __main__ - INFO - Connected to Neo4j
+2025-10-17 10:35:52,972 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 10:35:52,973 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 10:35:52,978 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 10:35:55,666 - __main__ - INFO - ML models loaded successfully
+2025-10-17 10:35:55,667 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 10:35:55,668 - __main__ - INFO - Connected to Neo4j
+2025-10-17 10:35:55,681 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 10:35:55,689 - werkzeug - INFO -  * Debugger PIN: 139-143-385
+2025-10-17 10:43:24,851 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 10:43:24] "GET /health HTTP/1.1" 200 -
+2025-10-17 10:43:24,982 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 10:43:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 11:00:41,673 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 11:00:41] "[33mGET / HTTP/1.1[0m" 404 -
+2025-10-17 11:00:49,424 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 11:00:49] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-07 12:14:21,816 - __main__ - ERROR - Error loading models: 'dict' object has no attribute 'append'
+2025-11-07 12:14:21,921 - __main__ - INFO - Connected to Elasticsearch
+2025-11-07 12:14:21,922 - __main__ - INFO - Connected to Neo4j
+2025-11-07 12:14:23,081 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-11-07 12:14:23,082 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 12:14:23,183 - werkzeug - INFO -  * Restarting with stat
+2025-11-07 12:14:31,650 - __main__ - INFO - ML models loaded successfully
+2025-11-07 12:14:31,652 - __main__ - INFO - Connected to Elasticsearch
+2025-11-07 12:14:31,654 - __main__ - INFO - Connected to Neo4j
+2025-11-07 12:14:31,685 - werkzeug - WARNING -  * Debugger is active!
+2025-11-07 12:14:31,698 - werkzeug - INFO -  * Debugger PIN: 509-097-705
