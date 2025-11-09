@@ -1,15 +1,52 @@
 version: '3.8'
 
 services:
-  # bWAPP - Vulnerable Web Application
-  bwapp:
-    image: raesene/bwapp
-    container_name: bwapp
+  # MySQL Database for bWAPP
+  mysql:
+    image: mysql:5.7
+    container_name: bwapp_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: bug
+      MYSQL_DATABASE: bWAPP
+      MYSQL_USER: bwapp
+      MYSQL_PASSWORD: bug
     ports:
-      - "8080:80"
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
     networks:
       - xss_network
     restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "bwapp", "-pbug"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # bWAPP with Integrated XSS Detection
+  bwapp:
+    build:
+      context: ./bwapp_custom
+      dockerfile: Dockerfile
+    container_name: bwapp
+    ports:
+      - "80:80"
+      - "8080:80"
+    volumes:
+      - ./bwapp_integration:/var/www/html/integration
+      - ./logs:/tmp
+    networks:
+      - xss_network
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      xss_detection_api:
+        condition: service_started
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
 
   # Elasticsearch
   elasticsearch:
@@ -96,7 +133,6 @@ services:
       - xss_network
     restart: unless-stopped
 
-
   # XSS Detection API (ML + Coordination)
   xss_detection_api:
     build:
@@ -146,3 +182,4 @@ volumes:
   elasticsearch_data:
   neo4j_data:
   neo4j_logs:
+  mysql_data:
