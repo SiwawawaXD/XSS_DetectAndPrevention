@@ -1,0 +1,755 @@
+2025-10-17 06:43:51,685 - __main__ - INFO - ML models loaded successfully
+2025-10-17 06:43:51,687 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 06:43:51,688 - __main__ - INFO - Connected to Neo4j
+2025-10-17 06:43:51,743 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 06:43:51,744 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 06:43:51,747 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 06:43:59,819 - __main__ - INFO - ML models loaded successfully
+2025-10-17 06:43:59,821 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 06:43:59,826 - __main__ - INFO - Connected to Neo4j
+2025-10-17 06:43:59,875 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 06:43:59,885 - werkzeug - INFO -  * Debugger PIN: 637-683-185
+2025-10-17 06:47:26,504 - __main__ - INFO - ML models loaded successfully
+2025-10-17 06:47:26,509 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 06:47:26,510 - __main__ - INFO - Connected to Neo4j
+2025-10-17 06:47:26,583 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 06:47:26,583 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 06:47:26,587 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 06:47:29,283 - __main__ - INFO - ML models loaded successfully
+2025-10-17 06:47:29,286 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 06:47:29,294 - __main__ - INFO - Connected to Neo4j
+2025-10-17 06:47:29,318 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 06:47:29,325 - werkzeug - INFO -  * Debugger PIN: 138-879-317
+2025-10-17 07:02:19,803 - __main__ - INFO - ML models loaded successfully
+2025-10-17 07:02:19,835 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 07:02:19,851 - __main__ - INFO - Connected to Neo4j
+2025-10-17 07:02:19,916 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 07:02:19,916 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 07:02:19,919 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 07:02:23,523 - __main__ - INFO - ML models loaded successfully
+2025-10-17 07:02:23,524 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 07:02:23,545 - __main__ - INFO - Connected to Neo4j
+2025-10-17 07:02:23,630 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 07:02:23,639 - werkzeug - INFO -  * Debugger PIN: 561-674-262
+2025-10-17 07:15:06,087 - __main__ - INFO - ML models loaded successfully
+2025-10-17 07:15:06,092 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 07:15:06,093 - __main__ - INFO - Connected to Neo4j
+2025-10-17 07:15:06,198 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 07:15:06,199 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 07:15:06,201 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 07:15:08,337 - __main__ - INFO - ML models loaded successfully
+2025-10-17 07:15:08,339 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 07:15:08,342 - __main__ - INFO - Connected to Neo4j
+2025-10-17 07:15:08,355 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 07:15:08,395 - werkzeug - INFO -  * Debugger PIN: 392-722-444
+2025-10-17 07:19:08,703 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:19:08] "GET /health HTTP/1.1" 200 -
+2025-10-17 07:30:49,542 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:30:49] "GET /health HTTP/1.1" 200 -
+2025-10-17 07:30:49,693 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:30:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 07:35:37,475 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:35:37] "GET /health HTTP/1.1" 200 -
+2025-10-17 07:35:37,573 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:35:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 07:38:18,624 - __main__ - ERROR - Detection error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-10-17 07:38:18,629 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:38:18] "[35m[1mPOST /detect HTTP/1.1[0m" 500 -
+2025-10-17 07:38:36,186 - __main__ - ERROR - Detection error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-10-17 07:38:36,187 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:38:36] "[35m[1mPOST /detect HTTP/1.1[0m" 500 -
+2025-10-17 07:38:41,196 - __main__ - ERROR - Detection error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-10-17 07:38:41,197 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:38:41] "[35m[1mPOST /detect HTTP/1.1[0m" 500 -
+2025-10-17 07:38:52,364 - __main__ - ERROR - Detection error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-10-17 07:38:52,366 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:38:52] "[35m[1mPOST /detect HTTP/1.1[0m" 500 -
+2025-10-17 07:39:20,729 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:39:20] "[31m[1mGET /detect HTTP/1.1[0m" 405 -
+2025-10-17 07:39:21,049 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:39:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 07:39:43,000 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 07:39:43] "GET /health HTTP/1.1" 200 -
+2025-10-17 10:35:52,855 - __main__ - INFO - ML models loaded successfully
+2025-10-17 10:35:52,868 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 10:35:52,881 - __main__ - INFO - Connected to Neo4j
+2025-10-17 10:35:52,972 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-10-17 10:35:52,973 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 10:35:52,978 - werkzeug - INFO -  * Restarting with stat
+2025-10-17 10:35:55,666 - __main__ - INFO - ML models loaded successfully
+2025-10-17 10:35:55,667 - __main__ - INFO - Connected to Elasticsearch
+2025-10-17 10:35:55,668 - __main__ - INFO - Connected to Neo4j
+2025-10-17 10:35:55,681 - werkzeug - WARNING -  * Debugger is active!
+2025-10-17 10:35:55,689 - werkzeug - INFO -  * Debugger PIN: 139-143-385
+2025-10-17 10:43:24,851 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 10:43:24] "GET /health HTTP/1.1" 200 -
+2025-10-17 10:43:24,982 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 10:43:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 11:00:41,673 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 11:00:41] "[33mGET / HTTP/1.1[0m" 404 -
+2025-10-17 11:00:49,424 - werkzeug - INFO - 172.18.0.1 - - [17/Oct/2025 11:00:49] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-10 06:25:06,442 - __main__ - INFO - ML models loaded successfully
+2025-11-10 06:25:06,446 - __main__ - INFO - Connected to Elasticsearch
+2025-11-10 06:25:06,454 - __main__ - INFO - Connected to Neo4j
+2025-11-10 06:25:06,504 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-11-10 06:25:06,505 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-10 06:25:06,507 - werkzeug - INFO -  * Restarting with stat
+2025-11-10 06:25:08,710 - __main__ - INFO - ML models loaded successfully
+2025-11-10 06:25:08,716 - __main__ - INFO - Connected to Elasticsearch
+2025-11-10 06:25:08,727 - __main__ - INFO - Connected to Neo4j
+2025-11-10 06:25:08,752 - werkzeug - WARNING -  * Debugger is active!
+2025-11-10 06:25:08,764 - werkzeug - INFO -  * Debugger PIN: 497-026-398
+2025-11-10 06:26:58,202 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.099s]
+2025-11-10 06:26:58,203 - __main__ - INFO - Logged to Elasticsearch: 20251110062658-7809
+2025-11-10 06:27:03,253 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.010s]
+2025-11-10 06:27:03,254 - __main__ - INFO - Logged to Elasticsearch: 20251110062703-7803
+2025-11-10 06:27:04,561 - __main__ - INFO - Logged to Neo4j: 20251110062658-7809
+2025-11-10 06:27:04,598 - __main__ - INFO - Detection completed: 20251110062658-7809 - Blocked: True
+2025-11-10 06:27:04,605 - __main__ - INFO - Logged to Neo4j: 20251110062703-7803
+2025-11-10 06:27:04,605 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:04] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:04,607 - __main__ - INFO - Detection completed: 20251110062703-7803 - Blocked: True
+2025-11-10 06:27:04,609 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:04] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:04,704 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.067s]
+2025-11-10 06:27:04,705 - __main__ - INFO - Logged to Elasticsearch: 20251110062704-173
+2025-11-10 06:27:04,732 - __main__ - INFO - Logged to Neo4j: 20251110062704-173
+2025-11-10 06:27:04,738 - __main__ - INFO - Detection completed: 20251110062704-173 - Blocked: True
+2025-11-10 06:27:04,739 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:04] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:04,854 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.070s]
+2025-11-10 06:27:04,854 - __main__ - INFO - Logged to Elasticsearch: 20251110062704-132
+2025-11-10 06:27:04,880 - __main__ - INFO - Logged to Neo4j: 20251110062704-132
+2025-11-10 06:27:04,886 - __main__ - INFO - Detection completed: 20251110062704-132 - Blocked: True
+2025-11-10 06:27:04,887 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:04] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:04,917 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:04,917 - __main__ - INFO - Logged to Elasticsearch: 20251110062704-7341
+2025-11-10 06:27:05,005 - __main__ - INFO - Logged to Neo4j: 20251110062704-7341
+2025-11-10 06:27:05,010 - __main__ - INFO - Detection completed: 20251110062704-7341 - Blocked: True
+2025-11-10 06:27:05,011 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,046 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:05,047 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-6078
+2025-11-10 06:27:05,073 - __main__ - INFO - Logged to Neo4j: 20251110062705-6078
+2025-11-10 06:27:05,080 - __main__ - INFO - Detection completed: 20251110062705-6078 - Blocked: True
+2025-11-10 06:27:05,081 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,172 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.068s]
+2025-11-10 06:27:05,172 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-8720
+2025-11-10 06:27:05,194 - __main__ - INFO - Logged to Neo4j: 20251110062705-8720
+2025-11-10 06:27:05,201 - __main__ - INFO - Detection completed: 20251110062705-8720 - Blocked: True
+2025-11-10 06:27:05,202 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,234 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:05,234 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-1659
+2025-11-10 06:27:05,264 - __main__ - INFO - Logged to Neo4j: 20251110062705-1659
+2025-11-10 06:27:05,328 - __main__ - INFO - Detection completed: 20251110062705-1659 - Blocked: True
+2025-11-10 06:27:05,329 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,368 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:05,369 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-6244
+2025-11-10 06:27:05,392 - __main__ - INFO - Logged to Neo4j: 20251110062705-6244
+2025-11-10 06:27:05,397 - __main__ - INFO - Detection completed: 20251110062705-6244 - Blocked: True
+2025-11-10 06:27:05,398 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,428 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:05,429 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-5554
+2025-11-10 06:27:05,454 - __main__ - INFO - Logged to Neo4j: 20251110062705-5554
+2025-11-10 06:27:05,461 - __main__ - INFO - Detection completed: 20251110062705-5554 - Blocked: True
+2025-11-10 06:27:05,463 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,555 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.070s]
+2025-11-10 06:27:05,555 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-2303
+2025-11-10 06:27:05,613 - __main__ - INFO - Logged to Neo4j: 20251110062705-2303
+2025-11-10 06:27:05,623 - __main__ - INFO - Detection completed: 20251110062705-2303 - Blocked: True
+2025-11-10 06:27:05,624 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,716 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.069s]
+2025-11-10 06:27:05,717 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-131
+2025-11-10 06:27:05,740 - __main__ - INFO - Logged to Neo4j: 20251110062705-131
+2025-11-10 06:27:05,745 - __main__ - INFO - Detection completed: 20251110062705-131 - Blocked: True
+2025-11-10 06:27:05,746 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,775 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:05,776 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-9
+2025-11-10 06:27:05,798 - __main__ - INFO - Logged to Neo4j: 20251110062705-9
+2025-11-10 06:27:05,805 - __main__ - INFO - Detection completed: 20251110062705-9 - Blocked: True
+2025-11-10 06:27:05,806 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,835 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:05,835 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-6159
+2025-11-10 06:27:05,857 - __main__ - INFO - Logged to Neo4j: 20251110062705-6159
+2025-11-10 06:27:05,923 - __main__ - INFO - Detection completed: 20251110062705-6159 - Blocked: True
+2025-11-10 06:27:05,934 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:05,986 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.011s]
+2025-11-10 06:27:05,987 - __main__ - INFO - Logged to Elasticsearch: 20251110062705-4549
+2025-11-10 06:27:06,012 - __main__ - INFO - Logged to Neo4j: 20251110062705-4549
+2025-11-10 06:27:06,017 - __main__ - INFO - Detection completed: 20251110062705-4549 - Blocked: True
+2025-11-10 06:27:06,019 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,047 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:06,048 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-9140
+2025-11-10 06:27:06,121 - __main__ - INFO - Logged to Neo4j: 20251110062706-9140
+2025-11-10 06:27:06,177 - __main__ - INFO - Detection completed: 20251110062706-9140 - Blocked: True
+2025-11-10 06:27:06,178 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,227 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:06,228 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-1861
+2025-11-10 06:27:06,233 - __main__ - INFO - Logged to Neo4j: 20251110062706-1861
+2025-11-10 06:27:06,240 - __main__ - INFO - Detection completed: 20251110062706-1861 - Blocked: True
+2025-11-10 06:27:06,241 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,272 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:06,273 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-561
+2025-11-10 06:27:06,279 - __main__ - INFO - Logged to Neo4j: 20251110062706-561
+2025-11-10 06:27:06,287 - __main__ - INFO - Detection completed: 20251110062706-561 - Blocked: True
+2025-11-10 06:27:06,288 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,382 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.070s]
+2025-11-10 06:27:06,383 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-894
+2025-11-10 06:27:06,388 - __main__ - INFO - Logged to Neo4j: 20251110062706-894
+2025-11-10 06:27:06,396 - __main__ - INFO - Detection completed: 20251110062706-894 - Blocked: True
+2025-11-10 06:27:06,398 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,428 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:06,428 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-2784
+2025-11-10 06:27:06,434 - __main__ - INFO - Logged to Neo4j: 20251110062706-2784
+2025-11-10 06:27:06,507 - __main__ - INFO - Detection completed: 20251110062706-2784 - Blocked: True
+2025-11-10 06:27:06,508 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,559 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:06,559 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-178
+2025-11-10 06:27:06,565 - __main__ - INFO - Logged to Neo4j: 20251110062706-178
+2025-11-10 06:27:06,573 - __main__ - INFO - Detection completed: 20251110062706-178 - Blocked: True
+2025-11-10 06:27:06,574 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,617 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:06,618 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-4034
+2025-11-10 06:27:06,623 - __main__ - INFO - Logged to Neo4j: 20251110062706-4034
+2025-11-10 06:27:06,632 - __main__ - INFO - Detection completed: 20251110062706-4034 - Blocked: True
+2025-11-10 06:27:06,634 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,726 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.073s]
+2025-11-10 06:27:06,726 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-4125
+2025-11-10 06:27:06,730 - __main__ - INFO - Logged to Neo4j: 20251110062706-4125
+2025-11-10 06:27:06,740 - __main__ - INFO - Detection completed: 20251110062706-4125 - Blocked: True
+2025-11-10 06:27:06,741 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,771 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:06,772 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-5672
+2025-11-10 06:27:06,776 - __main__ - INFO - Logged to Neo4j: 20251110062706-5672
+2025-11-10 06:27:06,851 - __main__ - INFO - Detection completed: 20251110062706-5672 - Blocked: True
+2025-11-10 06:27:06,852 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,880 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:06,881 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-4765
+2025-11-10 06:27:06,886 - __main__ - INFO - Logged to Neo4j: 20251110062706-4765
+2025-11-10 06:27:06,894 - __main__ - INFO - Detection completed: 20251110062706-4765 - Blocked: True
+2025-11-10 06:27:06,895 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,925 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:06,925 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-4266
+2025-11-10 06:27:06,949 - __main__ - INFO - Logged to Neo4j: 20251110062706-4266
+2025-11-10 06:27:06,957 - __main__ - INFO - Detection completed: 20251110062706-4266 - Blocked: True
+2025-11-10 06:27:06,958 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:06] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:06,987 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:06,987 - __main__ - INFO - Logged to Elasticsearch: 20251110062706-295
+2025-11-10 06:27:07,057 - __main__ - INFO - Logged to Neo4j: 20251110062706-295
+2025-11-10 06:27:07,069 - __main__ - INFO - Detection completed: 20251110062706-295 - Blocked: True
+2025-11-10 06:27:07,071 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:07] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:07,101 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:07,102 - __main__ - INFO - Logged to Elasticsearch: 20251110062707-9112
+2025-11-10 06:27:07,182 - __main__ - INFO - Logged to Neo4j: 20251110062707-9112
+2025-11-10 06:27:07,186 - __main__ - INFO - Detection completed: 20251110062707-9112 - Blocked: True
+2025-11-10 06:27:07,187 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:07] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:07,235 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:07,235 - __main__ - INFO - Logged to Elasticsearch: 20251110062707-2508
+2025-11-10 06:27:07,305 - __main__ - INFO - Logged to Neo4j: 20251110062707-2508
+2025-11-10 06:27:07,310 - __main__ - INFO - Detection completed: 20251110062707-2508 - Blocked: True
+2025-11-10 06:27:07,311 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:07] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:07,341 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:07,341 - __main__ - INFO - Logged to Elasticsearch: 20251110062707-3037
+2025-11-10 06:27:07,359 - __main__ - INFO - Logged to Neo4j: 20251110062707-3037
+2025-11-10 06:27:07,425 - __main__ - INFO - Detection completed: 20251110062707-3037 - Blocked: True
+2025-11-10 06:27:07,426 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:07] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:07,500 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.043s]
+2025-11-10 06:27:07,501 - __main__ - INFO - Logged to Elasticsearch: 20251110062707-1660
+2025-11-10 06:27:07,590 - __main__ - INFO - Logged to Neo4j: 20251110062707-1660
+2025-11-10 06:27:07,641 - __main__ - INFO - Detection completed: 20251110062707-1660 - Blocked: True
+2025-11-10 06:27:07,642 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:07] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:07,735 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:07,736 - __main__ - INFO - Logged to Elasticsearch: 20251110062707-6297
+2025-11-10 06:27:07,817 - __main__ - INFO - Logged to Neo4j: 20251110062707-6297
+2025-11-10 06:27:07,825 - __main__ - INFO - Detection completed: 20251110062707-6297 - Blocked: True
+2025-11-10 06:27:07,826 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:07] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:07,858 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:07,859 - __main__ - INFO - Logged to Elasticsearch: 20251110062707-8719
+2025-11-10 06:27:07,865 - __main__ - INFO - Logged to Neo4j: 20251110062707-8719
+2025-11-10 06:27:07,873 - __main__ - INFO - Detection completed: 20251110062707-8719 - Blocked: True
+2025-11-10 06:27:07,874 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:07] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:07,902 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:07,903 - __main__ - INFO - Logged to Elasticsearch: 20251110062707-9117
+2025-11-10 06:27:07,909 - __main__ - INFO - Logged to Neo4j: 20251110062707-9117
+2025-11-10 06:27:07,975 - __main__ - INFO - Detection completed: 20251110062707-9117 - Blocked: True
+2025-11-10 06:27:07,976 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:07] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:08,010 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:08,010 - __main__ - INFO - Logged to Elasticsearch: 20251110062708-1017
+2025-11-10 06:27:08,014 - __main__ - INFO - Logged to Neo4j: 20251110062708-1017
+2025-11-10 06:27:08,021 - __main__ - INFO - Detection completed: 20251110062708-1017 - Blocked: True
+2025-11-10 06:27:08,022 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:08] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:08,049 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-10 06:27:08,049 - __main__ - INFO - Logged to Elasticsearch: 20251110062708-9458
+2025-11-10 06:27:08,068 - __main__ - INFO - Logged to Neo4j: 20251110062708-9458
+2025-11-10 06:27:08,072 - __main__ - INFO - Detection completed: 20251110062708-9458 - Blocked: True
+2025-11-10 06:27:08,073 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:08] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:08,162 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.069s]
+2025-11-10 06:27:08,163 - __main__ - INFO - Logged to Elasticsearch: 20251110062708-843
+2025-11-10 06:27:08,181 - __main__ - INFO - Logged to Neo4j: 20251110062708-843
+2025-11-10 06:27:08,186 - __main__ - INFO - Detection completed: 20251110062708-843 - Blocked: True
+2025-11-10 06:27:08,187 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:08] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:08,227 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:08,227 - __main__ - INFO - Logged to Elasticsearch: 20251110062708-1135
+2025-11-10 06:27:08,299 - __main__ - INFO - Logged to Neo4j: 20251110062708-1135
+2025-11-10 06:27:08,308 - __main__ - INFO - Detection completed: 20251110062708-1135 - Blocked: True
+2025-11-10 06:27:08,309 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:08] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:08,340 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:08,340 - __main__ - INFO - Logged to Elasticsearch: 20251110062708-9925
+2025-11-10 06:27:08,419 - __main__ - INFO - Logged to Neo4j: 20251110062708-9925
+2025-11-10 06:27:08,424 - __main__ - INFO - Detection completed: 20251110062708-9925 - Blocked: True
+2025-11-10 06:27:08,425 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:08] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:08,522 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.066s]
+2025-11-10 06:27:08,523 - __main__ - INFO - Logged to Elasticsearch: 20251110062708-2885
+2025-11-10 06:27:08,539 - __main__ - INFO - Logged to Neo4j: 20251110062708-2885
+2025-11-10 06:27:08,544 - __main__ - INFO - Detection completed: 20251110062708-2885 - Blocked: True
+2025-11-10 06:27:08,545 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:08] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:08,573 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:08,574 - __main__ - INFO - Logged to Elasticsearch: 20251110062708-3459
+2025-11-10 06:27:08,643 - __main__ - INFO - Logged to Neo4j: 20251110062708-3459
+2025-11-10 06:27:08,648 - __main__ - INFO - Detection completed: 20251110062708-3459 - Blocked: True
+2025-11-10 06:27:08,649 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:08] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:08,690 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:08,690 - __main__ - INFO - Logged to Elasticsearch: 20251110062708-4549
+2025-11-10 06:27:08,707 - __main__ - INFO - Logged to Neo4j: 20251110062708-4549
+2025-11-10 06:27:08,777 - __main__ - INFO - Detection completed: 20251110062708-4549 - Blocked: True
+2025-11-10 06:27:08,778 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:08] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:09,412 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.614s]
+2025-11-10 06:27:09,413 - __main__ - INFO - Logged to Elasticsearch: 20251110062708-4604
+2025-11-10 06:27:09,417 - __main__ - INFO - Logged to Neo4j: 20251110062708-4604
+2025-11-10 06:27:09,425 - __main__ - INFO - Detection completed: 20251110062708-4604 - Blocked: True
+2025-11-10 06:27:09,426 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:09] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:09,502 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.055s]
+2025-11-10 06:27:09,503 - __main__ - INFO - Logged to Elasticsearch: 20251110062709-6575
+2025-11-10 06:27:09,539 - __main__ - INFO - Logged to Neo4j: 20251110062709-6575
+2025-11-10 06:27:09,543 - __main__ - INFO - Detection completed: 20251110062709-6575 - Blocked: True
+2025-11-10 06:27:09,544 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:09] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:09,647 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.084s]
+2025-11-10 06:27:09,648 - __main__ - INFO - Logged to Elasticsearch: 20251110062709-5991
+2025-11-10 06:27:09,653 - __main__ - INFO - Logged to Neo4j: 20251110062709-5991
+2025-11-10 06:27:09,660 - __main__ - INFO - Detection completed: 20251110062709-5991 - Blocked: True
+2025-11-10 06:27:09,661 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:09] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:09,757 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.076s]
+2025-11-10 06:27:09,758 - __main__ - INFO - Logged to Elasticsearch: 20251110062709-2782
+2025-11-10 06:27:09,761 - __main__ - INFO - Logged to Neo4j: 20251110062709-2782
+2025-11-10 06:27:09,769 - __main__ - INFO - Detection completed: 20251110062709-2782 - Blocked: True
+2025-11-10 06:27:09,770 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:09] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:09,810 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:09,811 - __main__ - INFO - Logged to Elasticsearch: 20251110062709-1406
+2025-11-10 06:27:09,827 - __main__ - INFO - Logged to Neo4j: 20251110062709-1406
+2025-11-10 06:27:09,834 - __main__ - INFO - Detection completed: 20251110062709-1406 - Blocked: True
+2025-11-10 06:27:09,835 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:09] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:09,923 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.069s]
+2025-11-10 06:27:09,924 - __main__ - INFO - Logged to Elasticsearch: 20251110062709-8031
+2025-11-10 06:27:09,940 - __main__ - INFO - Logged to Neo4j: 20251110062709-8031
+2025-11-10 06:27:09,945 - __main__ - INFO - Detection completed: 20251110062709-8031 - Blocked: True
+2025-11-10 06:27:09,946 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:09] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:09,985 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:09,985 - __main__ - INFO - Logged to Elasticsearch: 20251110062709-4487
+2025-11-10 06:27:10,000 - __main__ - INFO - Logged to Neo4j: 20251110062709-4487
+2025-11-10 06:27:10,004 - __main__ - INFO - Detection completed: 20251110062709-4487 - Blocked: True
+2025-11-10 06:27:10,005 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:10] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:10,035 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:10,036 - __main__ - INFO - Logged to Elasticsearch: 20251110062710-45
+2025-11-10 06:27:10,104 - __main__ - INFO - Logged to Neo4j: 20251110062710-45
+2025-11-10 06:27:10,108 - __main__ - INFO - Detection completed: 20251110062710-45 - Blocked: True
+2025-11-10 06:27:10,109 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:10] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:10,218 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.064s]
+2025-11-10 06:27:10,219 - __main__ - INFO - Logged to Elasticsearch: 20251110062710-3864
+2025-11-10 06:27:10,245 - __main__ - INFO - Logged to Neo4j: 20251110062710-3864
+2025-11-10 06:27:10,250 - __main__ - INFO - Detection completed: 20251110062710-3864 - Blocked: True
+2025-11-10 06:27:10,251 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:10] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:10,279 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:10,279 - __main__ - INFO - Logged to Elasticsearch: 20251110062710-2311
+2025-11-10 06:27:10,416 - __main__ - INFO - Logged to Neo4j: 20251110062710-2311
+2025-11-10 06:27:10,475 - __main__ - INFO - Detection completed: 20251110062710-2311 - Blocked: True
+2025-11-10 06:27:10,476 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:10] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:10,556 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.059s]
+2025-11-10 06:27:10,556 - __main__ - INFO - Logged to Elasticsearch: 20251110062710-8917
+2025-11-10 06:27:10,702 - __main__ - INFO - Logged to Neo4j: 20251110062710-8917
+2025-11-10 06:27:10,706 - __main__ - INFO - Detection completed: 20251110062710-8917 - Blocked: True
+2025-11-10 06:27:10,707 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:10] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:10,771 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.046s]
+2025-11-10 06:27:10,772 - __main__ - INFO - Logged to Elasticsearch: 20251110062710-8852
+2025-11-10 06:27:10,776 - __main__ - INFO - Logged to Neo4j: 20251110062710-8852
+2025-11-10 06:27:10,781 - __main__ - INFO - Detection completed: 20251110062710-8852 - Blocked: True
+2025-11-10 06:27:10,783 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:10] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:10,908 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.091s]
+2025-11-10 06:27:10,909 - __main__ - INFO - Logged to Elasticsearch: 20251110062710-9808
+2025-11-10 06:27:10,913 - __main__ - INFO - Logged to Neo4j: 20251110062710-9808
+2025-11-10 06:27:10,919 - __main__ - INFO - Detection completed: 20251110062710-9808 - Blocked: True
+2025-11-10 06:27:10,920 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:10] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:10,986 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.049s]
+2025-11-10 06:27:10,987 - __main__ - INFO - Logged to Elasticsearch: 20251110062710-6624
+2025-11-10 06:27:10,991 - __main__ - INFO - Logged to Neo4j: 20251110062710-6624
+2025-11-10 06:27:10,996 - __main__ - INFO - Detection completed: 20251110062710-6624 - Blocked: True
+2025-11-10 06:27:10,997 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:10] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:11,117 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.084s]
+2025-11-10 06:27:11,118 - __main__ - INFO - Logged to Elasticsearch: 20251110062711-1731
+2025-11-10 06:27:11,122 - __main__ - INFO - Logged to Neo4j: 20251110062711-1731
+2025-11-10 06:27:11,179 - __main__ - INFO - Detection completed: 20251110062711-1731 - Blocked: True
+2025-11-10 06:27:11,180 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:11] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:11,308 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.099s]
+2025-11-10 06:27:11,308 - __main__ - INFO - Logged to Elasticsearch: 20251110062711-2310
+2025-11-10 06:27:11,323 - __main__ - INFO - Logged to Neo4j: 20251110062711-2310
+2025-11-10 06:27:11,446 - __main__ - INFO - Detection completed: 20251110062711-2310 - Blocked: True
+2025-11-10 06:27:11,446 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:11] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:11,527 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.060s]
+2025-11-10 06:27:11,527 - __main__ - INFO - Logged to Elasticsearch: 20251110062711-4662
+2025-11-10 06:27:11,543 - __main__ - INFO - Logged to Neo4j: 20251110062711-4662
+2025-11-10 06:27:11,660 - __main__ - INFO - Detection completed: 20251110062711-4662 - Blocked: True
+2025-11-10 06:27:11,661 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:11] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:11,730 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.052s]
+2025-11-10 06:27:11,731 - __main__ - INFO - Logged to Elasticsearch: 20251110062711-3327
+2025-11-10 06:27:11,744 - __main__ - INFO - Logged to Neo4j: 20251110062711-3327
+2025-11-10 06:27:11,861 - __main__ - INFO - Detection completed: 20251110062711-3327 - Blocked: True
+2025-11-10 06:27:11,862 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:11] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:11,945 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.065s]
+2025-11-10 06:27:11,945 - __main__ - INFO - Logged to Elasticsearch: 20251110062711-1354
+2025-11-10 06:27:11,958 - __main__ - INFO - Logged to Neo4j: 20251110062711-1354
+2025-11-10 06:27:12,021 - __main__ - INFO - Detection completed: 20251110062711-1354 - Blocked: True
+2025-11-10 06:27:12,022 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:12] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:12,282 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.221s]
+2025-11-10 06:27:12,282 - __main__ - INFO - Logged to Elasticsearch: 20251110062712-9140
+2025-11-10 06:27:12,298 - __main__ - INFO - Logged to Neo4j: 20251110062712-9140
+2025-11-10 06:27:12,360 - __main__ - INFO - Detection completed: 20251110062712-9140 - Blocked: True
+2025-11-10 06:27:12,361 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:12] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:12,566 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.187s]
+2025-11-10 06:27:12,567 - __main__ - INFO - Logged to Elasticsearch: 20251110062712-5017
+2025-11-10 06:27:12,581 - __main__ - INFO - Logged to Neo4j: 20251110062712-5017
+2025-11-10 06:27:12,640 - __main__ - INFO - Detection completed: 20251110062712-5017 - Blocked: True
+2025-11-10 06:27:12,641 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:12] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:12,731 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.072s]
+2025-11-10 06:27:12,732 - __main__ - INFO - Logged to Elasticsearch: 20251110062712-8725
+2025-11-10 06:27:12,746 - __main__ - INFO - Logged to Neo4j: 20251110062712-8725
+2025-11-10 06:27:12,874 - __main__ - INFO - Detection completed: 20251110062712-8725 - Blocked: True
+2025-11-10 06:27:12,875 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:12] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:13,075 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.163s]
+2025-11-10 06:27:13,076 - __main__ - INFO - Logged to Elasticsearch: 20251110062712-9570
+2025-11-10 06:27:13,089 - __main__ - INFO - Logged to Neo4j: 20251110062712-9570
+2025-11-10 06:27:13,217 - __main__ - INFO - Detection completed: 20251110062712-9570 - Blocked: True
+2025-11-10 06:27:13,218 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:13] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:13,366 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.071s]
+2025-11-10 06:27:13,367 - __main__ - INFO - Logged to Elasticsearch: 20251110062713-683
+2025-11-10 06:27:13,381 - __main__ - INFO - Logged to Neo4j: 20251110062713-683
+2025-11-10 06:27:13,445 - __main__ - INFO - Detection completed: 20251110062713-683 - Blocked: True
+2025-11-10 06:27:13,446 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:13] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:13,586 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.121s]
+2025-11-10 06:27:13,587 - __main__ - INFO - Logged to Elasticsearch: 20251110062713-5002
+2025-11-10 06:27:13,590 - __main__ - INFO - Logged to Neo4j: 20251110062713-5002
+2025-11-10 06:27:13,595 - __main__ - INFO - Detection completed: 20251110062713-5002 - Blocked: True
+2025-11-10 06:27:13,596 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:13] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:13,835 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.046s]
+2025-11-10 06:27:13,836 - __main__ - INFO - Logged to Elasticsearch: 20251110062713-1826
+2025-11-10 06:27:13,840 - __main__ - INFO - Logged to Neo4j: 20251110062713-1826
+2025-11-10 06:27:13,907 - __main__ - INFO - Detection completed: 20251110062713-1826 - Blocked: True
+2025-11-10 06:27:13,908 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:13] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:13,982 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:13,983 - __main__ - INFO - Logged to Elasticsearch: 20251110062713-1822
+2025-11-10 06:27:13,986 - __main__ - INFO - Logged to Neo4j: 20251110062713-1822
+2025-11-10 06:27:14,375 - __main__ - INFO - Detection completed: 20251110062713-1822 - Blocked: True
+2025-11-10 06:27:14,377 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:14] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:14,470 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.063s]
+2025-11-10 06:27:14,471 - __main__ - INFO - Logged to Elasticsearch: 20251110062714-9386
+2025-11-10 06:27:14,475 - __main__ - INFO - Logged to Neo4j: 20251110062714-9386
+2025-11-10 06:27:14,480 - __main__ - INFO - Detection completed: 20251110062714-9386 - Blocked: True
+2025-11-10 06:27:14,481 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:14] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:14,934 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.417s]
+2025-11-10 06:27:14,934 - __main__ - INFO - Logged to Elasticsearch: 20251110062714-2776
+2025-11-10 06:27:15,075 - __main__ - INFO - Logged to Neo4j: 20251110062714-2776
+2025-11-10 06:27:15,133 - __main__ - INFO - Detection completed: 20251110062714-2776 - Blocked: True
+2025-11-10 06:27:15,134 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:15] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:15,257 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.073s]
+2025-11-10 06:27:15,258 - __main__ - INFO - Logged to Elasticsearch: 20251110062715-5583
+2025-11-10 06:27:15,272 - __main__ - INFO - Logged to Neo4j: 20251110062715-5583
+2025-11-10 06:27:15,334 - __main__ - INFO - Detection completed: 20251110062715-5583 - Blocked: True
+2025-11-10 06:27:15,334 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:15] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:15,529 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.158s]
+2025-11-10 06:27:15,530 - __main__ - INFO - Logged to Elasticsearch: 20251110062715-5811
+2025-11-10 06:27:15,535 - __main__ - INFO - Logged to Neo4j: 20251110062715-5811
+2025-11-10 06:27:15,542 - __main__ - INFO - Detection completed: 20251110062715-5811 - Blocked: True
+2025-11-10 06:27:15,543 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:15] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:15,688 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.125s]
+2025-11-10 06:27:15,689 - __main__ - INFO - Logged to Elasticsearch: 20251110062715-1141
+2025-11-10 06:27:15,693 - __main__ - INFO - Logged to Neo4j: 20251110062715-1141
+2025-11-10 06:27:15,754 - __main__ - INFO - Detection completed: 20251110062715-1141 - Blocked: True
+2025-11-10 06:27:15,755 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:15] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:15,826 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.053s]
+2025-11-10 06:27:15,826 - __main__ - INFO - Logged to Elasticsearch: 20251110062715-2314
+2025-11-10 06:27:15,830 - __main__ - INFO - Logged to Neo4j: 20251110062715-2314
+2025-11-10 06:27:15,896 - __main__ - INFO - Detection completed: 20251110062715-2314 - Blocked: True
+2025-11-10 06:27:15,897 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:15] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:16,035 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.120s]
+2025-11-10 06:27:16,035 - __main__ - INFO - Logged to Elasticsearch: 20251110062715-5687
+2025-11-10 06:27:16,039 - __main__ - INFO - Logged to Neo4j: 20251110062715-5687
+2025-11-10 06:27:16,047 - __main__ - INFO - Detection completed: 20251110062715-5687 - Blocked: True
+2025-11-10 06:27:16,048 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:16] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:16,115 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.037s]
+2025-11-10 06:27:16,116 - __main__ - INFO - Logged to Elasticsearch: 20251110062716-2807
+2025-11-10 06:27:16,199 - __main__ - INFO - Logged to Neo4j: 20251110062716-2807
+2025-11-10 06:27:16,203 - __main__ - INFO - Detection completed: 20251110062716-2807 - Blocked: True
+2025-11-10 06:27:16,204 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:16] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:16,324 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.102s]
+2025-11-10 06:27:16,325 - __main__ - INFO - Logged to Elasticsearch: 20251110062716-7114
+2025-11-10 06:27:16,394 - __main__ - INFO - Logged to Neo4j: 20251110062716-7114
+2025-11-10 06:27:16,452 - __main__ - INFO - Detection completed: 20251110062716-7114 - Blocked: True
+2025-11-10 06:27:16,453 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:16] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:16,582 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.064s]
+2025-11-10 06:27:16,583 - __main__ - INFO - Logged to Elasticsearch: 20251110062716-2722
+2025-11-10 06:27:16,656 - __main__ - INFO - Logged to Neo4j: 20251110062716-2722
+2025-11-10 06:27:16,779 - __main__ - INFO - Detection completed: 20251110062716-2722 - Blocked: True
+2025-11-10 06:27:16,780 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:16] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:16,916 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.103s]
+2025-11-10 06:27:16,916 - __main__ - INFO - Logged to Elasticsearch: 20251110062716-1009
+2025-11-10 06:27:17,046 - __main__ - INFO - Logged to Neo4j: 20251110062716-1009
+2025-11-10 06:27:17,049 - __main__ - INFO - Detection completed: 20251110062716-1009 - Blocked: True
+2025-11-10 06:27:17,050 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:17] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:17,133 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.066s]
+2025-11-10 06:27:17,134 - __main__ - INFO - Logged to Elasticsearch: 20251110062717-2163
+2025-11-10 06:27:17,200 - __main__ - INFO - Logged to Neo4j: 20251110062717-2163
+2025-11-10 06:27:17,255 - __main__ - INFO - Detection completed: 20251110062717-2163 - Blocked: True
+2025-11-10 06:27:17,257 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:17] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:17,334 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.058s]
+2025-11-10 06:27:17,335 - __main__ - INFO - Logged to Elasticsearch: 20251110062717-3758
+2025-11-10 06:27:17,432 - __main__ - INFO - Logged to Neo4j: 20251110062717-3758
+2025-11-10 06:27:17,560 - __main__ - INFO - Detection completed: 20251110062717-3758 - Blocked: True
+2025-11-10 06:27:17,561 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:17] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:17,634 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.055s]
+2025-11-10 06:27:17,634 - __main__ - INFO - Logged to Elasticsearch: 20251110062717-8727
+2025-11-10 06:27:17,706 - __main__ - INFO - Logged to Neo4j: 20251110062717-8727
+2025-11-10 06:27:17,772 - __main__ - INFO - Detection completed: 20251110062717-8727 - Blocked: True
+2025-11-10 06:27:17,773 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:17] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:17,914 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.062s]
+2025-11-10 06:27:17,914 - __main__ - INFO - Logged to Elasticsearch: 20251110062717-2654
+2025-11-10 06:27:17,982 - __main__ - INFO - Logged to Neo4j: 20251110062717-2654
+2025-11-10 06:27:18,046 - __main__ - INFO - Detection completed: 20251110062717-2654 - Blocked: True
+2025-11-10 06:27:18,047 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:18] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:18,243 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.174s]
+2025-11-10 06:27:18,244 - __main__ - INFO - Logged to Elasticsearch: 20251110062718-8134
+2025-11-10 06:27:18,247 - __main__ - INFO - Logged to Neo4j: 20251110062718-8134
+2025-11-10 06:27:18,311 - __main__ - INFO - Detection completed: 20251110062718-8134 - Blocked: True
+2025-11-10 06:27:18,312 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:18] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:18,460 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:18,460 - __main__ - INFO - Logged to Elasticsearch: 20251110062718-4508
+2025-11-10 06:27:18,461 - __main__ - INFO - Detection completed: 20251110062718-4508 - Blocked: False
+2025-11-10 06:27:18,462 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:18] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:18,586 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.106s]
+2025-11-10 06:27:18,587 - __main__ - INFO - Logged to Elasticsearch: 20251110062718-4221
+2025-11-10 06:27:18,591 - __main__ - INFO - Logged to Neo4j: 20251110062718-4221
+2025-11-10 06:27:18,596 - __main__ - INFO - Detection completed: 20251110062718-4221 - Blocked: True
+2025-11-10 06:27:18,596 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:18] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:18,725 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.097s]
+2025-11-10 06:27:18,726 - __main__ - INFO - Logged to Elasticsearch: 20251110062718-1493
+2025-11-10 06:27:18,852 - __main__ - INFO - Logged to Neo4j: 20251110062718-1493
+2025-11-10 06:27:18,891 - __main__ - INFO - Detection completed: 20251110062718-1493 - Blocked: True
+2025-11-10 06:27:18,892 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:18] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:18,972 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.060s]
+2025-11-10 06:27:18,972 - __main__ - INFO - Logged to Elasticsearch: 20251110062718-1756
+2025-11-10 06:27:19,105 - __main__ - INFO - Logged to Neo4j: 20251110062718-1756
+2025-11-10 06:27:19,109 - __main__ - INFO - Detection completed: 20251110062718-1756 - Blocked: True
+2025-11-10 06:27:19,110 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:19] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:19,233 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.086s]
+2025-11-10 06:27:19,234 - __main__ - INFO - Logged to Elasticsearch: 20251110062719-7506
+2025-11-10 06:27:19,239 - __main__ - INFO - Logged to Neo4j: 20251110062719-7506
+2025-11-10 06:27:19,300 - __main__ - INFO - Detection completed: 20251110062719-7506 - Blocked: True
+2025-11-10 06:27:19,301 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:19] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:19,434 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.094s]
+2025-11-10 06:27:19,434 - __main__ - INFO - Logged to Elasticsearch: 20251110062719-8981
+2025-11-10 06:27:19,500 - __main__ - INFO - Logged to Neo4j: 20251110062719-8981
+2025-11-10 06:27:19,503 - __main__ - INFO - Detection completed: 20251110062719-8981 - Blocked: True
+2025-11-10 06:27:19,504 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:19] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:19,634 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.073s]
+2025-11-10 06:27:19,635 - __main__ - INFO - Logged to Elasticsearch: 20251110062719-4239
+2025-11-10 06:27:19,701 - __main__ - INFO - Logged to Neo4j: 20251110062719-4239
+2025-11-10 06:27:19,820 - __main__ - INFO - Detection completed: 20251110062719-4239 - Blocked: True
+2025-11-10 06:27:19,821 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:19] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:20,021 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.182s]
+2025-11-10 06:27:20,021 - __main__ - INFO - Logged to Elasticsearch: 20251110062719-1006
+2025-11-10 06:27:20,093 - __main__ - INFO - Logged to Neo4j: 20251110062719-1006
+2025-11-10 06:27:20,096 - __main__ - INFO - Detection completed: 20251110062719-1006 - Blocked: True
+2025-11-10 06:27:20,097 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:20] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:20,225 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.110s]
+2025-11-10 06:27:20,226 - __main__ - INFO - Logged to Elasticsearch: 20251110062720-4656
+2025-11-10 06:27:20,237 - __main__ - INFO - Logged to Neo4j: 20251110062720-4656
+2025-11-10 06:27:20,241 - __main__ - INFO - Detection completed: 20251110062720-4656 - Blocked: True
+2025-11-10 06:27:20,242 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:20] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:20,360 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.102s]
+2025-11-10 06:27:20,361 - __main__ - INFO - Logged to Elasticsearch: 20251110062720-1913
+2025-11-10 06:27:20,429 - __main__ - INFO - Logged to Neo4j: 20251110062720-1913
+2025-11-10 06:27:20,548 - __main__ - INFO - Detection completed: 20251110062720-1913 - Blocked: True
+2025-11-10 06:27:20,549 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:20] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:20,733 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.147s]
+2025-11-10 06:27:20,733 - __main__ - INFO - Logged to Elasticsearch: 20251110062720-7809
+2025-11-10 06:27:20,803 - __main__ - INFO - Logged to Neo4j: 20251110062720-7809
+2025-11-10 06:27:20,807 - __main__ - INFO - Detection completed: 20251110062720-7809 - Blocked: True
+2025-11-10 06:27:20,808 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:20] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:20,937 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.072s]
+2025-11-10 06:27:20,937 - __main__ - INFO - Logged to Elasticsearch: 20251110062720-2835
+2025-11-10 06:27:20,950 - __main__ - INFO - Logged to Neo4j: 20251110062720-2835
+2025-11-10 06:27:20,954 - __main__ - INFO - Detection completed: 20251110062720-2835 - Blocked: True
+2025-11-10 06:27:20,955 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:20] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:21,091 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.119s]
+2025-11-10 06:27:21,092 - __main__ - INFO - Logged to Elasticsearch: 20251110062720-1246
+2025-11-10 06:27:21,103 - __main__ - INFO - Logged to Neo4j: 20251110062720-1246
+2025-11-10 06:27:21,221 - __main__ - INFO - Detection completed: 20251110062720-1246 - Blocked: True
+2025-11-10 06:27:21,222 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:21] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:21,309 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.044s]
+2025-11-10 06:27:21,309 - __main__ - INFO - Logged to Elasticsearch: 20251110062721-2738
+2025-11-10 06:27:21,312 - __main__ - INFO - Logged to Neo4j: 20251110062721-2738
+2025-11-10 06:27:21,317 - __main__ - INFO - Detection completed: 20251110062721-2738 - Blocked: True
+2025-11-10 06:27:21,318 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:21] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:21,383 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.035s]
+2025-11-10 06:27:21,383 - __main__ - INFO - Logged to Elasticsearch: 20251110062721-4170
+2025-11-10 06:27:21,511 - __main__ - INFO - Logged to Neo4j: 20251110062721-4170
+2025-11-10 06:27:21,569 - __main__ - INFO - Detection completed: 20251110062721-4170 - Blocked: True
+2025-11-10 06:27:21,570 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:21] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:21,633 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.045s]
+2025-11-10 06:27:21,633 - __main__ - INFO - Logged to Elasticsearch: 20251110062721-6467
+2025-11-10 06:27:21,646 - __main__ - INFO - Logged to Neo4j: 20251110062721-6467
+2025-11-10 06:27:21,768 - __main__ - INFO - Detection completed: 20251110062721-6467 - Blocked: True
+2025-11-10 06:27:21,769 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:21] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:21,850 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.053s]
+2025-11-10 06:27:21,850 - __main__ - INFO - Logged to Elasticsearch: 20251110062721-3603
+2025-11-10 06:27:21,863 - __main__ - INFO - Logged to Neo4j: 20251110062721-3603
+2025-11-10 06:27:21,926 - __main__ - INFO - Detection completed: 20251110062721-3603 - Blocked: True
+2025-11-10 06:27:21,927 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:21] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:21,954 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:21,955 - __main__ - INFO - Logged to Elasticsearch: 20251110062721-1334
+2025-11-10 06:27:21,969 - __main__ - INFO - Logged to Neo4j: 20251110062721-1334
+2025-11-10 06:27:22,089 - __main__ - INFO - Detection completed: 20251110062721-1334 - Blocked: True
+2025-11-10 06:27:22,090 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:22] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:22,174 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.068s]
+2025-11-10 06:27:22,174 - __main__ - INFO - Logged to Elasticsearch: 20251110062722-239
+2025-11-10 06:27:22,185 - __main__ - INFO - Logged to Neo4j: 20251110062722-239
+2025-11-10 06:27:22,188 - __main__ - INFO - Detection completed: 20251110062722-239 - Blocked: True
+2025-11-10 06:27:22,189 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:22] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:22,265 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.011s]
+2025-11-10 06:27:22,266 - __main__ - INFO - Logged to Elasticsearch: 20251110062722-2411
+2025-11-10 06:27:22,392 - __main__ - INFO - Logged to Neo4j: 20251110062722-2411
+2025-11-10 06:27:22,454 - __main__ - INFO - Detection completed: 20251110062722-2411 - Blocked: True
+2025-11-10 06:27:22,455 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:22] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:22,538 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.066s]
+2025-11-10 06:27:22,539 - __main__ - INFO - Logged to Elasticsearch: 20251110062722-8310
+2025-11-10 06:27:22,543 - __main__ - INFO - Logged to Neo4j: 20251110062722-8310
+2025-11-10 06:27:22,548 - __main__ - INFO - Detection completed: 20251110062722-8310 - Blocked: True
+2025-11-10 06:27:22,549 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:22] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:22,575 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-10 06:27:22,575 - __main__ - INFO - Logged to Elasticsearch: 20251110062722-91
+2025-11-10 06:27:22,578 - __main__ - INFO - Logged to Neo4j: 20251110062722-91
+2025-11-10 06:27:22,641 - __main__ - INFO - Detection completed: 20251110062722-91 - Blocked: True
+2025-11-10 06:27:22,642 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:22] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:22,668 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-10 06:27:22,668 - __main__ - INFO - Logged to Elasticsearch: 20251110062722-5376
+2025-11-10 06:27:22,681 - __main__ - INFO - Logged to Neo4j: 20251110062722-5376
+2025-11-10 06:27:22,799 - __main__ - INFO - Detection completed: 20251110062722-5376 - Blocked: True
+2025-11-10 06:27:22,800 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:22] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:23,251 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.421s]
+2025-11-10 06:27:23,252 - __main__ - INFO - Logged to Elasticsearch: 20251110062722-5131
+2025-11-10 06:27:23,255 - __main__ - INFO - Logged to Neo4j: 20251110062722-5131
+2025-11-10 06:27:23,260 - __main__ - INFO - Detection completed: 20251110062722-5131 - Blocked: True
+2025-11-10 06:27:23,261 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:23] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:23,653 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.361s]
+2025-11-10 06:27:23,654 - __main__ - INFO - Logged to Elasticsearch: 20251110062723-4686
+2025-11-10 06:27:23,657 - __main__ - INFO - Logged to Neo4j: 20251110062723-4686
+2025-11-10 06:27:23,716 - __main__ - INFO - Detection completed: 20251110062723-4686 - Blocked: True
+2025-11-10 06:27:23,717 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:23] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:23,779 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.022s]
+2025-11-10 06:27:23,779 - __main__ - INFO - Logged to Elasticsearch: 20251110062723-4379
+2025-11-10 06:27:23,783 - __main__ - INFO - Logged to Neo4j: 20251110062723-4379
+2025-11-10 06:27:23,848 - __main__ - INFO - Detection completed: 20251110062723-4379 - Blocked: True
+2025-11-10 06:27:23,849 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:23] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:23,981 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.114s]
+2025-11-10 06:27:23,981 - __main__ - INFO - Logged to Elasticsearch: 20251110062723-1244
+2025-11-10 06:27:23,984 - __main__ - INFO - Logged to Neo4j: 20251110062723-1244
+2025-11-10 06:27:24,044 - __main__ - INFO - Detection completed: 20251110062723-1244 - Blocked: True
+2025-11-10 06:27:24,045 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:24] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:24,182 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.103s]
+2025-11-10 06:27:24,183 - __main__ - INFO - Logged to Elasticsearch: 20251110062724-5760
+2025-11-10 06:27:24,196 - __main__ - INFO - Logged to Neo4j: 20251110062724-5760
+2025-11-10 06:27:24,324 - __main__ - INFO - Detection completed: 20251110062724-5760 - Blocked: True
+2025-11-10 06:27:24,325 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:24] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:24,465 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.124s]
+2025-11-10 06:27:24,466 - __main__ - INFO - Logged to Elasticsearch: 20251110062724-9112
+2025-11-10 06:27:24,480 - __main__ - INFO - Logged to Neo4j: 20251110062724-9112
+2025-11-10 06:27:24,541 - __main__ - INFO - Detection completed: 20251110062724-9112 - Blocked: True
+2025-11-10 06:27:24,542 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:24] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:24,681 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.120s]
+2025-11-10 06:27:24,682 - __main__ - INFO - Logged to Elasticsearch: 20251110062724-4232
+2025-11-10 06:27:24,682 - __main__ - INFO - Detection completed: 20251110062724-4232 - Blocked: False
+2025-11-10 06:27:24,683 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:24] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:24,773 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.060s]
+2025-11-10 06:27:24,773 - __main__ - INFO - Logged to Elasticsearch: 20251110062724-8561
+2025-11-10 06:27:24,773 - __main__ - INFO - Detection completed: 20251110062724-8561 - Blocked: False
+2025-11-10 06:27:24,774 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:24] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:24,966 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.172s]
+2025-11-10 06:27:24,966 - __main__ - INFO - Logged to Elasticsearch: 20251110062724-5785
+2025-11-10 06:27:24,967 - __main__ - INFO - Detection completed: 20251110062724-5785 - Blocked: False
+2025-11-10 06:27:24,968 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:24] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:25,093 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.109s]
+2025-11-10 06:27:25,094 - __main__ - INFO - Logged to Elasticsearch: 20251110062724-2186
+2025-11-10 06:27:25,094 - __main__ - INFO - Detection completed: 20251110062724-2186 - Blocked: False
+2025-11-10 06:27:25,095 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:25] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:25,344 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.119s]
+2025-11-10 06:27:25,345 - __main__ - INFO - Logged to Elasticsearch: 20251110062725-5741
+2025-11-10 06:27:25,345 - __main__ - INFO - Detection completed: 20251110062725-5741 - Blocked: False
+2025-11-10 06:27:25,346 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:25] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:25,471 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.108s]
+2025-11-10 06:27:25,471 - __main__ - INFO - Logged to Elasticsearch: 20251110062725-8585
+2025-11-10 06:27:25,471 - __main__ - INFO - Detection completed: 20251110062725-8585 - Blocked: False
+2025-11-10 06:27:25,472 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:25] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:25,673 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.184s]
+2025-11-10 06:27:25,673 - __main__ - INFO - Logged to Elasticsearch: 20251110062725-490
+2025-11-10 06:27:25,673 - __main__ - INFO - Detection completed: 20251110062725-490 - Blocked: False
+2025-11-10 06:27:25,674 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:25] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:25,874 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.184s]
+2025-11-10 06:27:25,875 - __main__ - INFO - Logged to Elasticsearch: 20251110062725-9745
+2025-11-10 06:27:25,875 - __main__ - INFO - Detection completed: 20251110062725-9745 - Blocked: False
+2025-11-10 06:27:25,876 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:25] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:25,900 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-10 06:27:25,900 - __main__ - INFO - Logged to Elasticsearch: 20251110062725-8135
+2025-11-10 06:27:25,901 - __main__ - INFO - Detection completed: 20251110062725-8135 - Blocked: False
+2025-11-10 06:27:25,901 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:25] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:26,024 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.096s]
+2025-11-10 06:27:26,025 - __main__ - INFO - Logged to Elasticsearch: 20251110062725-9445
+2025-11-10 06:27:26,025 - __main__ - INFO - Detection completed: 20251110062725-9445 - Blocked: False
+2025-11-10 06:27:26,026 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:26] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:26,149 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.107s]
+2025-11-10 06:27:26,150 - __main__ - INFO - Logged to Elasticsearch: 20251110062726-9358
+2025-11-10 06:27:26,150 - __main__ - INFO - Detection completed: 20251110062726-9358 - Blocked: False
+2025-11-10 06:27:26,151 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:26] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:27,992 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:1.824s]
+2025-11-10 06:27:27,993 - __main__ - INFO - Logged to Elasticsearch: 20251110062726-8602
+2025-11-10 06:27:27,993 - __main__ - INFO - Detection completed: 20251110062726-8602 - Blocked: False
+2025-11-10 06:27:27,994 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:27] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:28,062 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-10 06:27:28,063 - __main__ - INFO - Logged to Elasticsearch: 20251110062728-1156
+2025-11-10 06:27:28,063 - __main__ - INFO - Detection completed: 20251110062728-1156 - Blocked: False
+2025-11-10 06:27:28,064 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:28] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:28,127 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.045s]
+2025-11-10 06:27:28,127 - __main__ - INFO - Logged to Elasticsearch: 20251110062728-4791
+2025-11-10 06:27:28,128 - __main__ - INFO - Detection completed: 20251110062728-4791 - Blocked: False
+2025-11-10 06:27:28,128 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:28] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:28,249 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.055s]
+2025-11-10 06:27:28,249 - __main__ - INFO - Logged to Elasticsearch: 20251110062728-5613
+2025-11-10 06:27:28,250 - __main__ - INFO - Detection completed: 20251110062728-5613 - Blocked: False
+2025-11-10 06:27:28,250 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:28] "POST /detect HTTP/1.1" 200 -
+2025-11-10 06:27:28,311 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.043s]
+2025-11-10 06:27:28,312 - __main__ - INFO - Logged to Elasticsearch: 20251110062728-8382
+2025-11-10 06:27:28,312 - __main__ - INFO - Detection completed: 20251110062728-8382 - Blocked: False
+2025-11-10 06:27:28,313 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 06:27:28] "POST /detect HTTP/1.1" 200 -
+2025-11-10 07:05:31,498 - __main__ - INFO - ML models loaded successfully
+2025-11-10 07:05:31,500 - __main__ - INFO - Connected to Elasticsearch
+2025-11-10 07:05:31,501 - __main__ - INFO - Connected to Neo4j
+2025-11-10 07:05:31,515 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-11-10 07:05:31,516 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-10 07:05:31,517 - werkzeug - INFO -  * Restarting with stat
+2025-11-10 07:05:33,213 - __main__ - INFO - ML models loaded successfully
+2025-11-10 07:05:33,214 - __main__ - INFO - Connected to Elasticsearch
+2025-11-10 07:05:33,215 - __main__ - INFO - Connected to Neo4j
+2025-11-10 07:05:33,224 - werkzeug - WARNING -  * Debugger is active!
+2025-11-10 07:05:33,551 - werkzeug - INFO -  * Debugger PIN: 138-460-080
+2025-11-10 07:06:42,329 - werkzeug - INFO - 172.18.0.9 - - [10/Nov/2025 07:06:42] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-10 07:06:42,831 - werkzeug - INFO - 172.18.0.9 - - [10/Nov/2025 07:06:42] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-10 07:06:43,727 - werkzeug - INFO - 172.18.0.9 - - [10/Nov/2025 07:06:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-10 07:06:58,867 - werkzeug - INFO - 172.18.0.9 - - [10/Nov/2025 07:06:58] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -

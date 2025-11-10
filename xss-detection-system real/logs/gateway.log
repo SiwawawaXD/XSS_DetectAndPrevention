@@ -1,0 +1,36 @@
+2025-11-10 07:05:32,400 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-10 07:05:32,401 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-10 07:05:32,590 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.9:8000
+2025-11-10 07:05:32,590 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-10 07:05:32,591 - werkzeug - INFO -  * Restarting with stat
+2025-11-10 07:05:33,315 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-10 07:05:33,489 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-10 07:05:33,565 - werkzeug - WARNING -  * Debugger is active!
+2025-11-10 07:05:33,566 - werkzeug - INFO -  * Debugger PIN: 130-399-779
+2025-11-10 07:06:41,268 - __main__ - INFO - Request ac5e5dcf-180b-4496-a991-9eb6c5d6a86a: GET /
+2025-11-10 07:06:41,268 - __main__ - INFO - Request ac5e5dcf-180b-4496-a991-9eb6c5d6a86a: Checking with ModSecurity
+2025-11-10 07:06:42,269 - __main__ - INFO - Request ac5e5dcf-180b-4496-a991-9eb6c5d6a86a: Checking with ML API
+2025-11-10 07:06:42,331 - __main__ - ERROR - ML API returned status 400
+2025-11-10 07:06:42,331 - __main__ - INFO - Request ac5e5dcf-180b-4496-a991-9eb6c5d6a86a: ALLOWED - Forwarding to bWAPP
+2025-11-10 07:06:42,339 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 07:06:42] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-10 07:06:42,758 - __main__ - INFO - Request 970c97ea-e701-4ce9-a6f0-cd205b755ea3: GET /portal.php
+2025-11-10 07:06:42,758 - __main__ - INFO - Request 970c97ea-e701-4ce9-a6f0-cd205b755ea3: Checking with ModSecurity
+2025-11-10 07:06:42,827 - __main__ - INFO - Request 970c97ea-e701-4ce9-a6f0-cd205b755ea3: Checking with ML API
+2025-11-10 07:06:42,832 - __main__ - ERROR - ML API returned status 400
+2025-11-10 07:06:42,833 - __main__ - INFO - Request 970c97ea-e701-4ce9-a6f0-cd205b755ea3: ALLOWED - Forwarding to bWAPP
+2025-11-10 07:06:42,837 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 07:06:42] "[32mGET /portal.php HTTP/1.1[0m" 302 -
+2025-11-10 07:06:43,106 - __main__ - INFO - Request 2a500556-2068-41bd-b0b6-47006efa13bb: GET /login.php
+2025-11-10 07:06:43,106 - __main__ - INFO - Request 2a500556-2068-41bd-b0b6-47006efa13bb: Checking with ModSecurity
+2025-11-10 07:06:43,723 - __main__ - INFO - Request 2a500556-2068-41bd-b0b6-47006efa13bb: Checking with ML API
+2025-11-10 07:06:43,729 - __main__ - ERROR - ML API returned status 400
+2025-11-10 07:06:43,729 - __main__ - INFO - Request 2a500556-2068-41bd-b0b6-47006efa13bb: ALLOWED - Forwarding to bWAPP
+2025-11-10 07:06:43,734 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 07:06:43] "GET /login.php HTTP/1.1" 200 -
+2025-11-10 07:06:58,208 - __main__ - INFO - Request c8c328b7-2a77-4ce3-81c0-d8767327ca6c: GET /favicon.ico
+2025-11-10 07:06:58,208 - __main__ - INFO - Request c8c328b7-2a77-4ce3-81c0-d8767327ca6c: Checking with ModSecurity
+2025-11-10 07:06:58,748 - __main__ - INFO - Request c8c328b7-2a77-4ce3-81c0-d8767327ca6c: Checking with ML API
+2025-11-10 07:06:58,868 - __main__ - ERROR - ML API returned status 400
+2025-11-10 07:06:58,869 - __main__ - INFO - Request c8c328b7-2a77-4ce3-81c0-d8767327ca6c: ALLOWED - Forwarding to bWAPP
+2025-11-10 07:06:58,871 - werkzeug - INFO - 172.18.0.1 - - [10/Nov/2025 07:06:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
