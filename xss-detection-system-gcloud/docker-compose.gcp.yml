@@ -1,0 +1,167 @@
+version: '3.8'
+
+# GCP-Optimized Configuration for e2-standard-4 (4 vCPU, 16 GB RAM)
+# Single server deployment
+
+services:
+  gateway:
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    container_name: gateway
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/logs
+    environment:
+      - FLASK_ENV=production
+    depends_on:
+      - modsecurity
+      - xss_detection_api
+      - bwapp
+      - elasticsearch
+      - neo4j
+    networks:
+      - xss_network
+    restart: always
+    mem_limit: 512m
+    cpus: 0.5
+
+  bwapp:
+    image: raesene/bwapp
+    container_name: bwapp
+    networks:
+      - xss_network
+    restart: always
+    mem_limit: 256m
+    cpus: 0.3
+
+  modsecurity:
+    build:
+      context: ./modsecurity
+      dockerfile: Dockerfile
+    container_name: modsecurity
+    volumes:
+      - ./logs:/var/log/apache2
+    depends_on:
+      - bwapp
+    networks:
+      - xss_network
+    restart: always
+    mem_limit: 512m
+    cpus: 0.5
+
+  xss_detection_api:
+    build:
+      context: ./ml_api
+      dockerfile: Dockerfile
+    container_name: xss_detection_api
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./logs:/logs
+      - ./models:/models
+    environment:
+      - FLASK_ENV=production
+      - ELASTICSEARCH_HOST=elasticsearch:9200
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=SecureGCPPassword123!
+    depends_on:
+      - elasticsearch
+      - neo4j
+    networks:
+      - xss_network
+    restart: always
+    mem_limit: 1.5g
+    cpus: 1.0
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms1g -Xmx2g"
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      - bootstrap.memory_lock=true
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - xss_network
+    restart: always
+    mem_limit: 3g
+    cpus: 1.0
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.11.0
+    container_name: logstash
+    volumes:
+      - ./logstash/pipeline:/usr/share/logstash/pipeline
+      - ./logs:/logs
+    environment:
+      - "LS_JAVA_OPTS=-Xms256m -Xmx512m"
+      - "xpack.monitoring.enabled=false"
+    depends_on:
+      - elasticsearch
+    networks:
+      - xss_network
+    restart: always
+    mem_limit: 768m
+    cpus: 0.4
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.0
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - SERVER_HOST=0.0.0.0
+    depends_on:
+      - elasticsearch
+    networks:
+      - xss_network
+    restart: always
+    mem_limit: 1g
+    cpus: 0.5
+
+  neo4j:
+    image: neo4j:5.13.0
+    container_name: neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/SecureGCPPassword123!
+      - NEO4J_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_dbms_memory_heap_initial__size=512m
+      - NEO4J_dbms_memory_heap_max__size=1g
+      - NEO4J_dbms_memory_pagecache_size=512m
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+    networks:
+      - xss_network
+    restart: always
+    mem_limit: 2g
+    cpus: 0.7
+
+networks:
+  xss_network:
+    driver: bridge
+
+volumes:
+  elasticsearch_data:
+    driver: local
+  neo4j_data:
+    driver: local
+  neo4j_logs:
+    driver: local
