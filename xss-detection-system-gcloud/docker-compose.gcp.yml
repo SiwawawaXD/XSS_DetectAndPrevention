@@ -15,6 +15,9 @@ services:
       - ./logs:/logs
     environment:
       - FLASK_ENV=production
+      - NEO4J_URI=bolt://neo4j:7687          # ADD THIS
+      - NEO4J_USER=neo4j                      # ADD THIS
+      - NEO4J_PASSWORD=SecureGCPPassword123!  # ADD THIS
     depends_on:
       - modsecurity
       - xss_detection_api

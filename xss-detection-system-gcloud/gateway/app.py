@@ -6,6 +6,7 @@ import json
 import uuid
 from elasticsearch import Elasticsearch
 from neo4j import GraphDatabase
+import os
 
 app = Flask(__name__)
 
@@ -35,9 +36,13 @@ except Exception as e:
 
 # Neo4j connection
 try:
+    neo4j_uri = os.getenv('NEO4J_URI', 'bolt://neo4j:7687')
+    neo4j_user = os.getenv('NEO4J_USER', 'neo4j')
+    neo4j_password = os.getenv('NEO4J_PASSWORD', 'SecureGCPPassword123!')
+    
     neo4j_driver = GraphDatabase.driver(
-        "bolt://neo4j:7687",
-        auth=("neo4j", "password123")
+        neo4j_uri,
+        auth=(neo4j_user, neo4j_password)
     )
     logger.info("Gateway connected to Neo4j")
 except Exception as e:
