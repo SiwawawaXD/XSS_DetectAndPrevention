@@ -3,4 +3,4 @@ xss-detection-system is the first version with old structure that doesn't combin
 
 xss-detection-system real is the second version with new structure that combines ML and WAF into one component, but has bugs and errors.
 
-xss-detection-system-gcloud is the third and final version. This version is ready to be deployed on the Google Cloud platform. It can be deployed locally by using Docker as well. No bugs. Every component can be used.
+xss-detection-system-gcloud is the third and final version. This version is ready to be deployed on the Google Cloud platform. It can be deployed locally by using Docker as well without further modification. No bugs. Every component can be used.
