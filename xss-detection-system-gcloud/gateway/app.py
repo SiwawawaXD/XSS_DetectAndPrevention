@@ -10,7 +10,6 @@ import os
 
 app = Flask(__name__)
 
-# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -21,12 +20,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Service URLs
 MODSECURITY_URL = "http://modsecurity:80"
 ML_API_URL = "http://xss_detection_api:5001"
 BWAPP_URL = "http://bwapp:80"
 
-# Elasticsearch connection
 try:
     es = Elasticsearch(['http://elasticsearch:9200'])
     logger.info("Gateway connected to Elasticsearch")
@@ -34,33 +31,50 @@ except Exception as e:
     logger.error(f"Elasticsearch connection error: {e}")
     es = None
 
-# Neo4j connection
 try:
     neo4j_uri = os.getenv('NEO4J_URI', 'bolt://neo4j:7687')
     neo4j_user = os.getenv('NEO4J_USER', 'neo4j')
     neo4j_password = os.getenv('NEO4J_PASSWORD', 'SecureGCPPassword123!')
-    
-    neo4j_driver = GraphDatabase.driver(
-        neo4j_uri,
-        auth=(neo4j_user, neo4j_password)
-    )
+    neo4j_driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
     logger.info("Gateway connected to Neo4j")
 except Exception as e:
     logger.error(f"Neo4j connection error: {e}")
     neo4j_driver = None
 
+def extract_payload_string(request_data):
+    payloads = []
+    if request_data.get('path'):
+        payloads.append(request_data['path'])
+    if request_data.get('query_params'):
+        for key, value in request_data['query_params'].items():
+            payloads.append(f"{key}={value}")
+            payloads.append(str(value))
+    if request_data.get('body'):
+        body = request_data['body']
+        if isinstance(body, dict):
+            for key, value in body.items():
+                payloads.append(f"{key}={value}")
+                payloads.append(str(value))
+        elif isinstance(body, str):
+            payloads.append(body)
+    return " ".join(payloads)
 
-def check_ml_detection(payload_data):
-    """Send request to ML API for detection"""
+def check_ml_detection(request_data):
     try:
+        payload_string = extract_payload_string(request_data)
+        if not payload_string.strip():
+            return False, {"is_malicious": False, "reason": "Empty payload"}
+        logger.info(f"ML API checking payload: {payload_string[:200]}...")
         response = requests.post(
             f"{ML_API_URL}/detect",
-            json=payload_data,
+            json={"payload": payload_string, "source": f"{request_data.get('method', 'UNKNOWN')} {request_data.get('path', '/')}"},
             timeout=5
         )
         if response.status_code == 200:
             result = response.json()
-            return result.get('is_malicious', False), result
+            is_malicious = result.get('blocked', False) or result.get('is_malicious', False)
+            logger.info(f"ML API result: malicious={is_malicious}")
+            return is_malicious, result
         else:
             logger.error(f"ML API returned status {response.status_code}")
             return False, {"error": "ML API unavailable"}
@@ -68,217 +82,81 @@ def check_ml_detection(payload_data):
         logger.error(f"ML detection error: {e}")
         return False, {"error": str(e)}
 
-
 def check_modsecurity(method, path, headers, data=None, params=None):
-    """Send request through ModSecurity for WAF checking"""
     try:
-        # Forward the request to ModSecurity
         url = f"{MODSECURITY_URL}{path}"
-        
-        response = requests.request(
-            method=method,
-            url=url,
-            headers=dict(headers),
-            data=data,
-            params=params,
-            allow_redirects=False,
-            timeout=10
-        )
-        
-        # ModSecurity returns 403 when it blocks a request
+        response = requests.request(method=method, url=url, headers=dict(headers), data=data, params=params, allow_redirects=False, timeout=60)
         is_blocked = response.status_code == 403
-        
-        return is_blocked, {
-            "blocked": is_blocked,
-            "status_code": response.status_code,
-            "response": response.text[:500] if is_blocked else None
-        }
+        return is_blocked, {"blocked": is_blocked, "status_code": response.status_code}
     except Exception as e:
         logger.error(f"ModSecurity check error: {e}")
         return False, {"error": str(e)}
 
-
 def log_blocked_request(request_data, detection_results):
-    """Log blocked request to Elasticsearch and Neo4j"""
-    log_entry = {
-        "request_id": request_data['request_id'],
-        "timestamp": datetime.now().isoformat(),
-        "blocked": True,
-        "ip_address": request_data['ip_address'],
-        "method": request_data['method'],
-        "path": request_data['path'],
-        "user_agent": request_data['user_agent'],
-        "payload": request_data['payload'],
-        "modsecurity_result": detection_results.get('modsecurity', {}),
-        "ml_result": detection_results.get('ml', {}),
-        "blocked_by": detection_results.get('blocked_by', [])
-    }
-    
-    # Log to Elasticsearch
     if es:
         try:
-            es.index(
-                index=f"blocked-requests-{datetime.now().strftime('%Y.%m.%d')}",
-                document=log_entry
-            )
-            logger.info(f"Logged blocked request to Elasticsearch: {request_data['request_id']}")
+            index_name = f"blocked-requests-{datetime.now().strftime('%Y.%m.%d')}"
+            log_entry = {**request_data, "detection_results": detection_results, "timestamp": datetime.now().isoformat()}
+            es.index(index=index_name, document=log_entry)
+            logger.info(f"Logged to Elasticsearch: {request_data.get('request_id')}")
         except Exception as e:
             logger.error(f"Elasticsearch logging error: {e}")
-    
-    # Log to Neo4j
     if neo4j_driver:
         try:
             with neo4j_driver.session() as session:
-                query = """
-                CREATE (r:BlockedRequest {
-                    id: $id,
-                    timestamp: datetime($timestamp),
-                    ip_address: $ip_address,
-                    method: $method,
-                    path: $path,
-                    payload: $payload,
-                    blocked_by: $blocked_by,
-                    modsecurity_blocked: $modsecurity_blocked,
-                    ml_blocked: $ml_blocked
-                })
-                RETURN r
-                """
-                
-                session.run(query, {
-                    'id': log_entry['request_id'],
-                    'timestamp': log_entry['timestamp'],
-                    'ip_address': log_entry['ip_address'],
-                    'method': log_entry['method'],
-                    'path': log_entry['path'],
-                    'payload': str(log_entry['payload'])[:500],
-                    'blocked_by': detection_results.get('blocked_by', []),
-                    'modsecurity_blocked': detection_results.get('modsecurity', {}).get('blocked', False),
-                    'ml_blocked': detection_results.get('ml', {}).get('is_malicious', False)
-                })
-                logger.info(f"Logged blocked request to Neo4j: {request_data['request_id']}")
+                session.run("CREATE (r:BlockedRequest {id: $id, timestamp: datetime($timestamp), method: $method, path: $path, source_ip: $source_ip, blocked_by: $blocked_by})",
+                    id=request_data['request_id'], timestamp=request_data['timestamp'], method=request_data['method'], path=request_data['path'], source_ip=request_data['source_ip'], blocked_by=request_data.get('blocked_by', 'unknown'))
+            logger.info(f"Logged to Neo4j: {request_data.get('request_id')}")
         except Exception as e:
             logger.error(f"Neo4j logging error: {e}")
-
-
-@app.route('/health', methods=['GET'])
-def health():
-    """Health check endpoint"""
-    return jsonify({"status": "healthy", "service": "gateway"}), 200
-
 
 @app.route('/', defaults={'path': ''}, methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
 @app.route('/<path:path>', methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
 def gateway(path):
-    """
-    Main gateway endpoint that intercepts all requests
-    Flow:
-    1. Request arrives at gateway
-    2. Check with ModSecurity
-    3. Check with ML API
-    4. If either blocks, log and return 403
-    5. If both allow, forward to bWAPP
-    """
     request_id = str(uuid.uuid4())
-    
-    # Collect request data
-    request_data = {
-        'request_id': request_id,
-        'ip_address': request.remote_addr,
-        'method': request.method,
-        'path': f"/{path}",
-        'user_agent': request.headers.get('User-Agent', 'Unknown'),
-        'headers': dict(request.headers),
-        'params': dict(request.args),
-        'payload': {}
-    }
-    
-    # Get payload based on content type
-    if request.method in ['POST', 'PUT', 'PATCH']:
-        if request.is_json:
-            request_data['payload'] = request.get_json(silent=True) or {}
-        elif request.form:
-            request_data['payload'] = dict(request.form)
-        else:
-            request_data['payload'] = {'raw': request.get_data(as_text=True)}
-    
-    # Combine all input data for ML checking
-    all_data = {
-        'url': request_data['path'],
-        'params': request_data['params'],
-        'body': request_data['payload']
-    }
-    
-    logger.info(f"Request {request_id}: {request_data['method']} {request_data['path']}")
-    
-    detection_results = {}
-    blocked_by = []
-    
-    # Step 1: Check with ModSecurity
+    if path and not path.startswith('/'):
+        path = '/' + path
+    elif not path:
+        path = '/'
+    logger.info(f"Request {request_id}: {request.method} {path}")
+    try:
+        request_body = request.get_data()
+        request_body_text = request_body.decode('utf-8', errors='ignore')
+    except:
+        request_body = b''
+        request_body_text = ''
+    body_dict = {}
+    if request_body_text:
+        try:
+            body_dict = json.loads(request_body_text)
+        except:
+            try:
+                from urllib.parse import parse_qs
+                parsed = parse_qs(request_body_text)
+                body_dict = {k: v[0] if len(v) == 1 else v for k, v in parsed.items()}
+            except:
+                body_dict = {"raw": request_body_text}
+    ml_request_data = {"method": request.method, "path": path, "query_params": dict(request.args), "body": body_dict}
     logger.info(f"Request {request_id}: Checking with ModSecurity")
-    modsec_blocked, modsec_result = check_modsecurity(
-        method=request.method,
-        path=request_data['path'],
-        headers=request.headers,
-        data=request.get_data(),
-        params=request.args
-    )
-    detection_results['modsecurity'] = modsec_result
-    
-    if modsec_blocked:
-        blocked_by.append('ModSecurity')
-        logger.warning(f"Request {request_id}: BLOCKED by ModSecurity")
-    
-    # Step 2: Check with ML API
+    waf_blocked, waf_result = check_modsecurity(request.method, path, request.headers, request_body, request.args)
     logger.info(f"Request {request_id}: Checking with ML API")
-    ml_blocked, ml_result = check_ml_detection(all_data)
-    detection_results['ml'] = ml_result
-    
-    if ml_blocked:
-        blocked_by.append('ML')
-        logger.warning(f"Request {request_id}: BLOCKED by ML")
-    
-    # Step 3: Decide whether to block or forward
-    if blocked_by:
-        # Request is malicious - block and log
-        detection_results['blocked_by'] = blocked_by
-        log_blocked_request(request_data, detection_results)
-        
-        return jsonify({
-            "error": "Request blocked",
-            "request_id": request_id,
-            "blocked_by": blocked_by,
-            "message": "Your request was identified as potentially malicious and has been blocked."
-        }), 403
-    
-    # Step 4: Forward to bWAPP if not blocked
+    ml_blocked, ml_result = check_ml_detection(ml_request_data)
+    if waf_blocked or ml_blocked:
+        blocked_by = "WAF" if waf_blocked else "ML"
+        logger.warning(f"Request {request_id}: BLOCKED by {blocked_by}")
+        log_data = {"request_id": request_id, "timestamp": datetime.now().isoformat(), "method": request.method, "path": path, "source_ip": request.remote_addr, "blocked_by": blocked_by}
+        log_blocked_request(log_data, {"waf": waf_result, "ml": ml_result})
+        return jsonify({"request_id": request_id, "blocked_by": blocked_by, "message": "Your request was identified as potentially malicious and has been blocked."}), 403
     logger.info(f"Request {request_id}: ALLOWED - Forwarding to bWAPP")
     try:
-        url = f"{BWAPP_URL}/{path}"
-        
-        response = requests.request(
-            method=request.method,
-            url=url,
-            headers={key: value for key, value in request.headers if key.lower() != 'host'},
-            data=request.get_data(),
-            params=request.args,
-            allow_redirects=False,
-            timeout=30
-        )
-        
-        # Forward the response from bWAPP back to the client
+        url = f"{BWAPP_URL}{path}"
+        response = requests.request(method=request.method, url=url, headers={key: value for key, value in request.headers if key.lower() != 'host'}, data=request_body, params=request.args, allow_redirects=False, timeout=60)
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
-        headers = [(name, value) for (name, value) in response.raw.headers.items()
-                   if name.lower() not in excluded_headers]
-        
+        headers = [(name, value) for (name, value) in response.raw.headers.items() if name.lower() not in excluded_headers]
         return Response(response.content, response.status_code, headers)
-        
     except Exception as e:
         logger.error(f"Error forwarding to bWAPP: {e}")
-        return jsonify({
-            "error": "Backend error",
-            "message": "Unable to process request"
-        }), 502
-
+        return jsonify({"error": "Backend error", "message": "Unable to process request"}), 502
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)

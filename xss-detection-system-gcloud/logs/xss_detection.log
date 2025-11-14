@@ -1329,3 +1329,1640 @@
 2025-11-11 03:19:52,842 - werkzeug - INFO - 147.185.132.69 - - [11/Nov/2025 03:19:52] "[35m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03\x07¹Mß¾x-@\x91\x96«!õ\x18[0m" HTTPStatus.BAD_REQUEST -
 2025-11-11 03:24:59,491 - werkzeug - INFO - 172.18.0.6 - - [11/Nov/2025 03:24:59] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
 2025-11-11 03:25:05,217 - werkzeug - INFO - 172.18.0.6 - - [11/Nov/2025 03:25:05] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:50:07,225 - __main__ - INFO - ML models loaded successfully
+2025-11-13 11:50:07,227 - __main__ - INFO - Connected to Elasticsearch
+2025-11-13 11:50:07,228 - __main__ - INFO - Connected to Neo4j
+2025-11-13 11:50:07,251 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.7:5001
+2025-11-13 11:50:07,252 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-13 11:50:07,253 - werkzeug - INFO -  * Restarting with stat
+2025-11-13 11:50:09,269 - __main__ - INFO - ML models loaded successfully
+2025-11-13 11:50:09,270 - __main__ - INFO - Connected to Elasticsearch
+2025-11-13 11:50:09,271 - __main__ - INFO - Connected to Neo4j
+2025-11-13 11:50:09,278 - werkzeug - WARNING -  * Debugger is active!
+2025-11-13 11:50:09,278 - werkzeug - INFO -  * Debugger PIN: 123-588-173
+2025-11-13 11:52:20,873 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:20] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:20,985 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:20] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:21,083 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:21] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:21,364 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:21] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,505 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,634 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,761 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,887 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,896 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,901 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,903 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,909 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,912 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:28,994 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:29,030 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:29,033 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:29,036 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:29,090 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:52:29,476 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:52:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:55:16,387 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:55:16] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:55:18,760 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:55:18] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:55:19,053 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:55:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:55:19,055 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:55:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:55:19,056 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:55:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:55:19,059 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:55:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:55:19,062 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:55:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:55:19,064 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:55:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:55:34,051 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:55:34] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:56:25,976 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:56:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:56:26,978 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:56:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 11:56:42,020 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 11:56:42] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:24,855 - __main__ - INFO - ML models loaded successfully
+2025-11-13 15:50:24,858 - __main__ - INFO - Connected to Elasticsearch
+2025-11-13 15:50:24,859 - __main__ - INFO - Connected to Neo4j
+2025-11-13 15:50:24,907 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.6:5001
+2025-11-13 15:50:24,908 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-13 15:50:24,911 - werkzeug - INFO -  * Restarting with stat
+2025-11-13 15:50:28,218 - __main__ - INFO - ML models loaded successfully
+2025-11-13 15:50:28,220 - __main__ - INFO - Connected to Elasticsearch
+2025-11-13 15:50:28,221 - __main__ - INFO - Connected to Neo4j
+2025-11-13 15:50:28,237 - werkzeug - WARNING -  * Debugger is active!
+2025-11-13 15:50:28,238 - werkzeug - INFO -  * Debugger PIN: 366-176-297
+2025-11-13 15:50:28,254 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:28,628 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:28,649 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,031 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,033 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,064 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,067 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,072 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,079 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,233 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,307 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,309 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,353 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,371 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:29,866 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:36,439 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:36] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:42,841 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:42] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:43,067 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:43,293 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:43,716 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:43,719 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:43,720 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:43,724 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:43,728 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:43,730 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 15:50:59,073 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 15:50:59] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:09:20,500 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:09:20] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:10:14,454 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:10:14] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:10:14,596 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:10:14] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:10:14,749 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:10:14] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:10:32,990 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:10:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:14:35,584 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:14:35] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:14:39,414 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:14:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:16:55,588 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:16:55] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:17:37,399 - werkzeug - INFO - 3.149.59.26 - - [13/Nov/2025 16:17:37] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-13 16:21:25,039 - werkzeug - INFO - 3.149.59.26 - - [13/Nov/2025 16:21:25] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-13 16:23:37,297 - werkzeug - ERROR - 3.149.59.26 - - [13/Nov/2025 16:23:37] code 400, message Bad request version ('{yRèù¢8Î\x07\x81\x06')
+2025-11-13 16:23:37,297 - werkzeug - INFO - 3.149.59.26 - - [13/Nov/2025 16:23:37] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Ñ\x93\x8e+\x87ô¡¿H\x1c\x88M>\x0c{yRèù¢8Î\x07\x81\x06[0m" HTTPStatus.BAD_REQUEST -
+2025-11-13 16:28:28,988 - werkzeug - ERROR - 3.149.59.26 - - [13/Nov/2025 16:28:28] code 400, message Bad request syntax ('SSH-2.0-Go')
+2025-11-13 16:28:28,989 - werkzeug - INFO - 3.149.59.26 - - [13/Nov/2025 16:28:28] "[35m[1mSSH-2.0-Go[0m" HTTPStatus.BAD_REQUEST -
+2025-11-13 16:30:29,977 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:30:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:30:59,157 - werkzeug - ERROR - 3.149.59.26 - - [13/Nov/2025 16:30:59] code 400, message Bad request version ('À\x14À')
+2025-11-13 16:30:59,157 - werkzeug - INFO - 3.149.59.26 - - [13/Nov/2025 16:30:59] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x8a\x9aø\x98Ö\x19Å\x9d\x07:ly\x9cÜá¯¶Ær\x80\x1eøR\x89§§Î\x9d+\x04\x11c\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+2025-11-13 16:31:04,611 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:31:04] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:33:28,777 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:33:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:33:43,910 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:33:43] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:07,481 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:07] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:07,628 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:07] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:07,768 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:07] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,172 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,176 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,184 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,187 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,188 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,190 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,381 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,408 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,414 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:08,420 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:36:22,209 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:36:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:44:36,166 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:44:36] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:49:20,244 - __main__ - INFO - ML models loaded successfully
+2025-11-13 16:49:20,247 - __main__ - INFO - Connected to Elasticsearch
+2025-11-13 16:49:20,248 - __main__ - INFO - Connected to Neo4j
+2025-11-13 16:49:20,294 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.6:5001
+2025-11-13 16:49:20,295 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-13 16:49:20,297 - werkzeug - INFO -  * Restarting with stat
+2025-11-13 16:49:23,614 - __main__ - INFO - ML models loaded successfully
+2025-11-13 16:49:23,615 - __main__ - INFO - Connected to Elasticsearch
+2025-11-13 16:49:23,615 - __main__ - INFO - Connected to Neo4j
+2025-11-13 16:49:23,624 - werkzeug - WARNING -  * Debugger is active!
+2025-11-13 16:49:23,625 - werkzeug - INFO -  * Debugger PIN: 239-896-510
+2025-11-13 16:49:29,018 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:49:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:49:39,078 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:49:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:51:30,507 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:51:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:51:30,669 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:51:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:51:30,822 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:51:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:51:46,392 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:51:46] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 16:57:09,588 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 16:57:09] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:05:02,798 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:05:02] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:16:24,493 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:16:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:16:24,516 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:16:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:16:24,533 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:16:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:16:56,944 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:16:56] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:16:57,080 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:16:57] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:16:57,242 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:16:57] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:17:01,885 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:17:01] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:17:02,055 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:17:02] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:56:01,353 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:56:01] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:56:01,718 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:56:01] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:56:02,075 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:56:02] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-13 17:56:02,718 - werkzeug - INFO - 172.18.0.9 - - [13/Nov/2025 17:56:02] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 06:49:30,941 - __main__ - INFO - ML models loaded successfully
+2025-11-14 06:49:30,944 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 06:49:30,945 - __main__ - INFO - Connected to Neo4j
+2025-11-14 06:49:30,975 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.5:5001
+2025-11-14 06:49:30,976 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 06:49:30,979 - werkzeug - INFO -  * Restarting with stat
+2025-11-14 06:49:33,798 - __main__ - INFO - ML models loaded successfully
+2025-11-14 06:49:33,799 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 06:49:33,800 - __main__ - INFO - Connected to Neo4j
+2025-11-14 06:49:33,814 - werkzeug - WARNING -  * Debugger is active!
+2025-11-14 06:49:33,817 - werkzeug - INFO -  * Debugger PIN: 118-106-545
+2025-11-14 07:43:22,590 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:22,702 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:22,807 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:22,982 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:22,985 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,116 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,118 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,119 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,121 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,124 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,126 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,242 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,244 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,270 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,281 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,303 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,340 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,342 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,400 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,404 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,457 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,473 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:43:23,569 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:43:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:48:07,597 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:48:07] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:48:07,967 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:48:07] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:48:08,332 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:48:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 07:48:09,952 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 07:48:09] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:05:15,741 - __main__ - INFO - ML models loaded successfully
+2025-11-14 08:05:15,744 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 08:05:15,744 - __main__ - INFO - Connected to Neo4j
+2025-11-14 08:05:15,793 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.4:5001
+2025-11-14 08:05:15,794 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:05:15,795 - werkzeug - INFO -  * Restarting with stat
+2025-11-14 08:05:18,692 - __main__ - INFO - ML models loaded successfully
+2025-11-14 08:05:18,693 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 08:05:18,694 - __main__ - INFO - Connected to Neo4j
+2025-11-14 08:05:18,704 - werkzeug - WARNING -  * Debugger is active!
+2025-11-14 08:05:18,709 - werkzeug - INFO -  * Debugger PIN: 133-453-800
+2025-11-14 08:16:57,947 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:16:57] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:22,219 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:22,330 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:22,533 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:22,535 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:23,310 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:40,854 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:40] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:40,997 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:40] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:48,026 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:48] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:48,165 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:48] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:54,368 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:54] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:57,816 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:57] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:57,967 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:57] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:25:59,967 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:25:59] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:26:03,241 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:26:03] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:26:03,364 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:26:03] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:26:05,008 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:26:05] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:30:35,463 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:30:35] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:30:35,604 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:30:35] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:00,453 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:00] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:00,545 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:00] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:05,694 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:05] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:05,793 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:05] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:10,949 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:10] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:11,050 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:11] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:16,195 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:16] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:16,285 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:16] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:21,446 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:21] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:33:21,534 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:33:21] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:02,182 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:02] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:10,573 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:10] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:15,623 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:15] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:15,727 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:15] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:18,296 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:18] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:18,398 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:18] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:18,520 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:18] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:18,624 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:18] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:18,742 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:18] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:18,847 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:18] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:18,967 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:18] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:24,115 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:24,219 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:24,336 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:24,440 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:24,562 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:29,717 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:29,817 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:29,939 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:30,040 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:30,175 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:30,285 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:30,409 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:30,515 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:30,641 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:30,755 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:30,892 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:30,995 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:31,113 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:31] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:31,217 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:31] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:31,335 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:31] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:31,455 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:31] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:31,575 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:31] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:31,678 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:31] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:31,801 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:31] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:31,910 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:31] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:32,031 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:32,135 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:32,280 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:32,377 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:32,499 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:32,598 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:32,720 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:32,822 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:32,945 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:32] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:33,052 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:33] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:33,175 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:33] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:33,276 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:33] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:33,394 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:33] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:33,500 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:33] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:33,623 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:33] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:33,725 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:33] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:33,842 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:33] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:33,944 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:33] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:34,067 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:34] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:39,208 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:39,314 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:39,435 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:39,534 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:36:39,651 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:36:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:42:22,376 - __main__ - INFO - ML models loaded successfully
+2025-11-14 08:42:22,378 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 08:42:22,378 - __main__ - INFO - Connected to Neo4j
+2025-11-14 08:42:22,399 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.5:5001
+2025-11-14 08:42:22,399 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:42:22,400 - werkzeug - INFO -  * Restarting with stat
+2025-11-14 08:42:24,198 - __main__ - INFO - ML models loaded successfully
+2025-11-14 08:42:24,199 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 08:42:24,200 - __main__ - INFO - Connected to Neo4j
+2025-11-14 08:42:24,207 - werkzeug - WARNING -  * Debugger is active!
+2025-11-14 08:42:24,207 - werkzeug - INFO -  * Debugger PIN: 302-179-437
+2025-11-14 08:42:30,538 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:42:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:44:59,608 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:44:59] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:19,728 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:19,814 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:24,951 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:25,036 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:30,180 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:30,282 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:30] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:35,419 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:35] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:35,504 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:35] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:40,643 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:40] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:40,728 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:40] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:46,509 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:46] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:46,526 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:46] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:47,558 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:47] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:53,157 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:53] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:53,252 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:53] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:58,387 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:58] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:46:58,490 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:46:58] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:03,672 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:03] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:03,766 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:03] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:08,907 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:08] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:09,005 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:09] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:14,152 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:14] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:14,244 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:14] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:19,402 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:19,494 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:19] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:24,657 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:24,769 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:24,866 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:24] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:25,201 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:25,294 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:25,388 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:25,501 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:25,586 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:25,685 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:25,801 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:25,891 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:25,986 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:25] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:26,105 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:26,194 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:26,284 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:26,449 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:26,546 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:26,646 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:26,763 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:26,854 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:26,950 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:27,067 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:27] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:27,154 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:27] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:27,248 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:27] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:27,387 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:27] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:27,476 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:27] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:27,584 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:27] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:27,700 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:27] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:27,793 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:27] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:27,893 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:27] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,008 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,090 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,196 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,313 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,400 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,492 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,609 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,712 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,808 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:28,950 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:29,070 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:29,176 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:29,306 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:29,407 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:29] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:34,549 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:34] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:34,645 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:34] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:36,778 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:36] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:37,146 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:37] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:39,782 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:39,882 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:40,187 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:40] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:45,249 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:45] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:45,881 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:45] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:51,516 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:51] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:51,609 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:51] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:56,746 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:56] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:47:56,841 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:47:56] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:01,978 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:01] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:02,093 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:02] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:07,249 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:07] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:07,348 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:07] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:12,516 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:12] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:12,606 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:12] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:17,763 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:17] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:17,853 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:17] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:22,990 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:22] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:23,078 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:23] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:28,249 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:48:28,352 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:48:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:49:41,240 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:49:41] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:49:49,154 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:49:49] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:52:28,533 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:52:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:53:18,490 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:53:18] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:54:26,535 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:54:26] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:54:50,831 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 08:54:50] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 08:57:24,290 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.231s]
+2025-11-14 08:57:24,290 - __main__ - INFO - Logged to Elasticsearch: 20251114085724-1130
+2025-11-14 08:57:27,410 - __main__ - INFO - Logged to Neo4j: 20251114085724-1130
+2025-11-14 08:57:27,428 - __main__ - INFO - Detection completed: 20251114085724-1130 - Blocked: True
+2025-11-14 08:57:27,429 - werkzeug - INFO - 172.18.0.1 - - [14/Nov/2025 08:57:27] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:01:19,486 - __main__ - INFO - ML models loaded successfully
+2025-11-14 09:01:19,487 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 09:01:19,487 - __main__ - INFO - Connected to Neo4j
+2025-11-14 09:01:19,498 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.5:5001
+2025-11-14 09:01:19,498 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 09:01:19,499 - werkzeug - INFO -  * Restarting with stat
+2025-11-14 09:01:21,366 - __main__ - INFO - ML models loaded successfully
+2025-11-14 09:01:21,367 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 09:01:21,368 - __main__ - INFO - Connected to Neo4j
+2025-11-14 09:01:21,375 - werkzeug - WARNING -  * Debugger is active!
+2025-11-14 09:01:21,376 - werkzeug - INFO -  * Debugger PIN: 919-418-604
+2025-11-14 09:08:28,687 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:08:28] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:09:05,215 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:09:05] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:09:41,808 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:09:41] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:09:41,896 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:09:41] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:09:47,039 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:09:47] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:09:47,134 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:09:47] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:09:52,285 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:09:52] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:09:52,376 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:09:52] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:11:56,672 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:11:56] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:11:56,766 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:11:56] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:12:03,789 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:12:03] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:12:03,926 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:12:03] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:12:09,507 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:12:09] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:14:39,244 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:14:39] "[31m[1mPOST /detect HTTP/1.1[0m" 400 -
+2025-11-14 09:19:17,552 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.010s]
+2025-11-14 09:19:17,552 - __main__ - INFO - Logged to Elasticsearch: 20251114091917-2465
+2025-11-14 09:19:17,875 - __main__ - INFO - Logged to Neo4j: 20251114091917-2465
+2025-11-14 09:19:17,882 - __main__ - INFO - Detection completed: 20251114091917-2465 - Blocked: True
+2025-11-14 09:19:17,883 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:19:17] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:19:55,871 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 09:19:55,872 - __main__ - INFO - Logged to Elasticsearch: 20251114091955-6688
+2025-11-14 09:19:55,872 - __main__ - INFO - Detection completed: 20251114091955-6688 - Blocked: False
+2025-11-14 09:19:55,873 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:19:55] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:44,847 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 09:51:44,847 - __main__ - INFO - Logged to Elasticsearch: 20251114095144-8387
+2025-11-14 09:51:44,880 - __main__ - INFO - Logged to Neo4j: 20251114095144-8387
+2025-11-14 09:51:44,886 - __main__ - INFO - Detection completed: 20251114095144-8387 - Blocked: True
+2025-11-14 09:51:44,887 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:44] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:55,246 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 09:51:55,246 - __main__ - INFO - Logged to Elasticsearch: 20251114095155-9847
+2025-11-14 09:51:55,246 - __main__ - INFO - Detection completed: 20251114095155-9847 - Blocked: False
+2025-11-14 09:51:55,247 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:55] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:55,863 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 09:51:55,864 - __main__ - INFO - Logged to Elasticsearch: 20251114095155-5627
+2025-11-14 09:51:55,864 - __main__ - INFO - Detection completed: 20251114095155-5627 - Blocked: False
+2025-11-14 09:51:55,865 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:55] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:56,264 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 09:51:56,264 - __main__ - INFO - Logged to Elasticsearch: 20251114095156-1536
+2025-11-14 09:51:56,264 - __main__ - INFO - Detection completed: 20251114095156-1536 - Blocked: False
+2025-11-14 09:51:56,265 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:56] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:56,990 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 09:51:56,990 - __main__ - INFO - Logged to Elasticsearch: 20251114095156-9557
+2025-11-14 09:51:56,991 - __main__ - INFO - Detection completed: 20251114095156-9557 - Blocked: False
+2025-11-14 09:51:56,991 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:56] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:56,993 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 09:51:56,994 - __main__ - INFO - Logged to Elasticsearch: 20251114095156-4828
+2025-11-14 09:51:56,994 - __main__ - INFO - Detection completed: 20251114095156-4828 - Blocked: False
+2025-11-14 09:51:56,994 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:56] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,419 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.011s]
+2025-11-14 09:51:57,420 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-8434
+2025-11-14 09:51:57,421 - __main__ - INFO - Detection completed: 20251114095157-8434 - Blocked: False
+2025-11-14 09:51:57,422 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,425 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.012s]
+2025-11-14 09:51:57,426 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-9680
+2025-11-14 09:51:57,428 - __main__ - INFO - Detection completed: 20251114095157-9680 - Blocked: False
+2025-11-14 09:51:57,430 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-14 09:51:57,433 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,433 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.017s]
+2025-11-14 09:51:57,434 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-5043
+2025-11-14 09:51:57,434 - __main__ - INFO - Detection completed: 20251114095157-5043 - Blocked: False
+2025-11-14 09:51:57,435 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-6691
+2025-11-14 09:51:57,437 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 09:51:57,438 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.014s]
+2025-11-14 09:51:57,438 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,439 - __main__ - INFO - Detection completed: 20251114095157-6691 - Blocked: False
+2025-11-14 09:51:57,440 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,440 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-2111
+2025-11-14 09:51:57,441 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.010s]
+2025-11-14 09:51:57,441 - __main__ - INFO - Detection completed: 20251114095157-2111 - Blocked: False
+2025-11-14 09:51:57,442 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,443 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-254
+2025-11-14 09:51:57,443 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-3871
+2025-11-14 09:51:57,445 - __main__ - INFO - Detection completed: 20251114095157-254 - Blocked: False
+2025-11-14 09:51:57,445 - __main__ - INFO - Detection completed: 20251114095157-3871 - Blocked: False
+2025-11-14 09:51:57,446 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,448 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,960 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.010s]
+2025-11-14 09:51:57,961 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-5970
+2025-11-14 09:51:57,962 - __main__ - INFO - Detection completed: 20251114095157-5970 - Blocked: False
+2025-11-14 09:51:57,964 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-14 09:51:57,964 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,965 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-345
+2025-11-14 09:51:57,965 - __main__ - INFO - Detection completed: 20251114095157-345 - Blocked: False
+2025-11-14 09:51:57,966 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,967 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 09:51:57,968 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-7174
+2025-11-14 09:51:57,968 - __main__ - INFO - Detection completed: 20251114095157-7174 - Blocked: False
+2025-11-14 09:51:57,969 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:57,970 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 09:51:57,971 - __main__ - INFO - Logged to Elasticsearch: 20251114095157-5130
+2025-11-14 09:51:57,971 - __main__ - INFO - Detection completed: 20251114095157-5130 - Blocked: False
+2025-11-14 09:51:57,972 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:58,052 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 09:51:58,053 - __main__ - INFO - Logged to Elasticsearch: 20251114095158-6632
+2025-11-14 09:51:58,053 - __main__ - INFO - Detection completed: 20251114095158-6632 - Blocked: False
+2025-11-14 09:51:58,053 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:58] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:58,055 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.010s]
+2025-11-14 09:51:58,055 - __main__ - INFO - Logged to Elasticsearch: 20251114095158-872
+2025-11-14 09:51:58,055 - __main__ - INFO - Detection completed: 20251114095158-872 - Blocked: False
+2025-11-14 09:51:58,056 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:58] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:58,524 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 09:51:58,524 - __main__ - INFO - Logged to Elasticsearch: 20251114095158-7479
+2025-11-14 09:51:58,524 - __main__ - INFO - Detection completed: 20251114095158-7479 - Blocked: False
+2025-11-14 09:51:58,525 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:58] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:58,527 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.011s]
+2025-11-14 09:51:58,527 - __main__ - INFO - Logged to Elasticsearch: 20251114095158-6626
+2025-11-14 09:51:58,528 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-14 09:51:58,528 - __main__ - INFO - Detection completed: 20251114095158-6626 - Blocked: False
+2025-11-14 09:51:58,529 - __main__ - INFO - Logged to Elasticsearch: 20251114095158-3611
+2025-11-14 09:51:58,530 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:58] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:58,530 - __main__ - INFO - Detection completed: 20251114095158-3611 - Blocked: False
+2025-11-14 09:51:58,531 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:58] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:58,583 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 09:51:58,584 - __main__ - INFO - Logged to Elasticsearch: 20251114095158-3133
+2025-11-14 09:51:58,584 - __main__ - INFO - Detection completed: 20251114095158-3133 - Blocked: False
+2025-11-14 09:51:58,585 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:58] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:51:58,743 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 09:51:58,743 - __main__ - INFO - Logged to Elasticsearch: 20251114095158-3181
+2025-11-14 09:51:58,744 - __main__ - INFO - Detection completed: 20251114095158-3181 - Blocked: False
+2025-11-14 09:51:58,744 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:51:58] "POST /detect HTTP/1.1" 200 -
+2025-11-14 09:53:12,775 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 09:53:12,775 - __main__ - INFO - Logged to Elasticsearch: 20251114095312-9786
+2025-11-14 09:53:12,804 - __main__ - INFO - Logged to Neo4j: 20251114095312-9786
+2025-11-14 09:53:12,810 - __main__ - INFO - Detection completed: 20251114095312-9786 - Blocked: True
+2025-11-14 09:53:12,812 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 09:53:12] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:15:58,423 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 10:15:58,424 - __main__ - INFO - Logged to Elasticsearch: 20251114101558-9847
+2025-11-14 10:15:58,425 - __main__ - INFO - Detection completed: 20251114101558-9847 - Blocked: False
+2025-11-14 10:15:58,426 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:15:58] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:15:58,540 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:15:58,541 - __main__ - INFO - Logged to Elasticsearch: 20251114101558-5627
+2025-11-14 10:15:58,541 - __main__ - INFO - Detection completed: 20251114101558-5627 - Blocked: False
+2025-11-14 10:15:58,542 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:15:58] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:16:06,462 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:16:06,463 - __main__ - INFO - Logged to Elasticsearch: 20251114101606-7665
+2025-11-14 10:16:06,463 - __main__ - INFO - Detection completed: 20251114101606-7665 - Blocked: False
+2025-11-14 10:16:06,464 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:16:06] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:16:06,611 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:16:06,611 - __main__ - INFO - Logged to Elasticsearch: 20251114101606-1705
+2025-11-14 10:16:06,612 - __main__ - INFO - Detection completed: 20251114101606-1705 - Blocked: False
+2025-11-14 10:16:06,612 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:16:06] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:21:14,267 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:21:14,268 - __main__ - INFO - Logged to Elasticsearch: 20251114102114-9847
+2025-11-14 10:21:14,268 - __main__ - INFO - Detection completed: 20251114102114-9847 - Blocked: False
+2025-11-14 10:21:14,269 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:21:14] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:21:14,374 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:21:14,374 - __main__ - INFO - Logged to Elasticsearch: 20251114102114-5627
+2025-11-14 10:21:14,374 - __main__ - INFO - Detection completed: 20251114102114-5627 - Blocked: False
+2025-11-14 10:21:14,375 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:21:14] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:21:22,787 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:21:22,788 - __main__ - INFO - Logged to Elasticsearch: 20251114102122-836
+2025-11-14 10:21:22,788 - __main__ - INFO - Detection completed: 20251114102122-836 - Blocked: False
+2025-11-14 10:21:22,788 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:21:22] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:21:22,889 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:21:22,889 - __main__ - INFO - Logged to Elasticsearch: 20251114102122-1536
+2025-11-14 10:21:22,889 - __main__ - INFO - Detection completed: 20251114102122-1536 - Blocked: False
+2025-11-14 10:21:22,890 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:21:22] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:21:44,366 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:21:44,366 - __main__ - INFO - Logged to Elasticsearch: 20251114102144-9786
+2025-11-14 10:21:44,398 - __main__ - INFO - Logged to Neo4j: 20251114102144-9786
+2025-11-14 10:21:44,405 - __main__ - INFO - Detection completed: 20251114102144-9786 - Blocked: True
+2025-11-14 10:21:44,406 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:21:44] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:22:31,456 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:22:31,456 - __main__ - INFO - Logged to Elasticsearch: 20251114102231-1536
+2025-11-14 10:22:31,456 - __main__ - INFO - Detection completed: 20251114102231-1536 - Blocked: False
+2025-11-14 10:22:31,458 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:22:31] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:22:37,022 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 10:22:37,022 - __main__ - INFO - Logged to Elasticsearch: 20251114102237-7228
+2025-11-14 10:22:37,179 - __main__ - INFO - Logged to Neo4j: 20251114102237-7228
+2025-11-14 10:22:37,188 - __main__ - INFO - Detection completed: 20251114102237-7228 - Blocked: True
+2025-11-14 10:22:37,189 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:22:37] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:22:57,269 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:22:57,269 - __main__ - INFO - Logged to Elasticsearch: 20251114102257-1536
+2025-11-14 10:22:57,269 - __main__ - INFO - Detection completed: 20251114102257-1536 - Blocked: False
+2025-11-14 10:22:57,270 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:22:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:23:00,292 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:23:00,292 - __main__ - INFO - Logged to Elasticsearch: 20251114102300-1536
+2025-11-14 10:23:00,292 - __main__ - INFO - Detection completed: 20251114102300-1536 - Blocked: False
+2025-11-14 10:23:00,294 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:23:00] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:23:15,102 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:23:15,102 - __main__ - INFO - Logged to Elasticsearch: 20251114102315-9786
+2025-11-14 10:23:15,121 - __main__ - INFO - Logged to Neo4j: 20251114102315-9786
+2025-11-14 10:23:15,125 - __main__ - INFO - Detection completed: 20251114102315-9786 - Blocked: True
+2025-11-14 10:23:15,126 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:23:15] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:23:21,746 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:23:21,746 - __main__ - INFO - Logged to Elasticsearch: 20251114102321-1536
+2025-11-14 10:23:21,746 - __main__ - INFO - Detection completed: 20251114102321-1536 - Blocked: False
+2025-11-14 10:23:21,747 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:23:21] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:23:23,385 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:23:23,386 - __main__ - INFO - Logged to Elasticsearch: 20251114102323-1536
+2025-11-14 10:23:23,386 - __main__ - INFO - Detection completed: 20251114102323-1536 - Blocked: False
+2025-11-14 10:23:23,387 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:23:23] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:23:26,219 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:23:26,219 - __main__ - INFO - Logged to Elasticsearch: 20251114102326-1536
+2025-11-14 10:23:26,219 - __main__ - INFO - Detection completed: 20251114102326-1536 - Blocked: False
+2025-11-14 10:23:26,220 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:23:26] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:23:29,895 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:23:29,896 - __main__ - INFO - Logged to Elasticsearch: 20251114102329-7228
+2025-11-14 10:23:29,900 - __main__ - INFO - Logged to Neo4j: 20251114102329-7228
+2025-11-14 10:23:29,907 - __main__ - INFO - Detection completed: 20251114102329-7228 - Blocked: True
+2025-11-14 10:23:29,908 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:23:29] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:24:26,202 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:24:26,203 - __main__ - INFO - Logged to Elasticsearch: 20251114102426-7228
+2025-11-14 10:24:26,208 - __main__ - INFO - Logged to Neo4j: 20251114102426-7228
+2025-11-14 10:24:26,217 - __main__ - INFO - Detection completed: 20251114102426-7228 - Blocked: True
+2025-11-14 10:24:26,218 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:24:26] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:24:32,114 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 10:24:32,114 - __main__ - INFO - Logged to Elasticsearch: 20251114102432-1536
+2025-11-14 10:24:32,114 - __main__ - INFO - Detection completed: 20251114102432-1536 - Blocked: False
+2025-11-14 10:24:32,115 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:24:32] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:24:33,268 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:24:33,268 - __main__ - INFO - Logged to Elasticsearch: 20251114102433-1536
+2025-11-14 10:24:33,269 - __main__ - INFO - Detection completed: 20251114102433-1536 - Blocked: False
+2025-11-14 10:24:33,269 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:24:33] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:24:36,832 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:24:36,833 - __main__ - INFO - Logged to Elasticsearch: 20251114102436-7228
+2025-11-14 10:24:36,838 - __main__ - INFO - Logged to Neo4j: 20251114102436-7228
+2025-11-14 10:24:36,844 - __main__ - INFO - Detection completed: 20251114102436-7228 - Blocked: True
+2025-11-14 10:24:36,845 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:24:36] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:24:44,053 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:24:44,053 - __main__ - INFO - Logged to Elasticsearch: 20251114102444-1536
+2025-11-14 10:24:44,053 - __main__ - INFO - Detection completed: 20251114102444-1536 - Blocked: False
+2025-11-14 10:24:44,054 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:24:44] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:24:48,596 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 10:24:48,596 - __main__ - INFO - Logged to Elasticsearch: 20251114102448-3934
+2025-11-14 10:24:48,603 - __main__ - INFO - Logged to Neo4j: 20251114102448-3934
+2025-11-14 10:24:48,612 - __main__ - INFO - Detection completed: 20251114102448-3934 - Blocked: True
+2025-11-14 10:24:48,613 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:24:48] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:24:53,021 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:24:53,021 - __main__ - INFO - Logged to Elasticsearch: 20251114102453-1536
+2025-11-14 10:24:53,021 - __main__ - INFO - Detection completed: 20251114102453-1536 - Blocked: False
+2025-11-14 10:24:53,022 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:24:53] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:24:59,206 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.009s]
+2025-11-14 10:24:59,206 - __main__ - INFO - Logged to Elasticsearch: 20251114102459-1536
+2025-11-14 10:24:59,207 - __main__ - INFO - Detection completed: 20251114102459-1536 - Blocked: False
+2025-11-14 10:24:59,208 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:24:59] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:25:04,175 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:25:04,176 - __main__ - INFO - Logged to Elasticsearch: 20251114102504-7228
+2025-11-14 10:25:04,180 - __main__ - INFO - Logged to Neo4j: 20251114102504-7228
+2025-11-14 10:25:04,186 - __main__ - INFO - Detection completed: 20251114102504-7228 - Blocked: True
+2025-11-14 10:25:04,187 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:25:04] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:26:57,423 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:26:57,424 - __main__ - INFO - Logged to Elasticsearch: 20251114102657-9847
+2025-11-14 10:26:57,424 - __main__ - INFO - Detection completed: 20251114102657-9847 - Blocked: False
+2025-11-14 10:26:57,425 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:26:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:26:57,523 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.008s]
+2025-11-14 10:26:57,523 - __main__ - INFO - Logged to Elasticsearch: 20251114102657-5627
+2025-11-14 10:26:57,524 - __main__ - INFO - Detection completed: 20251114102657-5627 - Blocked: False
+2025-11-14 10:26:57,524 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:26:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:26:57,625 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:26:57,625 - __main__ - INFO - Logged to Elasticsearch: 20251114102657-1536
+2025-11-14 10:26:57,625 - __main__ - INFO - Detection completed: 20251114102657-1536 - Blocked: False
+2025-11-14 10:26:57,626 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:26:57] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:27:02,280 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:27:02,281 - __main__ - INFO - Logged to Elasticsearch: 20251114102702-7228
+2025-11-14 10:27:02,287 - __main__ - INFO - Logged to Neo4j: 20251114102702-7228
+2025-11-14 10:27:02,295 - __main__ - INFO - Detection completed: 20251114102702-7228 - Blocked: True
+2025-11-14 10:27:02,296 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:27:02] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:27:05,142 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.006s]
+2025-11-14 10:27:05,142 - __main__ - INFO - Logged to Elasticsearch: 20251114102705-1536
+2025-11-14 10:27:05,143 - __main__ - INFO - Detection completed: 20251114102705-1536 - Blocked: False
+2025-11-14 10:27:05,143 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:27:05] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:28:01,530 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:28:01,530 - __main__ - INFO - Logged to Elasticsearch: 20251114102801-7228
+2025-11-14 10:28:01,536 - __main__ - INFO - Logged to Neo4j: 20251114102801-7228
+2025-11-14 10:28:01,544 - __main__ - INFO - Detection completed: 20251114102801-7228 - Blocked: True
+2025-11-14 10:28:01,545 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:28:01] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:28:04,976 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:201 duration:0.007s]
+2025-11-14 10:28:04,976 - __main__ - INFO - Logged to Elasticsearch: 20251114102804-1536
+2025-11-14 10:28:04,976 - __main__ - INFO - Detection completed: 20251114102804-1536 - Blocked: False
+2025-11-14 10:28:04,977 - werkzeug - INFO - 172.18.0.7 - - [14/Nov/2025 10:28:04] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:30:44,896 - __main__ - INFO - ML models loaded successfully
+2025-11-14 10:30:44,898 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 10:30:44,898 - __main__ - INFO - Connected to Neo4j
+2025-11-14 10:30:44,936 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.8:5001
+2025-11-14 10:30:44,939 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 10:30:44,940 - werkzeug - INFO -  * Restarting with stat
+2025-11-14 10:30:47,919 - __main__ - INFO - ML models loaded successfully
+2025-11-14 10:30:47,921 - __main__ - INFO - Connected to Elasticsearch
+2025-11-14 10:30:47,921 - __main__ - INFO - Connected to Neo4j
+2025-11-14 10:30:47,932 - werkzeug - WARNING -  * Debugger is active!
+2025-11-14 10:30:47,933 - werkzeug - INFO -  * Debugger PIN: 796-200-647
+2025-11-14 10:31:11,541 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:11,542 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 1 times in a row, putting on 1 second timeout
+2025-11-14 10:31:11,542 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd7999a650>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999a650>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:11,562 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.003s]
+2025-11-14 10:31:11,563 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 2 times in a row, putting on 2 second timeout
+2025-11-14 10:31:11,564 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd7999a9e0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999a9e0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:11,566 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.002s]
+2025-11-14 10:31:11,567 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 3 times in a row, putting on 4 second timeout
+2025-11-14 10:31:11,567 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd7999ada0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999ada0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:11,572 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.004s]
+2025-11-14 10:31:11,573 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 4 times in a row, putting on 8 second timeout
+2025-11-14 10:31:11,573 - __main__ - ERROR - Elasticsearch logging error: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999a650>: Failed to establish a new connection: [Errno 111] Connection refused))
+2025-11-14 10:31:11,573 - __main__ - INFO - Detection completed: 20251114103111-5333 - Blocked: False
+2025-11-14 10:31:11,575 - werkzeug - INFO - 172.18.0.9 - - [14/Nov/2025 10:31:11] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:31:12,135 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:12,135 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 5 times in a row, putting on 16 second timeout
+2025-11-14 10:31:12,135 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd7999a8c0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999a8c0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:12,137 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:12,137 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 6 times in a row, putting on 30 second timeout
+2025-11-14 10:31:12,137 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd7999a7a0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999a7a0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:12,139 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:12,139 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 7 times in a row, putting on 30 second timeout
+2025-11-14 10:31:12,139 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd7999b5b0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999b5b0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:12,141 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:12,141 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 8 times in a row, putting on 30 second timeout
+2025-11-14 10:31:12,141 - __main__ - ERROR - Elasticsearch logging error: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999a8c0>: Failed to establish a new connection: [Errno 111] Connection refused))
+2025-11-14 10:31:12,141 - __main__ - INFO - Detection completed: 20251114103112-7217 - Blocked: False
+2025-11-14 10:31:12,142 - werkzeug - INFO - 172.18.0.9 - - [14/Nov/2025 10:31:12] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:31:20,441 - elastic_transport.node_pool - INFO - Resurrected node <Urllib3HttpNode(http://elasticsearch:9200)> (force=False)
+2025-11-14 10:31:20,442 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:20,443 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 9 times in a row, putting on 30 second timeout
+2025-11-14 10:31:20,443 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd78894520>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd78894520>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:20,443 - elastic_transport.node_pool - INFO - Resurrected node <Urllib3HttpNode(http://elasticsearch:9200)> (force=False)
+2025-11-14 10:31:20,444 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:20,445 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 10 times in a row, putting on 30 second timeout
+2025-11-14 10:31:20,445 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd7999ba00>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999ba00>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:20,445 - elastic_transport.node_pool - INFO - Resurrected node <Urllib3HttpNode(http://elasticsearch:9200)> (force=False)
+2025-11-14 10:31:20,456 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.010s]
+2025-11-14 10:31:20,456 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 11 times in a row, putting on 30 second timeout
+2025-11-14 10:31:20,456 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd7999ba60>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999ba60>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:20,458 - elastic_transport.node_pool - INFO - Resurrected node <Urllib3HttpNode(http://elasticsearch:9200)> (force=False)
+2025-11-14 10:31:20,460 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:20,460 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 12 times in a row, putting on 30 second timeout
+2025-11-14 10:31:20,462 - __main__ - ERROR - Elasticsearch logging error: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd78894520>: Failed to establish a new connection: [Errno 111] Connection refused))
+2025-11-14 10:31:20,463 - __main__ - INFO - Detection completed: 20251114103120-5882 - Blocked: False
+2025-11-14 10:31:20,463 - werkzeug - INFO - 172.18.0.9 - - [14/Nov/2025 10:31:20] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:31:23,283 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:23,283 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 13 times in a row, putting on 30 second timeout
+2025-11-14 10:31:23,283 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd79999210>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd79999210>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:23,286 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:23,286 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 14 times in a row, putting on 30 second timeout
+2025-11-14 10:31:23,286 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd788946a0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd788946a0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:23,288 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:23,288 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 15 times in a row, putting on 30 second timeout
+2025-11-14 10:31:23,288 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd78894940>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd78894940>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:23,290 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:23,290 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 16 times in a row, putting on 30 second timeout
+2025-11-14 10:31:23,290 - __main__ - ERROR - Elasticsearch logging error: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd79999210>: Failed to establish a new connection: [Errno 111] Connection refused))
+2025-11-14 10:31:23,290 - __main__ - INFO - Detection completed: 20251114103123-6666 - Blocked: False
+2025-11-14 10:31:23,291 - werkzeug - INFO - 172.18.0.9 - - [14/Nov/2025 10:31:23] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:31:25,272 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.002s]
+2025-11-14 10:31:25,273 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 17 times in a row, putting on 30 second timeout
+2025-11-14 10:31:25,273 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd78895a20>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd78895a20>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:25,275 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:25,276 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 18 times in a row, putting on 30 second timeout
+2025-11-14 10:31:25,276 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd79998160>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd79998160>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:25,278 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:25,278 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 19 times in a row, putting on 30 second timeout
+2025-11-14 10:31:25,279 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd7999a500>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd7999a500>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:25,281 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:25,281 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 20 times in a row, putting on 30 second timeout
+2025-11-14 10:31:25,281 - __main__ - ERROR - Elasticsearch logging error: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd78895a20>: Failed to establish a new connection: [Errno 111] Connection refused))
+2025-11-14 10:31:25,282 - __main__ - INFO - Detection completed: 20251114103125-5333 - Blocked: False
+2025-11-14 10:31:25,283 - werkzeug - INFO - 172.18.0.9 - - [14/Nov/2025 10:31:25] "POST /detect HTTP/1.1" 200 -
+2025-11-14 10:31:30,130 - elastic_transport.node_pool - INFO - Resurrected node <Urllib3HttpNode(http://elasticsearch:9200)> (force=False)
+2025-11-14 10:31:30,131 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:30,131 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 21 times in a row, putting on 30 second timeout
+2025-11-14 10:31:30,131 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd78894fd0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd78894fd0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:30,133 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:30,134 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 22 times in a row, putting on 30 second timeout
+2025-11-14 10:31:30,134 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd78894b50>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd78894b50>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:30,135 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:30,136 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 23 times in a row, putting on 30 second timeout
+2025-11-14 10:31:30,136 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x71cd78894a00>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd78894a00>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-14 10:31:30,137 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-14 10:31:30,138 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 24 times in a row, putting on 30 second timeout
+2025-11-14 10:31:30,138 - __main__ - ERROR - Elasticsearch logging error: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x71cd78894fd0>: Failed to establish a new connection: [Errno 111] Connection refused))
+2025-11-14 10:31:30,139 - __main__ - ERROR - Neo4j logging error: Couldn't connect to neo4j:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv4Address(('172.18.0.2', 7687)) (reason [Errno 111] Connection refused)
+2025-11-14 10:31:30,139 - __main__ - INFO - Detection completed: 20251114103130-95 - Blocked: True
+2025-11-14 10:31:30,140 - werkzeug - INFO - 172.18.0.9 - - [14/Nov/2025 10:31:30] "POST /detect HTTP/1.1" 200 -
