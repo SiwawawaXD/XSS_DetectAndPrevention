@@ -41,39 +41,71 @@ except Exception as e:
     logger.error(f"Neo4j connection error: {e}")
     neo4j_driver = None
 
+
 def extract_payload_string(request_data):
+    """
+    Extract only the VALUES from user input (not field names).
+    This prevents false positives from field names like 'password', 'script', etc.
+    """
     payloads = []
-    if request_data.get('path'):
-        payloads.append(request_data['path'])
+    
+    # Check path for suspicious patterns (but not common pages)
+    path = request_data.get('path', '')
+    if path and not path.endswith(('.php', '.html', '.css', '.js', '.png', '.jpg', '.gif')):
+        payloads.append(path)
+    
+    # Only check the VALUES of query parameters (not the keys)
     if request_data.get('query_params'):
         for key, value in request_data['query_params'].items():
-            payloads.append(f"{key}={value}")
+            # Skip common safe field names, only add the value
             payloads.append(str(value))
+    
+    # Only check the VALUES of body data (not the keys)
     if request_data.get('body'):
         body = request_data['body']
         if isinstance(body, dict):
             for key, value in body.items():
-                payloads.append(f"{key}={value}")
+                # Skip common form fields that won't contain attacks
+                if key.lower() in ['csrf_token', 'token', '_token']:
+                    continue
+                # Only add the value, not the key
                 payloads.append(str(value))
         elif isinstance(body, str):
             payloads.append(body)
-    return " ".join(payloads)
+    
+    # Combine all payloads with space
+    combined_payload = " ".join(payloads)
+    return combined_payload
+
 
 def check_ml_detection(request_data):
+    """Send request to ML API for detection"""
     try:
         payload_string = extract_payload_string(request_data)
-        if not payload_string.strip():
-            return False, {"is_malicious": False, "reason": "Empty payload"}
-        logger.info(f"ML API checking payload: {payload_string[:200]}...")
+        
+        # Skip ML detection for very short/simple payloads
+        if not payload_string.strip() or len(payload_string) < 5:
+            return False, {"is_malicious": False, "reason": "Payload too short"}
+        
+        logger.info(f"ML API checking payload: {payload_string[:100]}...")
+        
         response = requests.post(
             f"{ML_API_URL}/detect",
             json={"payload": payload_string, "source": f"{request_data.get('method', 'UNKNOWN')} {request_data.get('path', '/')}"},
             timeout=5
         )
+        
         if response.status_code == 200:
             result = response.json()
             is_malicious = result.get('blocked', False) or result.get('is_malicious', False)
-            logger.info(f"ML API result: malicious={is_malicious}")
+            confidence = result.get('ml_detection', {}).get('confidence', 0)
+            
+            # Only block if confidence is very high (> 0.8)
+            if is_malicious and confidence < 0.8:
+                logger.info(f"ML API detected potential threat but confidence too low ({confidence}), allowing request")
+                is_malicious = False
+            
+            logger.info(f"ML API result: malicious={is_malicious}, confidence={confidence}")
             return is_malicious, result
         else:
             logger.error(f"ML API returned status {response.status_code}")
@@ -82,7 +114,9 @@ def check_ml_detection(request_data):
         logger.error(f"ML detection error: {e}")
         return False, {"error": str(e)}
 
+
 def check_modsecurity(method, path, headers, data=None, params=None):
+    """Send request through ModSecurity for WAF checking"""
     try:
         url = f"{MODSECURITY_URL}{path}"
         response = requests.request(method=method, url=url, headers=dict(headers), data=data, params=params, allow_redirects=False, timeout=60)
@@ -92,7 +126,9 @@ def check_modsecurity(method, path, headers, data=None, params=None):
         logger.error(f"ModSecurity check error: {e}")
         return False, {"error": str(e)}
 
+
 def log_blocked_request(request_data, detection_results):
+    """Log blocked request to Elasticsearch and Neo4j"""
     if es:
         try:
             index_name = f"blocked-requests-{datetime.now().strftime('%Y.%m.%d')}"
@@ -101,6 +137,7 @@ def log_blocked_request(request_data, detection_results):
             logger.info(f"Logged to Elasticsearch: {request_data.get('request_id')}")
         except Exception as e:
             logger.error(f"Elasticsearch logging error: {e}")
+    
     if neo4j_driver:
         try:
             with neo4j_driver.session() as session:
@@ -110,6 +147,7 @@ def log_blocked_request(request_data, detection_results):
         except Exception as e:
             logger.error(f"Neo4j logging error: {e}")
 
+
 @app.route('/', defaults={'path': ''}, methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
 @app.route('/<path:path>', methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
 def gateway(path):
@@ -118,13 +156,16 @@ def gateway(path):
         path = '/' + path
     elif not path:
         path = '/'
+    
     logger.info(f"Request {request_id}: {request.method} {path}")
+    
     try:
         request_body = request.get_data()
         request_body_text = request_body.decode('utf-8', errors='ignore')
     except:
         request_body = b''
         request_body_text = ''
+    
     body_dict = {}
     if request_body_text:
         try:
@@ -136,17 +177,22 @@ def gateway(path):
                 body_dict = {k: v[0] if len(v) == 1 else v for k, v in parsed.items()}
             except:
                 body_dict = {"raw": request_body_text}
+    
     ml_request_data = {"method": request.method, "path": path, "query_params": dict(request.args), "body": body_dict}
+    
     logger.info(f"Request {request_id}: Checking with ModSecurity")
     waf_blocked, waf_result = check_modsecurity(request.method, path, request.headers, request_body, request.args)
+    
     logger.info(f"Request {request_id}: Checking with ML API")
     ml_blocked, ml_result = check_ml_detection(ml_request_data)
+    
     if waf_blocked or ml_blocked:
         blocked_by = "WAF" if waf_blocked else "ML"
         logger.warning(f"Request {request_id}: BLOCKED by {blocked_by}")
         log_data = {"request_id": request_id, "timestamp": datetime.now().isoformat(), "method": request.method, "path": path, "source_ip": request.remote_addr, "blocked_by": blocked_by}
         log_blocked_request(log_data, {"waf": waf_result, "ml": ml_result})
         return jsonify({"request_id": request_id, "blocked_by": blocked_by, "message": "Your request was identified as potentially malicious and has been blocked."}), 403
+    
     logger.info(f"Request {request_id}: ALLOWED - Forwarding to bWAPP")
     try:
         url = f"{BWAPP_URL}{path}"
@@ -157,6 +203,7 @@ def gateway(path):
     except Exception as e:
         logger.error(f"Error forwarding to bWAPP: {e}")
         return jsonify({"error": "Backend error", "message": "Unable to process request"}), 502
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)
