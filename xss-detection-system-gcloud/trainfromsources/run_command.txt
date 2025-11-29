@@ -1,0 +1,10 @@
+docker run --rm \
+  -e NEO4J_URI=bolt://neo4j:7687 \
+  -e NEO4J_USER=neo4j \
+  -e NEO4J_PASS=SecurePassword123 \
+  -v ../models:/models \
+  -v ../ml_trainer/datasets:/datasets \
+  xss-trainer:latest \
+    --from-neo4j \
+    --kaggle /datasets/kaggle_xss.csv \
+    --deepxss /datasets/deepxss.csv
