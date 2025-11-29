@@ -1,9 +1,10 @@
-version: '3.8'
-
-# GCP-Optimized Configuration for e2-standard-4 (4 vCPU, 16 GB RAM)
-# Single server deployment
+version: "3"
 
 services:
+
+  # ---------------------------------------------------------
+  # 1) Public Gateway (FastAPI) – sends payloads to ML API and ModSecurity
+  # ---------------------------------------------------------
   gateway:
     build:
       context: ./gateway
@@ -11,25 +12,30 @@ services:
     container_name: gateway
     ports:
       - "8000:8000"
-    volumes:
-      - ./logs:/logs
     environment:
       - FLASK_ENV=production
-      - NEO4J_URI=bolt://neo4j:7687          # ADD THIS
-      - NEO4J_USER=neo4j                      # ADD THIS
-      - NEO4J_PASSWORD=SecureGCPPassword123!  # ADD THIS
+      - ML_API_URL=http://ml_api:8080/analyze
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=SecureGCPPassword123!
+      - NORMALIZER_URL=http://normalizer:9000/log
     depends_on:
+      - ml_api
       - modsecurity
-      - xss_detection_api
-      - bwapp
-      - elasticsearch
+      - normalizer
       - neo4j
+      - bwapp
     networks:
       - xss_network
     restart: always
     mem_limit: 512m
     cpus: 0.5
 
+
+
+  # ---------------------------------------------------------
+  # 2) BWAPP (Target Application)
+  # ---------------------------------------------------------
   bwapp:
     image: raesene/bwapp
     container_name: bwapp
@@ -39,13 +45,16 @@ services:
     mem_limit: 256m
     cpus: 0.3
 
+
+
+  # ---------------------------------------------------------
+  # 3) ModSecurity WAF (front of BWAPP)
+  # ---------------------------------------------------------
   modsecurity:
     build:
       context: ./modsecurity
       dockerfile: Dockerfile
     container_name: modsecurity
-    volumes:
-      - ./logs:/var/log/apache2
     depends_on:
       - bwapp
     networks:
@@ -54,24 +63,24 @@ services:
     mem_limit: 512m
     cpus: 0.5
 
-  xss_detection_api:
+
+
+  # ---------------------------------------------------------
+  # 4) ML API – uses model trained by trainer container
+  # ---------------------------------------------------------
+  ml_api:
     build:
       context: ./ml_api
       dockerfile: Dockerfile
-    container_name: xss_detection_api
+    container_name: ml_api
     ports:
-      - "5001:5001"
-    volumes:
-      - ./logs:/logs
-      - ./models:/models
+      - "8080:8080"
     environment:
-      - FLASK_ENV=production
-      - ELASTICSEARCH_HOST=elasticsearch:9200
-      - NEO4J_URI=bolt://neo4j:7687
-      - NEO4J_USER=neo4j
-      - NEO4J_PASSWORD=SecureGCPPassword123!
+      - MODEL_PATH=../models/xgb_model.joblib
+      - SCALER_PATH=../models/xss_scaler.joblib
+    volumes:
+      - ../models:/models
     depends_on:
-      - elasticsearch
       - neo4j
     networks:
       - xss_network
@@ -79,65 +88,19 @@ services:
     mem_limit: 1.5g
     cpus: 1.0
 
-  elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
-    container_name: elasticsearch
-    environment:
-      - discovery.type=single-node
-      - "ES_JAVA_OPTS=-Xms1g -Xmx2g"
-      - xpack.security.enabled=false
-      - xpack.security.http.ssl.enabled=false
-      - bootstrap.memory_lock=true
-    ports:
-      - "9200:9200"
-    volumes:
-      - elasticsearch_data:/usr/share/elasticsearch/data
-    networks:
-      - xss_network
-    restart: always
-    mem_limit: 3g
-    cpus: 1.0
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
 
-  logstash:
-    image: docker.elastic.co/logstash/logstash:8.11.0
-    container_name: logstash
-    volumes:
-      - ./logstash/pipeline:/usr/share/logstash/pipeline
-      - ./logs:/logs
-    environment:
-      - "LS_JAVA_OPTS=-Xms256m -Xmx512m"
-      - "xpack.monitoring.enabled=false"
-    depends_on:
-      - elasticsearch
-    networks:
-      - xss_network
-    restart: always
-    mem_limit: 768m
-    cpus: 0.4
 
-  kibana:
-    image: docker.elastic.co/kibana/kibana:8.11.0
-    container_name: kibana
-    ports:
-      - "5601:5601"
-    environment:
-      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
-      - SERVER_HOST=0.0.0.0
-    depends_on:
-      - elasticsearch
-    networks:
-      - xss_network
-    restart: always
-    mem_limit: 1g
-    cpus: 0.5
-
+  # ---------------------------------------------------------
+  # 5) Neo4j (Graph DB) – logs stored here by normalizer & used in ML training
+  # ---------------------------------------------------------
   neo4j:
     image: neo4j:5.13.0
     container_name: neo4j
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "SecureGCPPassword123!", "RETURN 1;"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
     ports:
       - "7474:7474"
       - "7687:7687"
@@ -157,12 +120,66 @@ services:
     mem_limit: 2g
     cpus: 0.7
 
+
+
+  # ---------------------------------------------------------
+  # 6) Normalizer – sidecar that converts logs → Neo4j
+  # ---------------------------------------------------------
+  normalizer:
+    build:
+      context: ./normalizer
+      dockerfile: Dockerfile
+    container_name: normalizer
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    environment:
+      - PORT=9000
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=SecureGCPPassword123!
+    ports:
+      - "9000:9000"
+    networks:
+      - xss_network
+    restart: always
+    mem_limit: 256m
+    cpus: 0.3
+
+
+
+  # ---------------------------------------------------------
+  # 7) Trainer – Offline ML Training Container
+  # ---------------------------------------------------------
+  trainer:
+    build:
+      context: ./ml_trainer
+      dockerfile: Dockerfile
+    container_name: trainer
+    environment:
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=SecureGCPPassword123!
+    volumes:
+      - ./models:/models              # outputs trained model
+      - ./ml-trainer/datasets:/datasets          
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    networks:
+      - xss_network
+    restart: no  # only run when needed
+    mem_limit: 2g
+    cpus: 1.0
+
 networks:
   xss_network:
     driver: bridge
 
 volumes:
-  elasticsearch_data:
+  models:
+    driver: local
+  datasets:
     driver: local
   neo4j_data:
     driver: local

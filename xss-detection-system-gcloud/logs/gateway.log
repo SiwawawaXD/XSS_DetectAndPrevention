@@ -7381,3 +7381,606 @@ Failed to establish connection to ResolvedIPv4Address(('172.18.0.2', 7687)) (rea
 2025-11-14 10:31:30,930 - werkzeug - INFO - 203.131.216.2 - - [14/Nov/2025 10:31:30] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03|\x89ìÚ\x99ï5Å\x92n)\x0e{tÊv»2ÜÇ,h\x02\x8eæxt×\x07"\x86á \x8b7»\x9aÝ\x0b5Ú]\x0c!4¹\x08\x1etbÔÓÐ\x1eÐ©ë\x96Í%Í&-\x06\x1c\x00\x1e\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x95ÿ\x01\x00\x01\x00\x00\x0b\x00\x04\x03\x00\x01\x02\x00[0m" 400 -
 2025-11-14 10:31:31,002 - werkzeug - ERROR - 203.131.216.2 - - [14/Nov/2025 10:31:31] code 400, message Bad request version ('\x00\x04\x03\x00\x01\x02\x00')
 2025-11-14 10:31:31,002 - werkzeug - INFO - 203.131.216.2 - - [14/Nov/2025 10:31:31] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x81\x1dÝëÁ ^è\x0dB -¥TN\x0fÝI\x1b\x17ñã.\x075\x8f\x89\x08\x81\x88;Í &\x093¾È¹ºýjÛÉ\x86\x8e|F\x91\x14§^vm\x85\x1a!è\x1aøº~\x1bO\x0e\x00\x1e\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x95ÿ\x01\x00\x01\x00\x00\x0b\x00\x04\x03\x00\x01\x02\x00[0m" 400 -
+2025-11-26 18:13:47,355 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:13:47,356 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:13:47,396 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.9:8000
+2025-11-26 18:13:47,396 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:13:47,397 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:13:47,738 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:13:47,739 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:13:47,744 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:13:47,747 - werkzeug - INFO -  * Debugger PIN: 574-283-995
+2025-11-26 18:14:14,930 - __main__ - INFO - Request 68b83e2f-dd7e-4d3b-8359-b1fa6794a09d: GET /
+2025-11-26 18:14:14,951 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:14:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-11-26 18:14:15,007 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:14:15] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-26 18:14:15,008 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:14:15] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-26 18:14:15,227 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:14:15] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=SVvjA7nz9CIbu30FUhjS HTTP/1.1" 200 -
+2025-11-26 18:14:15,737 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:14:15] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-26 18:15:42,394 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:15:42,394 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:15:42,461 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.9:8000
+2025-11-26 18:15:42,462 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:15:42,462 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:15:42,792 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:15:42,793 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:15:42,797 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:15:42,798 - werkzeug - INFO -  * Debugger PIN: 263-861-733
+2025-11-26 18:15:44,639 - __main__ - INFO - Request 2f0fac3c-38b3-4301-9d30-0dca67b34ebc: GET /
+2025-11-26 18:15:44,640 - __main__ - INFO - Request 2f0fac3c-38b3-4301-9d30-0dca67b34ebc: Checking with ModSecurity
+2025-11-26 18:15:44,920 - __main__ - INFO - Request 2f0fac3c-38b3-4301-9d30-0dca67b34ebc: Checking with ML API
+2025-11-26 18:15:45,026 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:15:45] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-26 18:15:45,032 - __main__ - INFO - Request 8101083e-b68f-467b-bb12-272e9b9f7948: GET /portal.php
+2025-11-26 18:15:45,033 - __main__ - INFO - Request 8101083e-b68f-467b-bb12-272e9b9f7948: Checking with ModSecurity
+2025-11-26 18:15:45,222 - __main__ - INFO - Request 8101083e-b68f-467b-bb12-272e9b9f7948: Checking with ML API
+2025-11-26 18:15:45,326 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:15:45] "[32mGET /portal.php HTTP/1.1[0m" 302 -
+2025-11-26 18:15:45,794 - __main__ - INFO - Request 38de72f8-76fe-490b-b515-9e5137a83ff4: GET /
+2025-11-26 18:15:45,794 - __main__ - INFO - Request 38de72f8-76fe-490b-b515-9e5137a83ff4: Checking with ModSecurity
+2025-11-26 18:15:45,797 - __main__ - INFO - Request 38de72f8-76fe-490b-b515-9e5137a83ff4: Checking with ML API
+2025-11-26 18:15:45,827 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:15:45] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-26 18:15:45,831 - __main__ - INFO - Request 44c32b39-8bea-4a1c-a113-414c379e0c7d: GET /portal.php
+2025-11-26 18:15:45,832 - __main__ - INFO - Request 44c32b39-8bea-4a1c-a113-414c379e0c7d: Checking with ModSecurity
+2025-11-26 18:15:45,837 - __main__ - INFO - Request 44c32b39-8bea-4a1c-a113-414c379e0c7d: Checking with ML API
+2025-11-26 18:15:46,018 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:15:46] "[32mGET /portal.php HTTP/1.1[0m" 302 -
+2025-11-26 18:15:46,023 - __main__ - INFO - Request b695464b-16c8-4a2a-a99f-28c470a6c19e: GET /login.php
+2025-11-26 18:15:46,023 - __main__ - INFO - Request b695464b-16c8-4a2a-a99f-28c470a6c19e: Checking with ModSecurity
+2025-11-26 18:15:46,121 - __main__ - INFO - Request b695464b-16c8-4a2a-a99f-28c470a6c19e: Checking with ML API
+2025-11-26 18:15:46,129 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:15:46] "GET /login.php HTTP/1.1" 200 -
+2025-11-26 18:15:46,285 - __main__ - INFO - Request 26d412ce-5df8-4a7e-94e2-2324d403a05f: GET /favicon.ico
+2025-11-26 18:15:46,286 - __main__ - INFO - Request 26d412ce-5df8-4a7e-94e2-2324d403a05f: Checking with ModSecurity
+2025-11-26 18:15:46,329 - __main__ - INFO - Request 26d412ce-5df8-4a7e-94e2-2324d403a05f: Checking with ML API
+2025-11-26 18:15:46,330 - __main__ - INFO - ML API checking payload: /favicon.ico...
+2025-11-26 18:15:46,376 - __main__ - INFO - ML API result: malicious=False, confidence=0.9969663023948669
+2025-11-26 18:15:46,422 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:15:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-26 18:20:40,346 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:20:40,346 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:20:40,366 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.10:8000
+2025-11-26 18:20:40,367 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:20:40,367 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:20:40,743 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:20:40,743 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:20:40,750 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:20:40,750 - werkzeug - INFO -  * Debugger PIN: 523-363-795
+2025-11-26 18:21:20,028 - __main__ - INFO - Request 17c588cd-fa47-43f4-9307-985d2f122d35: GET /login.php
+2025-11-26 18:21:20,029 - __main__ - INFO - Request 17c588cd-fa47-43f4-9307-985d2f122d35: Checking with ModSecurity
+2025-11-26 18:21:20,124 - __main__ - INFO - Request 17c588cd-fa47-43f4-9307-985d2f122d35: Checking with ML API
+2025-11-26 18:21:20,300 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:21:20] "GET /login.php HTTP/1.1" 200 -
+2025-11-26 18:21:26,956 - __main__ - INFO - Request 356df869-3aa3-404b-9d55-73a5c52448f0: GET /login.php
+2025-11-26 18:21:26,958 - __main__ - INFO - Request 356df869-3aa3-404b-9d55-73a5c52448f0: Checking with ModSecurity
+2025-11-26 18:21:26,999 - __main__ - INFO - Request 356df869-3aa3-404b-9d55-73a5c52448f0: Checking with ML API
+2025-11-26 18:21:27,215 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:21:27] "GET /login.php HTTP/1.1" 200 -
+2025-11-26 18:21:28,307 - __main__ - INFO - Request 0ce038ca-8a6e-41d5-90ba-395692a6d575: GET /login.php
+2025-11-26 18:21:28,307 - __main__ - INFO - Request 0ce038ca-8a6e-41d5-90ba-395692a6d575: Checking with ModSecurity
+2025-11-26 18:21:28,311 - __main__ - INFO - Request 0ce038ca-8a6e-41d5-90ba-395692a6d575: Checking with ML API
+2025-11-26 18:21:28,330 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:21:28] "GET /login.php HTTP/1.1" 200 -
+2025-11-26 18:23:10,415 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:23:10,416 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:23:10,437 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.10:8000
+2025-11-26 18:23:10,437 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:23:10,437 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:23:10,840 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:23:10,840 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:23:10,845 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:23:10,846 - werkzeug - INFO -  * Debugger PIN: 802-537-621
+2025-11-26 18:23:15,794 - __main__ - INFO - Request 88128b28-f04a-405c-ab6f-96f25336fa10: GET /login.php
+2025-11-26 18:23:15,794 - __main__ - INFO - Request 88128b28-f04a-405c-ab6f-96f25336fa10: Checking with ModSecurity
+2025-11-26 18:23:15,820 - __main__ - INFO - Request 88128b28-f04a-405c-ab6f-96f25336fa10: Checking with ML API
+2025-11-26 18:23:15,824 - __main__ - ERROR - Error forwarding to bWAPP: HTTPConnectionPool(host='bwapp', port=80): Max retries exceeded with url: /login.php (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffadd28f90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-26 18:23:15,824 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:23:15] "[35m[1mGET /login.php HTTP/1.1[0m" 502 -
+2025-11-26 18:24:11,039 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:24:11,039 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:24:11,106 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.10:8000
+2025-11-26 18:24:11,107 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:24:11,107 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:24:11,509 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-26 18:24:11,509 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-26 18:24:11,519 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:24:11,520 - werkzeug - INFO -  * Debugger PIN: 112-962-414
+2025-11-26 18:24:21,645 - __main__ - INFO - Request dffc8ab1-f3ec-4a0f-9ba2-7c16ebf85136: GET /login.php
+2025-11-26 18:24:21,646 - __main__ - INFO - Request dffc8ab1-f3ec-4a0f-9ba2-7c16ebf85136: Checking with ModSecurity
+2025-11-26 18:24:21,672 - __main__ - INFO - Request dffc8ab1-f3ec-4a0f-9ba2-7c16ebf85136: Checking with ML API
+2025-11-26 18:24:21,674 - __main__ - ERROR - Error forwarding to bWAPP: HTTPConnectionPool(host='bwapp', port=80): Max retries exceeded with url: /login.php (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff8a7314d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-26 18:24:21,675 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:24:21] "[35m[1mGET /login.php HTTP/1.1[0m" 502 -
+2025-11-26 18:24:22,648 - __main__ - INFO - Request ba25f819-cd88-4b60-87fe-49821c0165f5: GET /login.php
+2025-11-26 18:24:22,648 - __main__ - INFO - Request ba25f819-cd88-4b60-87fe-49821c0165f5: Checking with ModSecurity
+2025-11-26 18:24:22,655 - __main__ - INFO - Request ba25f819-cd88-4b60-87fe-49821c0165f5: Checking with ML API
+2025-11-26 18:24:22,657 - __main__ - ERROR - Error forwarding to bWAPP: HTTPConnectionPool(host='bwapp', port=80): Max retries exceeded with url: /login.php (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff8a720110>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-26 18:24:22,659 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:24:22] "[35m[1mGET /login.php HTTP/1.1[0m" 502 -
+2025-11-26 18:24:23,236 - __main__ - INFO - Request 0182c318-c47a-4387-bda6-3b1e15e99ec4: GET /login.php
+2025-11-26 18:24:23,236 - __main__ - INFO - Request 0182c318-c47a-4387-bda6-3b1e15e99ec4: Checking with ModSecurity
+2025-11-26 18:24:23,239 - __main__ - INFO - Request 0182c318-c47a-4387-bda6-3b1e15e99ec4: Checking with ML API
+2025-11-26 18:24:23,240 - __main__ - ERROR - Error forwarding to bWAPP: HTTPConnectionPool(host='bwapp', port=80): Max retries exceeded with url: /login.php (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff8a7416d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-26 18:24:23,240 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:24:23] "[35m[1mGET /login.php HTTP/1.1[0m" 502 -
+2025-11-26 18:37:18,283 - __main__ - INFO - Request 7d8f72ca-14c9-42c5-b951-5102446914d7: GET /login.php
+2025-11-26 18:37:18,285 - __main__ - INFO - Request 7d8f72ca-14c9-42c5-b951-5102446914d7: Checking with ModSecurity
+2025-11-26 18:37:18,414 - __main__ - INFO - Request 7d8f72ca-14c9-42c5-b951-5102446914d7: Checking with ML API
+2025-11-26 18:37:18,509 - werkzeug - INFO - 192.168.65.1 - - [26/Nov/2025 18:37:18] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 13:57:07,620 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 13:57:07,621 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 13:57:07,653 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.11:8000
+2025-11-27 13:57:07,653 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 13:57:07,654 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 13:57:08,033 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 13:57:08,033 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 13:57:08,038 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 13:57:08,049 - werkzeug - INFO -  * Debugger PIN: 414-615-016
+2025-11-27 14:09:04,985 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:09:04,986 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:09:05,013 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.11:8000
+2025-11-27 14:09:05,013 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:09:05,013 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:09:05,496 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:09:05,496 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:09:05,504 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:09:05,506 - werkzeug - INFO -  * Debugger PIN: 656-340-207
+2025-11-27 14:11:49,048 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:11:49,049 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:11:49,122 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.11:8000
+2025-11-27 14:11:49,122 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:11:49,122 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:11:49,541 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:11:49,542 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:11:49,548 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:11:49,548 - werkzeug - INFO -  * Debugger PIN: 133-800-249
+2025-11-27 14:12:41,666 - __main__ - INFO - Request 73f9f993-2f73-4311-a79a-ba4f7fccf521: GET /login.php
+2025-11-27 14:12:41,667 - __main__ - INFO - Request 73f9f993-2f73-4311-a79a-ba4f7fccf521: Checking with ModSecurity
+2025-11-27 14:12:41,743 - __main__ - INFO - Request 73f9f993-2f73-4311-a79a-ba4f7fccf521: Checking with ML API
+2025-11-27 14:12:41,761 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:12:41] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:12:42,411 - __main__ - INFO - Request 0a8d38f8-c413-4d44-a366-3ef235c6da76: GET /favicon.ico
+2025-11-27 14:12:42,411 - __main__ - INFO - Request 0a8d38f8-c413-4d44-a366-3ef235c6da76: Checking with ModSecurity
+2025-11-27 14:12:42,422 - __main__ - INFO - Request 0a8d38f8-c413-4d44-a366-3ef235c6da76: Checking with ML API
+2025-11-27 14:12:42,423 - __main__ - INFO - ML API checking payload: /favicon.ico...
+2025-11-27 14:12:42,452 - __main__ - INFO - ML API result: malicious=False, confidence=0.9969663023948669
+2025-11-27 14:12:42,463 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:12:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-27 14:14:42,025 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:14:42,025 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:14:42,042 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.11:8000
+2025-11-27 14:14:42,042 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:14:42,043 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:14:42,402 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:14:42,402 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:14:42,407 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:14:42,407 - werkzeug - INFO -  * Debugger PIN: 318-173-745
+2025-11-27 14:15:10,760 - __main__ - INFO - Request cc3aa347-f291-4b4b-bc32-8668510c965f: GET /login.php
+2025-11-27 14:15:10,761 - __main__ - INFO - Request cc3aa347-f291-4b4b-bc32-8668510c965f: Checking with ModSecurity
+2025-11-27 14:15:10,839 - __main__ - INFO - Request cc3aa347-f291-4b4b-bc32-8668510c965f: Checking with ML API
+2025-11-27 14:15:10,862 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:15:10] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:15:11,636 - __main__ - INFO - Request 3a85291b-b935-4760-a505-e7a5dae169c3: GET /login.php
+2025-11-27 14:15:11,636 - __main__ - INFO - Request 3a85291b-b935-4760-a505-e7a5dae169c3: Checking with ModSecurity
+2025-11-27 14:15:11,668 - __main__ - INFO - Request 3a85291b-b935-4760-a505-e7a5dae169c3: Checking with ML API
+2025-11-27 14:15:11,742 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:15:11] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:15:12,456 - __main__ - INFO - Request 84e8d729-3174-432c-8105-477663837fcf: GET /login.php
+2025-11-27 14:15:12,456 - __main__ - INFO - Request 84e8d729-3174-432c-8105-477663837fcf: Checking with ModSecurity
+2025-11-27 14:15:12,461 - __main__ - INFO - Request 84e8d729-3174-432c-8105-477663837fcf: Checking with ML API
+2025-11-27 14:15:12,487 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:15:12] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:15:13,273 - __main__ - INFO - Request dfe8b2b4-402b-4b88-bea1-1c70db9c0c47: GET /login.php
+2025-11-27 14:15:13,274 - __main__ - INFO - Request dfe8b2b4-402b-4b88-bea1-1c70db9c0c47: Checking with ModSecurity
+2025-11-27 14:15:13,283 - __main__ - INFO - Request dfe8b2b4-402b-4b88-bea1-1c70db9c0c47: Checking with ML API
+2025-11-27 14:15:13,286 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:15:13] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:15:13,842 - __main__ - INFO - Request 7b9091e3-ed51-4a33-a7c3-84092c301abf: GET /login.php
+2025-11-27 14:15:13,842 - __main__ - INFO - Request 7b9091e3-ed51-4a33-a7c3-84092c301abf: Checking with ModSecurity
+2025-11-27 14:15:13,848 - __main__ - INFO - Request 7b9091e3-ed51-4a33-a7c3-84092c301abf: Checking with ML API
+2025-11-27 14:15:13,875 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:15:13] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:15:14,365 - __main__ - INFO - Request 6d3bdb65-dcd0-46ef-817d-1afc08d55891: GET /login.php
+2025-11-27 14:15:14,365 - __main__ - INFO - Request 6d3bdb65-dcd0-46ef-817d-1afc08d55891: Checking with ModSecurity
+2025-11-27 14:15:14,370 - __main__ - INFO - Request 6d3bdb65-dcd0-46ef-817d-1afc08d55891: Checking with ML API
+2025-11-27 14:15:14,372 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:15:14] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:15:14,831 - __main__ - INFO - Request 9c826b5d-1b90-4b7e-9a7e-6497e9f9fd11: GET /login.php
+2025-11-27 14:15:14,831 - __main__ - INFO - Request 9c826b5d-1b90-4b7e-9a7e-6497e9f9fd11: Checking with ModSecurity
+2025-11-27 14:15:14,844 - __main__ - INFO - Request 9c826b5d-1b90-4b7e-9a7e-6497e9f9fd11: Checking with ML API
+2025-11-27 14:15:14,846 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:15:14] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:15:16,680 - __main__ - INFO - Request 157df33b-2479-4331-9b45-8e3593a3ee33: GET /login.php
+2025-11-27 14:15:16,680 - __main__ - INFO - Request 157df33b-2479-4331-9b45-8e3593a3ee33: Checking with ModSecurity
+2025-11-27 14:15:16,689 - __main__ - INFO - Request 157df33b-2479-4331-9b45-8e3593a3ee33: Checking with ML API
+2025-11-27 14:15:16,734 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:15:16] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:15:40,126 - __main__ - INFO - Request 4cc3e6a3-ceab-43ee-9510-0dd7d2fc9c56: GET /login.php
+2025-11-27 14:15:40,129 - __main__ - INFO - Request 4cc3e6a3-ceab-43ee-9510-0dd7d2fc9c56: Checking with ModSecurity
+2025-11-27 14:15:40,178 - __main__ - INFO - Request 4cc3e6a3-ceab-43ee-9510-0dd7d2fc9c56: Checking with ML API
+2025-11-27 14:15:40,180 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:15:40] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:28,996 - __main__ - INFO - Request 623b5195-7e21-4362-a63b-2fbef53f3c36: GET /login.php
+2025-11-27 14:16:28,997 - __main__ - INFO - Request 623b5195-7e21-4362-a63b-2fbef53f3c36: Checking with ModSecurity
+2025-11-27 14:16:29,030 - __main__ - INFO - Request 623b5195-7e21-4362-a63b-2fbef53f3c36: Checking with ML API
+2025-11-27 14:16:29,034 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:29] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:31,181 - __main__ - INFO - Request a813a00c-2b11-4860-a3c9-5be433a7b48e: GET /login.php
+2025-11-27 14:16:31,182 - __main__ - INFO - Request a813a00c-2b11-4860-a3c9-5be433a7b48e: Checking with ModSecurity
+2025-11-27 14:16:31,193 - __main__ - INFO - Request a813a00c-2b11-4860-a3c9-5be433a7b48e: Checking with ML API
+2025-11-27 14:16:31,200 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:31] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:32,214 - __main__ - INFO - Request 497a764b-17bd-4a01-8893-9d4bd4f275e2: GET /login.php
+2025-11-27 14:16:32,215 - __main__ - INFO - Request 497a764b-17bd-4a01-8893-9d4bd4f275e2: Checking with ModSecurity
+2025-11-27 14:16:32,228 - __main__ - INFO - Request 497a764b-17bd-4a01-8893-9d4bd4f275e2: Checking with ML API
+2025-11-27 14:16:32,234 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:32] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:32,837 - __main__ - INFO - Request c112d7ef-bf53-41a8-b589-db0a9f163fa7: GET /login.php
+2025-11-27 14:16:32,837 - __main__ - INFO - Request c112d7ef-bf53-41a8-b589-db0a9f163fa7: Checking with ModSecurity
+2025-11-27 14:16:32,850 - __main__ - INFO - Request c112d7ef-bf53-41a8-b589-db0a9f163fa7: Checking with ML API
+2025-11-27 14:16:32,858 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:32] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:33,748 - __main__ - INFO - Request 5b5a4d7f-7268-4050-a91e-557675f09c67: GET /login.php
+2025-11-27 14:16:33,751 - __main__ - INFO - Request 5b5a4d7f-7268-4050-a91e-557675f09c67: Checking with ModSecurity
+2025-11-27 14:16:33,763 - __main__ - INFO - Request 5b5a4d7f-7268-4050-a91e-557675f09c67: Checking with ML API
+2025-11-27 14:16:33,769 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:33] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:34,564 - __main__ - INFO - Request 468c2a9c-6fbf-43d3-a921-d01829e1d9de: GET /login.php
+2025-11-27 14:16:34,565 - __main__ - INFO - Request 468c2a9c-6fbf-43d3-a921-d01829e1d9de: Checking with ModSecurity
+2025-11-27 14:16:34,578 - __main__ - INFO - Request 468c2a9c-6fbf-43d3-a921-d01829e1d9de: Checking with ML API
+2025-11-27 14:16:34,588 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:34] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:35,244 - __main__ - INFO - Request 53416269-73a1-4768-b4eb-22781810c9f1: GET /login.php
+2025-11-27 14:16:35,244 - __main__ - INFO - Request 53416269-73a1-4768-b4eb-22781810c9f1: Checking with ModSecurity
+2025-11-27 14:16:35,253 - __main__ - INFO - Request 53416269-73a1-4768-b4eb-22781810c9f1: Checking with ML API
+2025-11-27 14:16:35,258 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:35] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:35,860 - __main__ - INFO - Request af26fc1b-e7d5-4566-a0a5-a8c2188b7c68: GET /login.php
+2025-11-27 14:16:35,861 - __main__ - INFO - Request af26fc1b-e7d5-4566-a0a5-a8c2188b7c68: Checking with ModSecurity
+2025-11-27 14:16:35,870 - __main__ - INFO - Request af26fc1b-e7d5-4566-a0a5-a8c2188b7c68: Checking with ML API
+2025-11-27 14:16:35,874 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:35] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:36,758 - __main__ - INFO - Request 7bb464c0-9c2d-4b66-aa0c-84ec4fa269d8: GET /login.php
+2025-11-27 14:16:36,758 - __main__ - INFO - Request 7bb464c0-9c2d-4b66-aa0c-84ec4fa269d8: Checking with ModSecurity
+2025-11-27 14:16:36,770 - __main__ - INFO - Request 7bb464c0-9c2d-4b66-aa0c-84ec4fa269d8: Checking with ML API
+2025-11-27 14:16:36,776 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:36] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:16:37,526 - __main__ - INFO - Request f0086087-939c-4081-8014-c06869560b10: GET /login.php
+2025-11-27 14:16:37,526 - __main__ - INFO - Request f0086087-939c-4081-8014-c06869560b10: Checking with ModSecurity
+2025-11-27 14:16:37,538 - __main__ - INFO - Request f0086087-939c-4081-8014-c06869560b10: Checking with ML API
+2025-11-27 14:16:37,544 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:16:37] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:18:27,863 - __main__ - INFO - Request 02458baf-4d68-4e6d-9686-04f0bf34c002: GET /install.php
+2025-11-27 14:18:27,865 - __main__ - INFO - Request 02458baf-4d68-4e6d-9686-04f0bf34c002: Checking with ModSecurity
+2025-11-27 14:18:27,911 - __main__ - INFO - Request 02458baf-4d68-4e6d-9686-04f0bf34c002: Checking with ML API
+2025-11-27 14:18:27,917 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:27] "GET /install.php HTTP/1.1" 200 -
+2025-11-27 14:18:27,932 - __main__ - INFO - Request 0156f4e5-6dda-4278-91d0-eb0c8075a393: GET /stylesheets/stylesheet.css
+2025-11-27 14:18:27,932 - __main__ - INFO - Request 0156f4e5-6dda-4278-91d0-eb0c8075a393: Checking with ModSecurity
+2025-11-27 14:18:27,934 - __main__ - INFO - Request 870442e1-4d85-40dc-805c-580f850bb610: GET /js/html5.js
+2025-11-27 14:18:27,937 - __main__ - INFO - Request 870442e1-4d85-40dc-805c-580f850bb610: Checking with ModSecurity
+2025-11-27 14:18:27,937 - __main__ - INFO - Request 6e1b58a0-7b9e-4cc5-a3ff-56f8ee25f7fc: GET /images/twitter.png
+2025-11-27 14:18:27,938 - __main__ - INFO - Request 6e1b58a0-7b9e-4cc5-a3ff-56f8ee25f7fc: Checking with ModSecurity
+2025-11-27 14:18:27,940 - __main__ - INFO - Request 33a954b6-a4d8-453f-bea0-e0476a5ad9aa: GET /images/linkedin.png
+2025-11-27 14:18:27,941 - __main__ - INFO - Request 33a954b6-a4d8-453f-bea0-e0476a5ad9aa: Checking with ModSecurity
+2025-11-27 14:18:27,952 - __main__ - INFO - Request 870442e1-4d85-40dc-805c-580f850bb610: Checking with ML API
+2025-11-27 14:18:27,961 - __main__ - INFO - Request 6e1b58a0-7b9e-4cc5-a3ff-56f8ee25f7fc: Checking with ML API
+2025-11-27 14:18:27,962 - __main__ - INFO - Request 33a954b6-a4d8-453f-bea0-e0476a5ad9aa: Checking with ML API
+2025-11-27 14:18:27,965 - __main__ - INFO - Request 0156f4e5-6dda-4278-91d0-eb0c8075a393: Checking with ML API
+2025-11-27 14:18:27,966 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:27] "GET /js/html5.js HTTP/1.1" 200 -
+2025-11-27 14:18:27,984 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:27] "GET /images/linkedin.png HTTP/1.1" 200 -
+2025-11-27 14:18:27,995 - __main__ - INFO - Request 2d73e88d-97cb-451e-abd5-9bd5de2285e9: GET /images/facebook.png
+2025-11-27 14:18:27,995 - __main__ - INFO - Request 2d73e88d-97cb-451e-abd5-9bd5de2285e9: Checking with ModSecurity
+2025-11-27 14:18:28,058 - __main__ - INFO - Request 2d73e88d-97cb-451e-abd5-9bd5de2285e9: Checking with ML API
+2025-11-27 14:18:28,058 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/twitter.png HTTP/1.1" 200 -
+2025-11-27 14:18:28,059 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /stylesheets/stylesheet.css HTTP/1.1" 200 -
+2025-11-27 14:18:28,062 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/facebook.png HTTP/1.1" 200 -
+2025-11-27 14:18:28,063 - __main__ - INFO - Request 3126eb31-8115-43fd-a630-26ad13e6bfba: GET /images/blogger.png
+2025-11-27 14:18:28,065 - __main__ - INFO - Request 3126eb31-8115-43fd-a630-26ad13e6bfba: Checking with ModSecurity
+2025-11-27 14:18:28,065 - __main__ - INFO - Request c03fd15e-85bc-48bd-95c5-055b8f643348: GET /images/cc.png
+2025-11-27 14:18:28,067 - __main__ - INFO - Request 557dcb42-15d0-4725-8046-aca3099ec8cb: GET /images/bee_1.png
+2025-11-27 14:18:28,067 - __main__ - INFO - Request c03fd15e-85bc-48bd-95c5-055b8f643348: Checking with ModSecurity
+2025-11-27 14:18:28,067 - __main__ - INFO - Request 557dcb42-15d0-4725-8046-aca3099ec8cb: Checking with ModSecurity
+2025-11-27 14:18:28,068 - __main__ - INFO - Request 80d90502-5f95-4d17-b4ad-8d88a581dc01: GET /images/bg_3.jpg
+2025-11-27 14:18:28,068 - __main__ - INFO - Request 6937de6b-f418-4fa8-a242-1d3db00412b0: GET /images/bg_1.jpg
+2025-11-27 14:18:28,069 - __main__ - INFO - Request 96df46be-35c2-4c39-85e8-94ec6a903605: GET /images/bg_2.jpg
+2025-11-27 14:18:28,070 - __main__ - INFO - Request 80d90502-5f95-4d17-b4ad-8d88a581dc01: Checking with ModSecurity
+2025-11-27 14:18:28,072 - __main__ - INFO - Request 6937de6b-f418-4fa8-a242-1d3db00412b0: Checking with ModSecurity
+2025-11-27 14:18:28,072 - __main__ - INFO - Request 96df46be-35c2-4c39-85e8-94ec6a903605: Checking with ModSecurity
+2025-11-27 14:18:28,073 - __main__ - INFO - Request 3126eb31-8115-43fd-a630-26ad13e6bfba: Checking with ML API
+2025-11-27 14:18:28,075 - __main__ - INFO - Request 557dcb42-15d0-4725-8046-aca3099ec8cb: Checking with ML API
+2025-11-27 14:18:28,076 - __main__ - INFO - Request c03fd15e-85bc-48bd-95c5-055b8f643348: Checking with ML API
+2025-11-27 14:18:28,077 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/blogger.png HTTP/1.1" 200 -
+2025-11-27 14:18:28,078 - __main__ - INFO - Request 80d90502-5f95-4d17-b4ad-8d88a581dc01: Checking with ML API
+2025-11-27 14:18:28,079 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/bee_1.png HTTP/1.1" 200 -
+2025-11-27 14:18:28,080 - __main__ - INFO - Request 7d348166-e694-4cb8-bcc6-f95c91064f8c: GET /fonts/architectsdaughter.ttf
+2025-11-27 14:18:28,082 - __main__ - INFO - Request 6937de6b-f418-4fa8-a242-1d3db00412b0: Checking with ML API
+2025-11-27 14:18:28,083 - __main__ - INFO - Request 7d348166-e694-4cb8-bcc6-f95c91064f8c: Checking with ModSecurity
+2025-11-27 14:18:28,085 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/bg_3.jpg HTTP/1.1" 200 -
+2025-11-27 14:18:28,085 - __main__ - INFO - Request 739ac83d-6c3a-4b4c-abcd-3ac5e4ac6df2: GET /images/sb_1.jpg
+2025-11-27 14:18:28,089 - __main__ - INFO - Request 739ac83d-6c3a-4b4c-abcd-3ac5e4ac6df2: Checking with ModSecurity
+2025-11-27 14:18:28,087 - __main__ - INFO - Request 96df46be-35c2-4c39-85e8-94ec6a903605: Checking with ML API
+2025-11-27 14:18:28,088 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/bg_1.jpg HTTP/1.1" 200 -
+2025-11-27 14:18:28,085 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/cc.png HTTP/1.1" 200 -
+2025-11-27 14:18:28,097 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/bg_2.jpg HTTP/1.1" 200 -
+2025-11-27 14:18:28,098 - __main__ - INFO - Request 7d348166-e694-4cb8-bcc6-f95c91064f8c: Checking with ML API
+2025-11-27 14:18:28,099 - __main__ - INFO - ML API checking payload: /fonts/architectsdaughter.ttf...
+2025-11-27 14:18:28,101 - __main__ - INFO - Request 739ac83d-6c3a-4b4c-abcd-3ac5e4ac6df2: Checking with ML API
+2025-11-27 14:18:28,105 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/sb_1.jpg HTTP/1.1" 200 -
+2025-11-27 14:18:28,120 - __main__ - INFO - ML API result: malicious=False, confidence=0.9969663023948669
+2025-11-27 14:18:28,127 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /fonts/architectsdaughter.ttf HTTP/1.1" 200 -
+2025-11-27 14:18:28,193 - __main__ - INFO - Request 20266fbe-ce61-48b9-a526-deced29b5d4c: GET /images/favicon.ico
+2025-11-27 14:18:28,193 - __main__ - INFO - Request 20266fbe-ce61-48b9-a526-deced29b5d4c: Checking with ModSecurity
+2025-11-27 14:18:28,198 - __main__ - INFO - Request 20266fbe-ce61-48b9-a526-deced29b5d4c: Checking with ML API
+2025-11-27 14:18:28,198 - __main__ - INFO - ML API checking payload: /images/favicon.ico...
+2025-11-27 14:18:28,201 - __main__ - INFO - ML API result: malicious=False, confidence=0.9969663023948669
+2025-11-27 14:18:28,202 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:28] "GET /images/favicon.ico HTTP/1.1" 200 -
+2025-11-27 14:18:31,261 - __main__ - INFO - Request 8d63d2f8-a721-47d6-87e1-a9fac29e8702: GET /install.php
+2025-11-27 14:18:31,262 - __main__ - INFO - Request 8d63d2f8-a721-47d6-87e1-a9fac29e8702: Checking with ModSecurity
+2025-11-27 14:18:31,383 - __main__ - INFO - Request 8d63d2f8-a721-47d6-87e1-a9fac29e8702: Checking with ML API
+2025-11-27 14:18:31,388 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:31] "GET /install.php?install=yes HTTP/1.1" 200 -
+2025-11-27 14:18:34,936 - __main__ - INFO - Request de0abca1-5432-4da6-95ee-114562d95204: GET /login.php
+2025-11-27 14:18:34,936 - __main__ - INFO - Request de0abca1-5432-4da6-95ee-114562d95204: Checking with ModSecurity
+2025-11-27 14:18:34,950 - __main__ - INFO - Request de0abca1-5432-4da6-95ee-114562d95204: Checking with ML API
+2025-11-27 14:18:34,974 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:34] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:18:34,997 - __main__ - INFO - Request edac7145-a0d1-4474-87b2-978c05f6a526: GET /images/owasp.png
+2025-11-27 14:18:34,998 - __main__ - INFO - Request edac7145-a0d1-4474-87b2-978c05f6a526: Checking with ModSecurity
+2025-11-27 14:18:34,998 - __main__ - INFO - Request 2e66dcf9-4105-4883-8813-9029289c4113: GET /images/zap.png
+2025-11-27 14:18:35,000 - __main__ - INFO - Request 2e66dcf9-4105-4883-8813-9029289c4113: Checking with ModSecurity
+2025-11-27 14:18:35,006 - __main__ - INFO - Request edac7145-a0d1-4474-87b2-978c05f6a526: Checking with ML API
+2025-11-27 14:18:35,007 - __main__ - INFO - Request 2e66dcf9-4105-4883-8813-9029289c4113: Checking with ML API
+2025-11-27 14:18:35,009 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:35] "GET /images/zap.png HTTP/1.1" 200 -
+2025-11-27 14:18:35,009 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:35] "GET /images/owasp.png HTTP/1.1" 200 -
+2025-11-27 14:18:35,022 - __main__ - INFO - Request fc6ef301-bd05-4c16-87ac-8c4c00364a85: GET /images/netsparker.png
+2025-11-27 14:18:35,022 - __main__ - INFO - Request 31f64c1a-30e4-4f8c-99a3-1b838381c2a3: GET /images/mk.png
+2025-11-27 14:18:35,022 - __main__ - INFO - Request fc6ef301-bd05-4c16-87ac-8c4c00364a85: Checking with ModSecurity
+2025-11-27 14:18:35,023 - __main__ - INFO - Request b43b1d9c-0e6e-46be-bc04-e15819d9557d: GET /images/mme.png
+2025-11-27 14:18:35,025 - __main__ - INFO - Request b43b1d9c-0e6e-46be-bc04-e15819d9557d: Checking with ModSecurity
+2025-11-27 14:18:35,024 - __main__ - INFO - Request 176171d7-9e70-427d-a041-91fe1f1bf054: GET /images/netsparker.gif
+2025-11-27 14:18:35,027 - __main__ - INFO - Request 176171d7-9e70-427d-a041-91fe1f1bf054: Checking with ModSecurity
+2025-11-27 14:18:35,023 - __main__ - INFO - Request 31f64c1a-30e4-4f8c-99a3-1b838381c2a3: Checking with ModSecurity
+2025-11-27 14:18:35,034 - __main__ - INFO - Request b43b1d9c-0e6e-46be-bc04-e15819d9557d: Checking with ML API
+2025-11-27 14:18:35,037 - __main__ - INFO - Request fc6ef301-bd05-4c16-87ac-8c4c00364a85: Checking with ML API
+2025-11-27 14:18:35,040 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:35] "GET /images/mme.png HTTP/1.1" 200 -
+2025-11-27 14:18:35,042 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:35] "GET /images/netsparker.png HTTP/1.1" 200 -
+2025-11-27 14:18:35,044 - __main__ - INFO - Request 176171d7-9e70-427d-a041-91fe1f1bf054: Checking with ML API
+2025-11-27 14:18:35,047 - __main__ - INFO - Request 31f64c1a-30e4-4f8c-99a3-1b838381c2a3: Checking with ML API
+2025-11-27 14:18:35,055 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:35] "GET /images/netsparker.gif HTTP/1.1" 200 -
+2025-11-27 14:18:35,057 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:35] "GET /images/mk.png HTTP/1.1" 200 -
+2025-11-27 14:18:37,144 - __main__ - INFO - Request 365489c2-4752-45f9-bd0c-c9d801359334: GET /login.php
+2025-11-27 14:18:37,145 - __main__ - INFO - Request 365489c2-4752-45f9-bd0c-c9d801359334: Checking with ModSecurity
+2025-11-27 14:18:37,159 - __main__ - INFO - Request 365489c2-4752-45f9-bd0c-c9d801359334: Checking with ML API
+2025-11-27 14:18:37,165 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:18:37] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:22:26,901 - __main__ - INFO - Request 70dc7c54-ebb0-40c0-9765-149130bcf630: POST /login.php
+2025-11-27 14:22:26,903 - __main__ - INFO - Request 70dc7c54-ebb0-40c0-9765-149130bcf630: Checking with ModSecurity
+2025-11-27 14:22:26,925 - __main__ - WARNING - Request 70dc7c54-ebb0-40c0-9765-149130bcf630: BLOCKED by WAF
+2025-11-27 14:22:26,932 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:22:26] "[35m[1mPOST /login.php HTTP/1.1[0m" 500 -
+2025-11-27 14:22:26,960 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:22:26] "GET /login.php?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-27 14:22:26,961 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:22:26] "GET /login.php?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-27 14:22:27,014 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:22:27] "GET /login.php?__debugger__=yes&cmd=resource&f=console.png&s=83Vd52PZCaoJLmsc4AQy HTTP/1.1" 200 -
+2025-11-27 14:22:27,091 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:22:27] "GET /login.php?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-27 14:23:29,063 - __main__ - INFO - Request 6ee18578-5d58-487a-afb5-59b6209f2674: GET /login.php
+2025-11-27 14:23:29,064 - __main__ - INFO - Request 6ee18578-5d58-487a-afb5-59b6209f2674: Checking with ModSecurity
+2025-11-27 14:23:29,087 - __main__ - INFO - Request 6ee18578-5d58-487a-afb5-59b6209f2674: Checking with ML API
+2025-11-27 14:23:29,096 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:23:29] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:23:51,915 - __main__ - INFO - Request 5a3ca350-dff9-43d0-ba6b-2c17bc34b726: POST /login.php
+2025-11-27 14:23:51,915 - __main__ - INFO - Request 5a3ca350-dff9-43d0-ba6b-2c17bc34b726: Checking with ModSecurity
+2025-11-27 14:23:51,928 - __main__ - WARNING - Request 5a3ca350-dff9-43d0-ba6b-2c17bc34b726: BLOCKED by WAF
+2025-11-27 14:23:51,931 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:23:51] "[35m[1mPOST /login.php HTTP/1.1[0m" 500 -
+2025-11-27 14:23:51,955 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:23:51] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-27 14:23:51,956 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:23:51] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-27 14:23:51,996 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:23:51] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=console.png&s=83Vd52PZCaoJLmsc4AQy HTTP/1.1[0m" 304 -
+2025-11-27 14:23:52,052 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:23:52] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-27 14:24:12,811 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:24:12,811 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:24:12,928 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.11:8000
+2025-11-27 14:24:12,928 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:24:12,929 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:24:13,190 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:24:13,191 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:24:13,197 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:24:13,198 - werkzeug - INFO -  * Debugger PIN: 281-594-372
+2025-11-27 14:32:10,745 - __main__ - INFO - Request e33b4b9b-b916-42fc-9d55-57c9bd000500: GET /login.php
+2025-11-27 14:32:10,747 - __main__ - INFO - Request e33b4b9b-b916-42fc-9d55-57c9bd000500: Checking with ModSecurity
+2025-11-27 14:32:10,747 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:32:10,747 - __main__ - INFO - Request e33b4b9b-b916-42fc-9d55-57c9bd000500: Checking with ML API
+2025-11-27 14:32:10,832 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:32:10] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:32:12,383 - __main__ - INFO - Request 65f144ea-5e8c-4818-ad34-8ef9e42da971: GET /login.php
+2025-11-27 14:32:12,383 - __main__ - INFO - Request 65f144ea-5e8c-4818-ad34-8ef9e42da971: Checking with ModSecurity
+2025-11-27 14:32:12,383 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:32:12,384 - __main__ - INFO - Request 65f144ea-5e8c-4818-ad34-8ef9e42da971: Checking with ML API
+2025-11-27 14:32:12,424 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:32:12] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:32:18,410 - __main__ - INFO - Request 74dc39b7-2d28-47f0-83e6-35d9bd34ec6a: GET /install.php
+2025-11-27 14:32:18,411 - __main__ - INFO - Request 74dc39b7-2d28-47f0-83e6-35d9bd34ec6a: Checking with ModSecurity
+2025-11-27 14:32:18,411 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:32:18,411 - __main__ - INFO - Request 74dc39b7-2d28-47f0-83e6-35d9bd34ec6a: Checking with ML API
+2025-11-27 14:32:18,527 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:32:18] "GET /install.php HTTP/1.1" 200 -
+2025-11-27 14:32:21,032 - __main__ - INFO - Request 77a6cb96-9e33-4203-b6b4-5b8f17c26529: GET /install.php
+2025-11-27 14:32:21,033 - __main__ - INFO - Request 77a6cb96-9e33-4203-b6b4-5b8f17c26529: Checking with ModSecurity
+2025-11-27 14:32:21,033 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:32:21,033 - __main__ - INFO - Request 77a6cb96-9e33-4203-b6b4-5b8f17c26529: Checking with ML API
+2025-11-27 14:32:21,248 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:32:21] "GET /install.php?install=yes HTTP/1.1" 200 -
+2025-11-27 14:32:26,525 - __main__ - INFO - Request 69dcdcb5-be71-40a7-921e-8848a61a7f20: GET /login.php
+2025-11-27 14:32:26,526 - __main__ - INFO - Request 69dcdcb5-be71-40a7-921e-8848a61a7f20: Checking with ModSecurity
+2025-11-27 14:32:26,526 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:32:26,527 - __main__ - INFO - Request 69dcdcb5-be71-40a7-921e-8848a61a7f20: Checking with ML API
+2025-11-27 14:32:26,624 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:32:26] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:32:39,907 - __main__ - INFO - Request b38cd372-6929-4a33-876c-3f2e7116e482: POST /login.php
+2025-11-27 14:32:39,908 - __main__ - INFO - Request b38cd372-6929-4a33-876c-3f2e7116e482: Checking with ModSecurity
+2025-11-27 14:32:39,909 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:32:39,909 - __main__ - INFO - Request b38cd372-6929-4a33-876c-3f2e7116e482: Checking with ML API
+2025-11-27 14:32:39,909 - __main__ - INFO - ML API checking payload: admin alert(Hello) 0 submit...
+2025-11-27 14:32:39,909 - __main__ - ERROR - ML detection error: 'Request' object has no attribute 'post'
+2025-11-27 14:32:39,943 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:32:39] "POST /login.php HTTP/1.1" 200 -
+2025-11-27 14:33:16,276 - __main__ - INFO - Request 45f1dee3-0ac1-4744-bd25-5e9d8329362e: POST /login.php
+2025-11-27 14:33:16,278 - __main__ - INFO - Request 45f1dee3-0ac1-4744-bd25-5e9d8329362e: Checking with ModSecurity
+2025-11-27 14:33:16,279 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:33:16,279 - __main__ - INFO - Request 45f1dee3-0ac1-4744-bd25-5e9d8329362e: Checking with ML API
+2025-11-27 14:33:16,279 - __main__ - INFO - ML API checking payload: admin <img src=x:alert(alt) onerror=eval(src) alt=1> 0 submit...
+2025-11-27 14:33:16,279 - __main__ - ERROR - ML detection error: 'Request' object has no attribute 'post'
+2025-11-27 14:33:16,307 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:33:16] "POST /login.php HTTP/1.1" 200 -
+2025-11-27 14:33:51,337 - __main__ - INFO - Request 457250be-dd90-45b1-ba9f-268dab839587: POST /login.php
+2025-11-27 14:33:51,338 - __main__ - INFO - Request 457250be-dd90-45b1-ba9f-268dab839587: Checking with ModSecurity
+2025-11-27 14:33:51,338 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:33:51,338 - __main__ - INFO - Request 457250be-dd90-45b1-ba9f-268dab839587: Checking with ML API
+2025-11-27 14:33:51,338 - __main__ - INFO - ML API checking payload: admin ''TRUE=TRUEOR 0 submit...
+2025-11-27 14:33:51,338 - __main__ - ERROR - ML detection error: 'Request' object has no attribute 'post'
+2025-11-27 14:33:51,366 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:33:51] "POST /login.php HTTP/1.1" 200 -
+2025-11-27 14:34:30,976 - __main__ - INFO - Request a6f74fc3-ee4b-4d26-82b0-06b6f23a5077: POST /login.php
+2025-11-27 14:34:30,978 - __main__ - INFO - Request a6f74fc3-ee4b-4d26-82b0-06b6f23a5077: Checking with ModSecurity
+2025-11-27 14:34:30,978 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:34:30,978 - __main__ - INFO - Request a6f74fc3-ee4b-4d26-82b0-06b6f23a5077: Checking with ML API
+2025-11-27 14:34:30,978 - __main__ - INFO - ML API checking payload: admin %3Cscript%3Ealert(1)%3C%2Fscript%3E 0 submit...
+2025-11-27 14:34:30,979 - __main__ - ERROR - ML detection error: 'Request' object has no attribute 'post'
+2025-11-27 14:34:31,030 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:34:31] "POST /login.php HTTP/1.1" 200 -
+2025-11-27 14:36:56,146 - __main__ - INFO - Request 878dc6cd-2594-432d-9a34-08bbc9b8140c: GET /bwapp/xss_reflected_1.php
+2025-11-27 14:36:56,146 - __main__ - INFO - Request 878dc6cd-2594-432d-9a34-08bbc9b8140c: Checking with ModSecurity
+2025-11-27 14:36:56,147 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:36:56,147 - __main__ - INFO - Request 878dc6cd-2594-432d-9a34-08bbc9b8140c: Checking with ML API
+2025-11-27 14:36:56,154 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:36:56] "[33mGET /bwapp/xss_reflected_1.php HTTP/1.1[0m" 404 -
+2025-11-27 14:37:00,612 - __main__ - INFO - Request 06127668-da56-4402-91ba-b8649e0ed5eb: GET /xss_reflected_1.php
+2025-11-27 14:37:00,612 - __main__ - INFO - Request 06127668-da56-4402-91ba-b8649e0ed5eb: Checking with ModSecurity
+2025-11-27 14:37:00,613 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:37:00,613 - __main__ - INFO - Request 06127668-da56-4402-91ba-b8649e0ed5eb: Checking with ML API
+2025-11-27 14:37:00,624 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:37:00] "[33mGET /xss_reflected_1.php HTTP/1.1[0m" 404 -
+2025-11-27 14:37:14,173 - __main__ - INFO - Request 16eeb82e-fc70-419e-b3e4-c7d57d17c221: GET /bWAPP/xss_reflected_1.php
+2025-11-27 14:37:14,174 - __main__ - INFO - Request 16eeb82e-fc70-419e-b3e4-c7d57d17c221: Checking with ModSecurity
+2025-11-27 14:37:14,174 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:37:14,174 - __main__ - INFO - Request 16eeb82e-fc70-419e-b3e4-c7d57d17c221: Checking with ML API
+2025-11-27 14:37:14,178 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:37:14] "[33mGET /bWAPP/xss_reflected_1.php HTTP/1.1[0m" 404 -
+2025-11-27 14:37:31,469 - __main__ - INFO - Request d1ff988e-efdd-4803-9e60-6c864ad11cb5: POST /login.php
+2025-11-27 14:37:31,470 - __main__ - INFO - Request d1ff988e-efdd-4803-9e60-6c864ad11cb5: Checking with ModSecurity
+2025-11-27 14:37:31,470 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:37:31,471 - __main__ - INFO - Request d1ff988e-efdd-4803-9e60-6c864ad11cb5: Checking with ML API
+2025-11-27 14:37:31,471 - __main__ - INFO - ML API checking payload: admin ''TRUE=TRUEOR 0 submit...
+2025-11-27 14:37:31,471 - __main__ - ERROR - ML detection error: 'Request' object has no attribute 'post'
+2025-11-27 14:37:31,484 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:37:31] "POST /login.php HTTP/1.1" 200 -
+2025-11-27 14:37:39,911 - __main__ - INFO - Request 045914df-b06a-4670-988f-534cb6c7567a: POST /login.php
+2025-11-27 14:37:39,911 - __main__ - INFO - Request 045914df-b06a-4670-988f-534cb6c7567a: Checking with ModSecurity
+2025-11-27 14:37:39,912 - __main__ - ERROR - ModSecurity check error: 'Request' object has no attribute 'request'
+2025-11-27 14:37:39,912 - __main__ - INFO - Request 045914df-b06a-4670-988f-534cb6c7567a: Checking with ML API
+2025-11-27 14:37:39,912 - __main__ - INFO - ML API checking payload: joe "><script>alert(1)</script> 0 submit...
+2025-11-27 14:37:39,912 - __main__ - ERROR - ML detection error: 'Request' object has no attribute 'post'
+2025-11-27 14:37:39,925 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:37:39] "POST /login.php HTTP/1.1" 200 -
+2025-11-27 14:40:32,939 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:40:32,940 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:40:32,959 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.11:8000
+2025-11-27 14:40:32,960 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:40:32,960 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:40:33,323 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:40:33,324 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:40:33,331 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:40:33,334 - werkzeug - INFO -  * Debugger PIN: 116-360-508
+2025-11-27 14:43:54,066 - __main__ - INFO - Request e2d58a06-4895-4272-bf45-2508b7b103b4: GET /install.php
+2025-11-27 14:43:54,067 - __main__ - INFO - Request e2d58a06-4895-4272-bf45-2508b7b103b4: Checking with ModSecurity
+2025-11-27 14:43:54,126 - __main__ - INFO - Request e2d58a06-4895-4272-bf45-2508b7b103b4: Checking with ML API
+2025-11-27 14:43:54,163 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:43:54] "GET /install.php HTTP/1.1" 200 -
+2025-11-27 14:43:56,340 - __main__ - INFO - Request f73d1e80-ac25-4fea-8e28-b221e1f41115: GET /install.php
+2025-11-27 14:43:56,341 - __main__ - INFO - Request f73d1e80-ac25-4fea-8e28-b221e1f41115: Checking with ModSecurity
+2025-11-27 14:43:56,483 - __main__ - INFO - Request f73d1e80-ac25-4fea-8e28-b221e1f41115: Checking with ML API
+2025-11-27 14:43:56,575 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:43:56] "GET /install.php?install=yes HTTP/1.1" 200 -
+2025-11-27 14:43:58,876 - __main__ - INFO - Request c9ec79e2-6d38-463c-bf87-7ebcd2b2153f: GET /login.php
+2025-11-27 14:43:58,877 - __main__ - INFO - Request c9ec79e2-6d38-463c-bf87-7ebcd2b2153f: Checking with ModSecurity
+2025-11-27 14:43:58,889 - __main__ - INFO - Request c9ec79e2-6d38-463c-bf87-7ebcd2b2153f: Checking with ML API
+2025-11-27 14:43:58,914 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:43:58] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:44:15,234 - __main__ - INFO - Request 9e7b7069-52c2-4aa8-8503-29b7f1cd66d4: POST /login.php
+2025-11-27 14:44:15,235 - __main__ - INFO - Request 9e7b7069-52c2-4aa8-8503-29b7f1cd66d4: Checking with ModSecurity
+2025-11-27 14:44:15,246 - __main__ - WARNING - Request 9e7b7069-52c2-4aa8-8503-29b7f1cd66d4: BLOCKED by WAF
+2025-11-27 14:44:15,251 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:44:15] "[35m[1mPOST /login.php HTTP/1.1[0m" 500 -
+2025-11-27 14:44:15,284 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:44:15] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-27 14:44:15,284 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:44:15] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-27 14:44:15,315 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:44:15] "GET /login.php?__debugger__=yes&cmd=resource&f=console.png&s=9CwViPhdL2Mrz8qdfJXK HTTP/1.1" 200 -
+2025-11-27 14:44:15,378 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:44:15] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-27 14:50:50,408 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:50:50,409 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:50:50,426 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.11:8000
+2025-11-27 14:50:50,426 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:50:50,426 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:50:50,723 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:50:50,724 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:50:50,735 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:50:50,736 - werkzeug - INFO -  * Debugger PIN: 371-649-540
+2025-11-27 14:50:59,195 - __main__ - INFO - Request 63c0eca1-3e70-4b53-b59c-0167a0e8cb0e: GET /install.php
+2025-11-27 14:50:59,198 - __main__ - INFO - Request 63c0eca1-3e70-4b53-b59c-0167a0e8cb0e: Checking with ModSecurity
+2025-11-27 14:50:59,225 - __main__ - INFO - Request 63c0eca1-3e70-4b53-b59c-0167a0e8cb0e: Checking with ML API
+2025-11-27 14:50:59,227 - __main__ - ERROR - Error forwarding to bWAPP: HTTPConnectionPool(host='bwapp', port=80): Max retries exceeded with url: /install.php (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffaa931990>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-27 14:50:59,227 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:50:59] "[35m[1mGET /install.php HTTP/1.1[0m" 502 -
+2025-11-27 14:51:04,098 - __main__ - INFO - Request a5e68393-70db-4109-8941-69c7ff41b12b: GET /install.php
+2025-11-27 14:51:04,099 - __main__ - INFO - Request a5e68393-70db-4109-8941-69c7ff41b12b: Checking with ModSecurity
+2025-11-27 14:51:04,104 - __main__ - INFO - Request a5e68393-70db-4109-8941-69c7ff41b12b: Checking with ML API
+2025-11-27 14:51:04,105 - __main__ - ERROR - Error forwarding to bWAPP: HTTPConnectionPool(host='bwapp', port=80): Max retries exceeded with url: /install.php (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffaa923710>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-27 14:51:04,106 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:51:04] "[35m[1mGET /install.php HTTP/1.1[0m" 502 -
+2025-11-27 14:51:35,958 - __main__ - INFO - Request 40323397-2cc6-4157-aeb8-137e7788df41: GET /install.php
+2025-11-27 14:51:35,959 - __main__ - INFO - Request 40323397-2cc6-4157-aeb8-137e7788df41: Checking with ModSecurity
+2025-11-27 14:51:36,008 - __main__ - INFO - Request 40323397-2cc6-4157-aeb8-137e7788df41: Checking with ML API
+2025-11-27 14:51:36,093 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:51:36] "GET /install.php HTTP/1.1" 200 -
+2025-11-27 14:51:37,567 - __main__ - INFO - Request cf8d8337-58ee-43fc-a667-9cc67bb2addc: GET /install.php
+2025-11-27 14:51:37,568 - __main__ - INFO - Request cf8d8337-58ee-43fc-a667-9cc67bb2addc: Checking with ModSecurity
+2025-11-27 14:51:37,813 - __main__ - INFO - Request cf8d8337-58ee-43fc-a667-9cc67bb2addc: Checking with ML API
+2025-11-27 14:51:37,896 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:51:37] "GET /install.php?install=yes HTTP/1.1" 200 -
+2025-11-27 14:51:38,772 - __main__ - INFO - Request b4b09642-50e2-43c0-8882-83017fbc70a9: GET /login.php
+2025-11-27 14:51:38,773 - __main__ - INFO - Request b4b09642-50e2-43c0-8882-83017fbc70a9: Checking with ModSecurity
+2025-11-27 14:51:38,795 - __main__ - INFO - Request b4b09642-50e2-43c0-8882-83017fbc70a9: Checking with ML API
+2025-11-27 14:51:38,891 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:51:38] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:51:50,744 - __main__ - INFO - Request 67cb1ee8-8f6a-4855-90d5-d609a489d638: POST /login.php
+2025-11-27 14:51:50,745 - __main__ - INFO - Request 67cb1ee8-8f6a-4855-90d5-d609a489d638: Checking with ModSecurity
+2025-11-27 14:51:50,753 - __main__ - WARNING - Request 67cb1ee8-8f6a-4855-90d5-d609a489d638: BLOCKED by WAF
+2025-11-27 14:51:50,759 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:51:50] "[35m[1mPOST /login.php HTTP/1.1[0m" 500 -
+2025-11-27 14:51:50,780 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:51:50] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-27 14:51:50,780 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:51:50] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-27 14:51:50,817 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:51:50] "GET /login.php?__debugger__=yes&cmd=resource&f=console.png&s=sMgPsefsw8oeQPMDKxhk HTTP/1.1" 200 -
+2025-11-27 14:51:50,888 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:51:50] "[36mGET /login.php?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-27 14:52:36,601 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:52:36,601 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:52:36,621 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.21.0.11:8000
+2025-11-27 14:52:36,621 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:52:36,621 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:52:36,983 - __main__ - INFO - Gateway connected to Elasticsearch
+2025-11-27 14:52:36,984 - __main__ - INFO - Gateway connected to Neo4j
+2025-11-27 14:52:36,993 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:52:36,995 - werkzeug - INFO -  * Debugger PIN: 883-973-641
+2025-11-27 14:52:38,852 - __main__ - INFO - Request 605c055c-dc87-4423-a9a9-c928537e9f98: GET /login.php
+2025-11-27 14:52:38,852 - __main__ - INFO - Request 605c055c-dc87-4423-a9a9-c928537e9f98: Checking with ModSecurity
+2025-11-27 14:52:38,865 - __main__ - INFO - Request 605c055c-dc87-4423-a9a9-c928537e9f98: Checking with ML API
+2025-11-27 14:52:38,867 - __main__ - ERROR - Error forwarding to bWAPP: HTTPConnectionPool(host='bwapp', port=80): Max retries exceeded with url: /login.php (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffac231350>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-27 14:52:38,868 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:52:38] "[35m[1mGET /login.php HTTP/1.1[0m" 502 -
+2025-11-27 14:52:40,387 - __main__ - INFO - Request 693a0a0e-516c-42d8-8ac6-2740d16f748e: GET /install.php
+2025-11-27 14:52:40,388 - __main__ - INFO - Request 693a0a0e-516c-42d8-8ac6-2740d16f748e: Checking with ModSecurity
+2025-11-27 14:52:40,395 - __main__ - INFO - Request 693a0a0e-516c-42d8-8ac6-2740d16f748e: Checking with ML API
+2025-11-27 14:52:40,397 - __main__ - ERROR - Error forwarding to bWAPP: HTTPConnectionPool(host='bwapp', port=80): Max retries exceeded with url: /install.php?install=yes (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffac213750>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-27 14:52:40,397 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:52:40] "[35m[1mGET /install.php?install=yes HTTP/1.1[0m" 502 -
+2025-11-27 14:52:41,846 - __main__ - INFO - Request 20cf1180-882a-467d-8cab-6c6a9dbf9678: GET /install.php
+2025-11-27 14:52:41,846 - __main__ - INFO - Request 20cf1180-882a-467d-8cab-6c6a9dbf9678: Checking with ModSecurity
+2025-11-27 14:52:41,851 - __main__ - INFO - Request 20cf1180-882a-467d-8cab-6c6a9dbf9678: Checking with ML API
+2025-11-27 14:52:41,852 - __main__ - ERROR - Error forwarding to bWAPP: HTTPConnectionPool(host='bwapp', port=80): Max retries exceeded with url: /install.php?install=yes (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffac244c50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-27 14:52:41,853 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:52:41] "[35m[1mGET /install.php?install=yes HTTP/1.1[0m" 502 -
+2025-11-27 14:54:30,467 - __main__ - INFO - Request bb022657-d416-4319-9680-56493dd8f1ae: GET /install.php
+2025-11-27 14:54:30,468 - __main__ - INFO - Request bb022657-d416-4319-9680-56493dd8f1ae: Checking with ModSecurity
+2025-11-27 14:54:30,639 - __main__ - INFO - Request bb022657-d416-4319-9680-56493dd8f1ae: Checking with ML API
+2025-11-27 14:54:30,724 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:54:30] "GET /install.php?install=yes HTTP/1.1" 200 -
+2025-11-27 14:54:33,511 - __main__ - INFO - Request 6defb5dc-5f3d-4c5d-992c-a21e60ff23e7: GET /login.php
+2025-11-27 14:54:33,511 - __main__ - INFO - Request 6defb5dc-5f3d-4c5d-992c-a21e60ff23e7: Checking with ModSecurity
+2025-11-27 14:54:33,533 - __main__ - INFO - Request 6defb5dc-5f3d-4c5d-992c-a21e60ff23e7: Checking with ML API
+2025-11-27 14:54:33,619 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:54:33] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:54:39,302 - __main__ - INFO - Request b648b470-4d14-4de7-9b3c-52e751dcfb81: POST /login.php
+2025-11-27 14:54:39,304 - __main__ - INFO - Request b648b470-4d14-4de7-9b3c-52e751dcfb81: Checking with ModSecurity
+2025-11-27 14:54:39,315 - __main__ - WARNING - Request b648b470-4d14-4de7-9b3c-52e751dcfb81: BLOCKED by WAF
+2025-11-27 14:54:39,415 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/blocked-requests-2025.11.27/_doc [status:201 duration:0.099s]
+2025-11-27 14:54:39,416 - __main__ - INFO - Logged to Elasticsearch: b648b470-4d14-4de7-9b3c-52e751dcfb81
+2025-11-27 14:54:39,901 - __main__ - INFO - Logged to Neo4j: b648b470-4d14-4de7-9b3c-52e751dcfb81
+2025-11-27 14:54:39,901 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:54:39] "[31m[1mPOST /login.php HTTP/1.1[0m" 403 -
+2025-11-27 14:58:16,597 - __main__ - INFO - Request 2e4a7e40-4b4d-464a-9a47-4e73ea54a53e: GET /login.php
+2025-11-27 14:58:16,599 - __main__ - INFO - Request 2e4a7e40-4b4d-464a-9a47-4e73ea54a53e: Checking with ModSecurity
+2025-11-27 14:58:16,709 - __main__ - INFO - Request 2e4a7e40-4b4d-464a-9a47-4e73ea54a53e: Checking with ML API
+2025-11-27 14:58:16,808 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:58:16] "GET /login.php HTTP/1.1" 200 -
+2025-11-27 14:58:26,841 - __main__ - INFO - Request 93ce8ad5-043d-4f55-9174-3cf7218aa1b4: POST /login.php
+2025-11-27 14:58:26,842 - __main__ - INFO - Request 93ce8ad5-043d-4f55-9174-3cf7218aa1b4: Checking with ModSecurity
+2025-11-27 14:58:26,854 - __main__ - WARNING - Request 93ce8ad5-043d-4f55-9174-3cf7218aa1b4: BLOCKED by WAF
+2025-11-27 14:58:26,867 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/blocked-requests-2025.11.27/_doc [status:201 duration:0.011s]
+2025-11-27 14:58:26,867 - __main__ - INFO - Logged to Elasticsearch: 93ce8ad5-043d-4f55-9174-3cf7218aa1b4
+2025-11-27 14:58:26,893 - __main__ - INFO - Logged to Neo4j: 93ce8ad5-043d-4f55-9174-3cf7218aa1b4
+2025-11-27 14:58:26,894 - werkzeug - INFO - 192.168.65.1 - - [27/Nov/2025 14:58:26] "[31m[1mPOST /login.php HTTP/1.1[0m" 403 -

@@ -1,0 +1,416 @@
+--4adfb423-A--
+[27/Nov/2025:14:22:26.925051 +0000] aSheogoGp5snQXTi25BP-QAAABc 172.21.0.11 54912 172.21.0.7 80
+--4adfb423-B--
+POST /login.php HTTP/1.1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:8000
+Content-Length: 116
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Origin: http://localhost:8000
+Dnt: 1
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:8000/login.php
+Accept-Language: en-US,en;q=0.9,my;q=0.8
+Cookie: security_level=1; ajs_anonymous_id=b7503d55-e650-4f0d-ad5e-f1ce5aca25d6; username-localhost-8888="2|1:0|10:1762783560|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICJmYWYwYWNlNjNlNmU0YjE0YmQxYjhhODJmYjA4MDBiZiIsICJuYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiaW5pdGlhbHMiOiAiQVQiLCAiY29sb3IiOiBudWxsfQ==|28c0941191888a06e2a59fe874581661ea0e6eaf41eb02086aa66613e94ebce0"; _xsrf=2|fecc86d0|3c2dcf40dd2227581a5a04e33abbfa37|1762783560; AMP_MKTG_8f1ede8e9c=JTdCJTIycmVmZXJyZXIlMjIlM0ElMjJodHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBODAwMCUyRmluc3RhbGwucGhwJTIyJTJDJTIycmVmZXJyaW5nX2RvbWFpbiUyMiUzQSUyMmxvY2FsaG9zdCUzQTgwMDAlMjIlN0Q=; PHPSESSID=hhl2vekjmqabr9ojn48ho3qcp7; AMP_8f1ede8e9c=JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI3NzgyNDRkZi00MjVkLTRkODQtYWZmOC0yZmQxZGI2MmI1ZmIlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjJhMjY0NjA1Yy0xMDAyLTRhMGUtOTJlZS1kNTVkNjkwYWMzNDUlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzY0MTgwODU1NTc3JTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc2NDI1MzExMTQ5NyU3RA==
+
+--4adfb423-C--
+login=admin&password=%3Cimg+src%3Dx%3Aalert%28alt%29+onerror%3Deval%28src%29+alt%3D1%3E&security_level=0&form=submit
+--4adfb423-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 276
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--4adfb423-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.58 (Ubuntu) Server at localhost Port 8000</address>
+</body></html>
+
+--4adfb423-H--
+Message: Warning. Pattern match "(?i)\\b(?:s(?:e(?:t(?:_(?:e(?:xception|rror)_handler|magic_quotes_runtime|include_path)|defaultstub)|ssion_s(?:et_save_handler|tart))|qlite_(?:(?:(?:unbuffered|single|array)_)?query|create_(?:aggregate|function)|p?open|exec)|tr(?:eam_(?:context_create| ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf"] [line "349"] [id "933160"] [msg "PHP Injection Attack: High-Risk PHP Function Call Found"] [data "Matched Data: eval(src) found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-php"] [tag "platform-multi"] [tag "attack-injection-php"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?:(?:_(?:\\$\\$ND_FUNC\\$\\$_|_js_function)|(?:new\\s+Function|\\beval)\\s*\\(|String\\s*\\.\\s*fromCharCode|function\\s*\\(\\s*\\)\\s*{|this\\.constructor)|module\\.exports\\s*=)" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-934-APPLICATION-ATTACK-NODEJS.conf"] [line "70"] [id "934100"] [msg "Node.js Injection Attack"] [data "Matched Data: eval( found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-javascript"] [tag "platform-multi"] [tag "attack-rce"] [tag "attack-injection-nodejs"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i)[\\s\"'`;\\/0-9=\\x0B\\x09\\x0C\\x3B\\x2C\\x28\\x3B]on[a-zA-Z]+[\\s\\x0B\\x09\\x0C\\x3B\\x2C\\x28\\x3B]*?=" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "109"] [id "941120"] [msg "XSS Filter - Category 2: Event Handler Vector"] [data "Matched Data:  onerror= found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i:(?:<\\w[\\s\\S]*[\\s\\/]|['\"](?:[\\s\\S]*[\\s\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <img src=x:alert(alt) onerror= found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 25)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"]
+Message: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 25 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=5,PHPI=5,HTTP=0,SESS=0): individual paranoia level scores: 25, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i)\\\\\\\\b(?:s(?:e(?:t(?:_(?:e(?:xception|rror)_handler|magic_quotes_runtime|include_path)|defaultstub)|ssion_s(?:et_save_handler|tart))|qlite_(?:(?:(?:unbuffered|single|array)_)?query|create_(?:aggregate|function)|p?open|exec)|tr(?:eam_(?:context_create| ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf"] [line "349"] [id "933160"] [msg "PHP Injection Attack: High-Risk PHP Function Call Found"] [data "Matched Data: eval(src) found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-php"] [tag "platform-multi"] [tag "attack-injection-php"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aSheogoGp5snQXTi25BP-QAAABc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?:(?:_(?:\\\\\\\\$\\\\\\\\$ND_FUNC\\\\\\\\$\\\\\\\\$_|_js_function)|(?:new\\\\\\\\s+Function|\\\\\\\\beval)\\\\\\\\s*\\\\\\\\(|String\\\\\\\\s*\\\\\\\\.\\\\\\\\s*fromCharCode|function\\\\\\\\s*\\\\\\\\(\\\\\\\\s*\\\\\\\\)\\\\\\\\s*{|this\\\\\\\\.constructor)|module\\\\\\\\.exports\\\\\\\\s*=)" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-934-APPLICATION-ATTACK-NODEJS.conf"] [line "70"] [id "934100"] [msg "Node.js Injection Attack"] [data "Matched Data: eval( found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-javascript"] [tag "platform-multi"] [tag "attack-rce"] [tag "attack-injection-nodejs"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aSheogoGp5snQXTi25BP-QAAABc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aSheogoGp5snQXTi25BP-QAAABc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i)[\\\\\\\\s\\\\"'`;\\\\\\\\/0-9=\\\\\\\\x0B\\\\\\\\x09\\\\\\\\x0C\\\\\\\\x3B\\\\\\\\x2C\\\\\\\\x28\\\\\\\\x3B]on[a-zA-Z]+[\\\\\\\\s\\\\\\\\x0B\\\\\\\\x09\\\\\\\\x0C\\\\\\\\x3B\\\\\\\\x2C\\\\\\\\x28\\\\\\\\x3B]*?=" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "109"] [id "941120"] [msg "XSS Filter - Category 2: Event Handler Vector"] [data "Matched Data:  onerror= found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aSheogoGp5snQXTi25BP-QAAABc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i:(?:<\\\\\\\\w[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/]|['\\\\"](?:[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <img src=x:alert(alt) onerror= found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aSheogoGp5snQXTi25BP-QAAABc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 25)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"] [hostname "localhost"] [uri "/login.php"] [unique_id "aSheogoGp5snQXTi25BP-QAAABc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 25 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=5,PHPI=5,HTTP=0,SESS=0): individual paranoia level scores: 25, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"] [hostname "localhost"] [uri "/login.php"] [unique_id "aSheogoGp5snQXTi25BP-QAAABc"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1764253346908083 18644 (- - -)
+Stopwatch2: 1764253346908083 18644; combined=10428, p1=2737, p2=7448, p3=0, p4=0, p5=243, sr=435, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.9.7 (http://www.modsecurity.org/); OWASP_CRS/3.3.5.
+Server: Apache/2.4.58 (Ubuntu)
+Engine-Mode: "ENABLED"
+
+--4adfb423-Z--
+
+--6a2c3a30-A--
+[27/Nov/2025:14:23:51.929022 +0000] aShe9woGp5snQXTi25BP-gAAABg 172.21.0.11 32924 172.21.0.7 80
+--6a2c3a30-B--
+POST /login.php HTTP/1.1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:8000
+Content-Length: 116
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Origin: http://localhost:8000
+Dnt: 1
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:8000/login.php
+Accept-Language: en-US,en;q=0.9,my;q=0.8
+Cookie: security_level=1; ajs_anonymous_id=b7503d55-e650-4f0d-ad5e-f1ce5aca25d6; username-localhost-8888="2|1:0|10:1762783560|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICJmYWYwYWNlNjNlNmU0YjE0YmQxYjhhODJmYjA4MDBiZiIsICJuYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiaW5pdGlhbHMiOiAiQVQiLCAiY29sb3IiOiBudWxsfQ==|28c0941191888a06e2a59fe874581661ea0e6eaf41eb02086aa66613e94ebce0"; _xsrf=2|fecc86d0|3c2dcf40dd2227581a5a04e33abbfa37|1762783560; AMP_MKTG_8f1ede8e9c=JTdCJTIycmVmZXJyZXIlMjIlM0ElMjJodHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBODAwMCUyRmluc3RhbGwucGhwJTIyJTJDJTIycmVmZXJyaW5nX2RvbWFpbiUyMiUzQSUyMmxvY2FsaG9zdCUzQTgwMDAlMjIlN0Q=; PHPSESSID=hhl2vekjmqabr9ojn48ho3qcp7; AMP_8f1ede8e9c=JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI3NzgyNDRkZi00MjVkLTRkODQtYWZmOC0yZmQxZGI2MmI1ZmIlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjJhMjY0NjA1Yy0xMDAyLTRhMGUtOTJlZS1kNTVkNjkwYWMzNDUlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzY0MTgwODU1NTc3JTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc2NDI1MzExMTQ5NyU3RA==
+
+--6a2c3a30-C--
+login=admin&password=%3Cimg+src%3Dx%3Aalert%28alt%29+onerror%3Deval%28src%29+alt%3D1%3E&security_level=0&form=submit
+--6a2c3a30-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 276
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--6a2c3a30-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.58 (Ubuntu) Server at localhost Port 8000</address>
+</body></html>
+
+--6a2c3a30-H--
+Message: Warning. Pattern match "(?i)\\b(?:s(?:e(?:t(?:_(?:e(?:xception|rror)_handler|magic_quotes_runtime|include_path)|defaultstub)|ssion_s(?:et_save_handler|tart))|qlite_(?:(?:(?:unbuffered|single|array)_)?query|create_(?:aggregate|function)|p?open|exec)|tr(?:eam_(?:context_create| ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf"] [line "349"] [id "933160"] [msg "PHP Injection Attack: High-Risk PHP Function Call Found"] [data "Matched Data: eval(src) found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-php"] [tag "platform-multi"] [tag "attack-injection-php"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?:(?:_(?:\\$\\$ND_FUNC\\$\\$_|_js_function)|(?:new\\s+Function|\\beval)\\s*\\(|String\\s*\\.\\s*fromCharCode|function\\s*\\(\\s*\\)\\s*{|this\\.constructor)|module\\.exports\\s*=)" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-934-APPLICATION-ATTACK-NODEJS.conf"] [line "70"] [id "934100"] [msg "Node.js Injection Attack"] [data "Matched Data: eval( found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-javascript"] [tag "platform-multi"] [tag "attack-rce"] [tag "attack-injection-nodejs"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i)[\\s\"'`;\\/0-9=\\x0B\\x09\\x0C\\x3B\\x2C\\x28\\x3B]on[a-zA-Z]+[\\s\\x0B\\x09\\x0C\\x3B\\x2C\\x28\\x3B]*?=" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "109"] [id "941120"] [msg "XSS Filter - Category 2: Event Handler Vector"] [data "Matched Data:  onerror= found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i:(?:<\\w[\\s\\S]*[\\s\\/]|['\"](?:[\\s\\S]*[\\s\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <img src=x:alert(alt) onerror= found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 25)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"]
+Message: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 25 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=5,PHPI=5,HTTP=0,SESS=0): individual paranoia level scores: 25, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i)\\\\\\\\b(?:s(?:e(?:t(?:_(?:e(?:xception|rror)_handler|magic_quotes_runtime|include_path)|defaultstub)|ssion_s(?:et_save_handler|tart))|qlite_(?:(?:(?:unbuffered|single|array)_)?query|create_(?:aggregate|function)|p?open|exec)|tr(?:eam_(?:context_create| ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf"] [line "349"] [id "933160"] [msg "PHP Injection Attack: High-Risk PHP Function Call Found"] [data "Matched Data: eval(src) found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-php"] [tag "platform-multi"] [tag "attack-injection-php"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShe9woGp5snQXTi25BP-gAAABg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?:(?:_(?:\\\\\\\\$\\\\\\\\$ND_FUNC\\\\\\\\$\\\\\\\\$_|_js_function)|(?:new\\\\\\\\s+Function|\\\\\\\\beval)\\\\\\\\s*\\\\\\\\(|String\\\\\\\\s*\\\\\\\\.\\\\\\\\s*fromCharCode|function\\\\\\\\s*\\\\\\\\(\\\\\\\\s*\\\\\\\\)\\\\\\\\s*{|this\\\\\\\\.constructor)|module\\\\\\\\.exports\\\\\\\\s*=)" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-934-APPLICATION-ATTACK-NODEJS.conf"] [line "70"] [id "934100"] [msg "Node.js Injection Attack"] [data "Matched Data: eval( found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-javascript"] [tag "platform-multi"] [tag "attack-rce"] [tag "attack-injection-nodejs"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShe9woGp5snQXTi25BP-gAAABg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShe9woGp5snQXTi25BP-gAAABg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i)[\\\\\\\\s\\\\"'`;\\\\\\\\/0-9=\\\\\\\\x0B\\\\\\\\x09\\\\\\\\x0C\\\\\\\\x3B\\\\\\\\x2C\\\\\\\\x28\\\\\\\\x3B]on[a-zA-Z]+[\\\\\\\\s\\\\\\\\x0B\\\\\\\\x09\\\\\\\\x0C\\\\\\\\x3B\\\\\\\\x2C\\\\\\\\x28\\\\\\\\x3B]*?=" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "109"] [id "941120"] [msg "XSS Filter - Category 2: Event Handler Vector"] [data "Matched Data:  onerror= found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShe9woGp5snQXTi25BP-gAAABg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i:(?:<\\\\\\\\w[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/]|['\\\\"](?:[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <img src=x:alert(alt) onerror= found within ARGS:password: <img src=x:alert(alt) onerror=eval(src) alt=1>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShe9woGp5snQXTi25BP-gAAABg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 25)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShe9woGp5snQXTi25BP-gAAABg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 25 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=5,PHPI=5,HTTP=0,SESS=0): individual paranoia level scores: 25, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShe9woGp5snQXTi25BP-gAAABg"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1764253431917804 12665 (- - -)
+Stopwatch2: 1764253431917804 12665; combined=7645, p1=1872, p2=5556, p3=0, p4=0, p5=217, sr=282, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.9.7 (http://www.modsecurity.org/); OWASP_CRS/3.3.5.
+Server: Apache/2.4.58 (Ubuntu)
+Engine-Mode: "ENABLED"
+
+--6a2c3a30-Z--
+
+--10a34906-A--
+[27/Nov/2025:14:44:15.246475 +0000] aShjv7qHB6uH-nLIzXOy6AAAAAE 172.21.0.11 49552 172.21.0.10 80
+--10a34906-B--
+POST /login.php HTTP/1.1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:8000
+Content-Length: 99
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Origin: http://localhost:8000
+Dnt: 1
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:8000/login.php
+Accept-Language: en-US,en;q=0.9,my;q=0.8
+Cookie: security_level=1; ajs_anonymous_id=b7503d55-e650-4f0d-ad5e-f1ce5aca25d6; username-localhost-8888="2|1:0|10:1762783560|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICJmYWYwYWNlNjNlNmU0YjE0YmQxYjhhODJmYjA4MDBiZiIsICJuYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiaW5pdGlhbHMiOiAiQVQiLCAiY29sb3IiOiBudWxsfQ==|28c0941191888a06e2a59fe874581661ea0e6eaf41eb02086aa66613e94ebce0"; _xsrf=2|fecc86d0|3c2dcf40dd2227581a5a04e33abbfa37|1762783560; AMP_MKTG_8f1ede8e9c=JTdCJTIycmVmZXJyZXIlMjIlM0ElMjJodHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBODAwMCUyRmluc3RhbGwucGhwJTIyJTJDJTIycmVmZXJyaW5nX2RvbWFpbiUyMiUzQSUyMmxvY2FsaG9zdCUzQTgwMDAlMjIlN0Q=; PHPSESSID=hhl2vekjmqabr9ojn48ho3qcp7; AMP_8f1ede8e9c=JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI3NzgyNDRkZi00MjVkLTRkODQtYWZmOC0yZmQxZGI2MmI1ZmIlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjJhMjY0NjA1Yy0xMDAyLTRhMGUtOTJlZS1kNTVkNjkwYWMzNDUlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzY0MTgwODU1NTc3JTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc2NDI1MzExMTQ5NyU3RA==
+
+--10a34906-C--
+login=admin&password=%253Cscript%253Ealert%281%29%253C%252Fscript%253E&security_level=0&form=submit
+--10a34906-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 276
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--10a34906-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.58 (Ubuntu) Server at localhost Port 8000</address>
+</body></html>
+
+--10a34906-H--
+Message: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i)<script[^>]*>[\\s\\S]*?" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "83"] [id "941110"] [msg "XSS Filter - Category 1: Script Tag Vector"] [data "Matched Data: <script> found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i:(?:<\\w[\\s\\S]*[\\s\\/]|['\"](?:[\\s\\S]*[\\s\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <script found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 15)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"]
+Message: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 15 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=0,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 15, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShjv7qHB6uH-nLIzXOy6AAAAAE"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i)<script[^>]*>[\\\\\\\\s\\\\\\\\S]*?" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "83"] [id "941110"] [msg "XSS Filter - Category 1: Script Tag Vector"] [data "Matched Data: <script> found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShjv7qHB6uH-nLIzXOy6AAAAAE"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i:(?:<\\\\\\\\w[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/]|['\\\\"](?:[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <script found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShjv7qHB6uH-nLIzXOy6AAAAAE"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 15)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShjv7qHB6uH-nLIzXOy6AAAAAE"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 15 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=0,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 15, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShjv7qHB6uH-nLIzXOy6AAAAAE"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1764254655238423 10034 (- - -)
+Stopwatch2: 1764254655238423 10034; combined=6659, p1=1040, p2=5388, p3=0, p4=0, p5=230, sr=123, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.9.7 (http://www.modsecurity.org/); OWASP_CRS/3.3.5.
+Server: Apache/2.4.58 (Ubuntu)
+Engine-Mode: "ENABLED"
+
+--10a34906-Z--
+
+--b1e29c70-A--
+[27/Nov/2025:14:51:50.753944 +0000] aShlhtK7aMJ-bRpQ0KT0UQAAAAc 172.21.0.11 46374 172.21.0.7 80
+--b1e29c70-B--
+POST /login.php HTTP/1.1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:8000
+Content-Length: 109
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Origin: http://localhost:8000
+Dnt: 1
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:8000/login.php
+Accept-Language: en-US,en;q=0.9,my;q=0.8
+Cookie: security_level=1; ajs_anonymous_id=b7503d55-e650-4f0d-ad5e-f1ce5aca25d6; username-localhost-8888="2|1:0|10:1762783560|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICJmYWYwYWNlNjNlNmU0YjE0YmQxYjhhODJmYjA4MDBiZiIsICJuYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiaW5pdGlhbHMiOiAiQVQiLCAiY29sb3IiOiBudWxsfQ==|28c0941191888a06e2a59fe874581661ea0e6eaf41eb02086aa66613e94ebce0"; _xsrf=2|fecc86d0|3c2dcf40dd2227581a5a04e33abbfa37|1762783560; PHPSESSID=hhl2vekjmqabr9ojn48ho3qcp7; AMP_MKTG_8f1ede8e9c=JTdCJTdE; AMP_8f1ede8e9c=JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI3NzgyNDRkZi00MjVkLTRkODQtYWZmOC0yZmQxZGI2MmI1ZmIlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjJhMjY0NjA1Yy0xMDAyLTRhMGUtOTJlZS1kNTVkNjkwYWMzNDUlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzY0MjU1MDU5NTcwJTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc2NDI1NTA1OTU3MyU3RA==
+
+--b1e29c70-C--
+login=admin&password=%25u003cscript%25u003ealert%281%29%25u003c%2Fscript%25u003e&security_level=0&form=submit
+--b1e29c70-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 276
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--b1e29c70-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.58 (Ubuntu) Server at localhost Port 8000</address>
+</body></html>
+
+--b1e29c70-H--
+Message: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i)<script[^>]*>[\\s\\S]*?" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "83"] [id "941110"] [msg "XSS Filter - Category 1: Script Tag Vector"] [data "Matched Data: <script> found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i:(?:<\\w[\\s\\S]*[\\s\\/]|['\"](?:[\\s\\S]*[\\s\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <script found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 15)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"]
+Message: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 15 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=0,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 15, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShlhtK7aMJ-bRpQ0KT0UQAAAAc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i)<script[^>]*>[\\\\\\\\s\\\\\\\\S]*?" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "83"] [id "941110"] [msg "XSS Filter - Category 1: Script Tag Vector"] [data "Matched Data: <script> found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShlhtK7aMJ-bRpQ0KT0UQAAAAc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i:(?:<\\\\\\\\w[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/]|['\\\\"](?:[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <script found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShlhtK7aMJ-bRpQ0KT0UQAAAAc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 15)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShlhtK7aMJ-bRpQ0KT0UQAAAAc"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 15 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=0,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 15, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShlhtK7aMJ-bRpQ0KT0UQAAAAc"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1764255110747643 8554 (- - -)
+Stopwatch2: 1764255110747643 8554; combined=4947, p1=796, p2=3939, p3=0, p4=0, p5=212, sr=133, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.9.7 (http://www.modsecurity.org/); OWASP_CRS/3.3.5.
+Server: Apache/2.4.58 (Ubuntu)
+Engine-Mode: "ENABLED"
+
+--b1e29c70-Z--
+
+--ad119964-A--
+[27/Nov/2025:14:54:39.315134 +0000] aShmL_cNG3i0GdH2Dq6YowAAAAg 172.21.0.11 53106 172.21.0.7 80
+--ad119964-B--
+POST /login.php HTTP/1.1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:8000
+Content-Length: 108
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Origin: http://localhost:8000
+Dnt: 1
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:8000/login.php
+Accept-Language: en-US,en;q=0.9,my;q=0.8
+Cookie: security_level=1; ajs_anonymous_id=b7503d55-e650-4f0d-ad5e-f1ce5aca25d6; username-localhost-8888="2|1:0|10:1762783560|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICJmYWYwYWNlNjNlNmU0YjE0YmQxYjhhODJmYjA4MDBiZiIsICJuYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiaW5pdGlhbHMiOiAiQVQiLCAiY29sb3IiOiBudWxsfQ==|28c0941191888a06e2a59fe874581661ea0e6eaf41eb02086aa66613e94ebce0"; _xsrf=2|fecc86d0|3c2dcf40dd2227581a5a04e33abbfa37|1762783560; PHPSESSID=hhl2vekjmqabr9ojn48ho3qcp7; AMP_MKTG_8f1ede8e9c=JTdCJTdE; AMP_8f1ede8e9c=JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI3NzgyNDRkZi00MjVkLTRkODQtYWZmOC0yZmQxZGI2MmI1ZmIlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjJhMjY0NjA1Yy0xMDAyLTRhMGUtOTJlZS1kNTVkNjkwYWMzNDUlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzY0MjU1MDU5NTcwJTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc2NDI1NTA1OTU3MyU3RA==
+
+--ad119964-C--
+login=test&password=%25u003cscript%25u003ealert%281%29%25u003c%2Fscript%25u003e&security_level=0&form=submit
+--ad119964-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 276
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--ad119964-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.58 (Ubuntu) Server at localhost Port 8000</address>
+</body></html>
+
+--ad119964-H--
+Message: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i)<script[^>]*>[\\s\\S]*?" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "83"] [id "941110"] [msg "XSS Filter - Category 1: Script Tag Vector"] [data "Matched Data: <script> found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i:(?:<\\w[\\s\\S]*[\\s\\/]|['\"](?:[\\s\\S]*[\\s\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <script found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 15)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"]
+Message: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 15 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=0,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 15, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShmL_cNG3i0GdH2Dq6YowAAAAg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i)<script[^>]*>[\\\\\\\\s\\\\\\\\S]*?" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "83"] [id "941110"] [msg "XSS Filter - Category 1: Script Tag Vector"] [data "Matched Data: <script> found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShmL_cNG3i0GdH2Dq6YowAAAAg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i:(?:<\\\\\\\\w[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/]|['\\\\"](?:[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <script found within ARGS:password: <script>alert(1)</script>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShmL_cNG3i0GdH2Dq6YowAAAAg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 15)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShmL_cNG3i0GdH2Dq6YowAAAAg"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 15 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=0,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 15, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShmL_cNG3i0GdH2Dq6YowAAAAg"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1764255279307374 9876 (- - -)
+Stopwatch2: 1764255279307374 9876; combined=6116, p1=609, p2=5011, p3=0, p4=0, p5=495, sr=80, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.9.7 (http://www.modsecurity.org/); OWASP_CRS/3.3.5.
+Server: Apache/2.4.58 (Ubuntu)
+Engine-Mode: "ENABLED"
+
+--ad119964-Z--
+
+--6cdded6c-A--
+[27/Nov/2025:14:58:26.858730 +0000] aShnEvcNG3i0GdH2Dq6YpAAAAAo 172.21.0.11 45502 172.21.0.7 80
+--6cdded6c-B--
+POST /login.php HTTP/1.1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:8000
+Content-Length: 147
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Origin: http://localhost:8000
+Dnt: 1
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:8000/login.php
+Accept-Language: en-US,en;q=0.9,my;q=0.8
+Cookie: security_level=1; ajs_anonymous_id=b7503d55-e650-4f0d-ad5e-f1ce5aca25d6; username-localhost-8888="2|1:0|10:1762783560|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICJmYWYwYWNlNjNlNmU0YjE0YmQxYjhhODJmYjA4MDBiZiIsICJuYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBUaGVseGlub2UiLCAiaW5pdGlhbHMiOiAiQVQiLCAiY29sb3IiOiBudWxsfQ==|28c0941191888a06e2a59fe874581661ea0e6eaf41eb02086aa66613e94ebce0"; _xsrf=2|fecc86d0|3c2dcf40dd2227581a5a04e33abbfa37|1762783560; PHPSESSID=hhl2vekjmqabr9ojn48ho3qcp7; AMP_MKTG_8f1ede8e9c=JTdCJTdE; AMP_8f1ede8e9c=JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI3NzgyNDRkZi00MjVkLTRkODQtYWZmOC0yZmQxZGI2MmI1ZmIlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjJhMjY0NjA1Yy0xMDAyLTRhMGUtOTJlZS1kNTVkNjkwYWMzNDUlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzY0MjU1MDU5NTcwJTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc2NDI1NTA1OTU3MyU3RA==
+
+--6cdded6c-C--
+login=doh&password=%253Cimg%2520src%253Dx%2520onerror%253D%2527%2561%256C%2565%2572%2574%2528%2539%2539%2529%2527%253E&security_level=0&form=submit
+--6cdded6c-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 276
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--6cdded6c-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.58 (Ubuntu) Server at localhost Port 8000</address>
+</body></html>
+
+--6cdded6c-H--
+Message: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <img src=x onerror='alert(99)'>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i)[\\s\"'`;\\/0-9=\\x0B\\x09\\x0C\\x3B\\x2C\\x28\\x3B]on[a-zA-Z]+[\\s\\x0B\\x09\\x0C\\x3B\\x2C\\x28\\x3B]*?=" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "109"] [id "941120"] [msg "XSS Filter - Category 2: Event Handler Vector"] [data "Matched Data:  onerror= found within ARGS:password: <img src=x onerror='alert(99)'>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Warning. Pattern match "(?i:(?:<\\w[\\s\\S]*[\\s\\/]|['\"](?:[\\s\\S]*[\\s\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <img src=x onerror= found within ARGS:password: <img src=x onerror='alert(99)'>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"]
+Message: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 15)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"]
+Message: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 15 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=0,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 15, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. detected XSS using libinjection. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "56"] [id "941100"] [msg "XSS Attack Detected via libinjection"] [data "Matched Data: XSS data found within ARGS:password: <img src=x onerror='alert(99)'>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShnEvcNG3i0GdH2Dq6YpAAAAAo"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i)[\\\\\\\\s\\\\"'`;\\\\\\\\/0-9=\\\\\\\\x0B\\\\\\\\x09\\\\\\\\x0C\\\\\\\\x3B\\\\\\\\x2C\\\\\\\\x28\\\\\\\\x3B]on[a-zA-Z]+[\\\\\\\\s\\\\\\\\x0B\\\\\\\\x09\\\\\\\\x0C\\\\\\\\x3B\\\\\\\\x2C\\\\\\\\x28\\\\\\\\x3B]*?=" at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "109"] [id "941120"] [msg "XSS Filter - Category 2: Event Handler Vector"] [data "Matched Data:  onerror= found within ARGS:password: <img src=x onerror='alert(99)'>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShnEvcNG3i0GdH2Dq6YpAAAAAo"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Pattern match "(?i:(?:<\\\\\\\\w[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/]|['\\\\"](?:[\\\\\\\\s\\\\\\\\S]*[\\\\\\\\s\\\\\\\\/])?)(?:on(?:d(?:e(?:vice(?:(?:orienta|mo)tion|proximity|found|light)|livery(?:success|error)|activate)|r(?:ag(?:e(?:n(?:ter|d)|xit)|(?:gestur|leav)e|start|drop|over)|op)|i(?:s(?:c(?:hargingtimechange ..." at ARGS:password. [file "/etc/modsecurity/crs/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf"] [line "200"] [id "941160"] [msg "NoScript XSS InjectionChecker: HTML Injection"] [data "Matched Data: <img src=x onerror= found within ARGS:password: <img src=x onerror='alert(99)'>"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-xss"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/242"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShnEvcNG3i0GdH2Dq6YpAAAAAo"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Access denied with code 403 (phase 2). Operator GE matched 5 at TX:anomaly_score. [file "/etc/modsecurity/crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "94"] [id "949110"] [msg "Inbound Anomaly Score Exceeded (Total Score: 15)"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShnEvcNG3i0GdH2Dq6YpAAAAAo"]
+Apache-Error: [file "apache2_util.c"] [line 275] [level 3] [client 172.21.0.11] ModSecurity: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/etc/modsecurity/crs/rules/RESPONSE-980-CORRELATION.conf"] [line "92"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 15 - SQLI=0,XSS=15,RFI=0,LFI=0,RCE=0,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 15, 0, 0, 0"] [ver "OWASP_CRS/3.3.5"] [tag "event-correlation"] [hostname "localhost"] [uri "/login.php"] [unique_id "aShnEvcNG3i0GdH2Dq6YpAAAAAo"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1764255506844874 17839 (- - -)
+Stopwatch2: 1764255506844874 17839; combined=16317, p1=1177, p2=5939, p3=0, p4=0, p5=4754, sr=188, sw=1, l=0, gc=4446
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.9.7 (http://www.modsecurity.org/); OWASP_CRS/3.3.5.
+Server: Apache/2.4.58 (Ubuntu)
+Engine-Mode: "ENABLED"
+
+--6cdded6c-Z--
+

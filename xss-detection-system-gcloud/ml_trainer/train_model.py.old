@@ -1,0 +1,257 @@
+"""
+UNIFIED XSS TRAINING SCRIPT
+============================
+
+Supports learning from:
+ - Synthetic generator (your original payload list)
+ - Neo4j logs (via Sidecar Normalizer)
+ - Kaggle dataset
+ - DeepXSS dataset
+
+Outputs:
+ - XGBoost model → /models/xgb_model.joblib
+ - Scaler → /models/xss_scaler.joblib
+"""
+
+import pandas as pd
+import numpy as np
+import joblib
+import urllib.parse
+import re
+import os
+import logging
+from neo4j import GraphDatabase
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import (
+    accuracy_score, precision_score, recall_score,
+    f1_score, confusion_matrix, roc_auc_score
+)
+import xgboost as xgb
+
+
+# ---------------------------------------------------------
+# LOGGER
+# ---------------------------------------------------------
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("train-model")
+
+
+# ---------------------------------------------------------
+# NEO4J LOADER
+# ---------------------------------------------------------
+def load_from_neo4j(limit=20000):
+    """
+    Reads AttackEvent logs inserted by Sidecar into Neo4j.
+    These become ML training samples.
+    """
+    try:
+        uri = os.getenv("NEO4J_URI", "bolt://neo4j:7687")
+        user = os.getenv("NEO4J_USER", "neo4j")
+        password = os.getenv("NEO4J_PASSWORD", "password123")
+
+        driver = GraphDatabase.driver(uri, auth=(user, password))
+
+        q = """
+        MATCH (e:AttackEvent)
+        RETURN e.input_normalized AS payload,
+               CASE WHEN e.attack_type = 'xss' THEN 1 ELSE 0 END AS label
+        LIMIT $limit
+        """
+
+        with driver.session() as session:
+            rows = session.run(q, limit=limit)
+            df = pd.DataFrame([dict(r) for r in rows])
+
+        if df.empty:
+            logger.warning("Neo4j has no logs yet.")
+        else:
+            logger.info(f"Loaded {len(df)} rows from Neo4j")
+
+        return df
+
+    except Exception as e:
+        logger.error(f"Neo4j load failed: {e}")
+        return pd.DataFrame(columns=["payload", "label"])
+
+
+# ---------------------------------------------------------
+# KAGGLE / DEEPXSS DATASET LOADERS
+# ---------------------------------------------------------
+def load_kaggle_csv(path):
+    if not os.path.exists(path):
+        logger.warning(f"Kaggle dataset not found: {path}")
+        return pd.DataFrame()
+    try:
+        df = pd.read_csv(path)
+        df = df.rename(columns={"Sentence": "payload", "Label": "label"})
+        logger.info(f"Kaggle dataset loaded: {len(df)} entries")
+        return df[["payload", "label"]]
+    except Exception as e:
+        logger.error(f"Kaggle dataset error: {e}")
+        return pd.DataFrame()
+
+
+def load_deepxss_csv(path):
+    if not os.path.exists(path):
+        logger.warning(f"DeepXSS dataset not found: {path}")
+        return pd.DataFrame()
+    try:
+        df = pd.read_csv(path)
+        df = df.rename(columns={"text": "payload", "label": "label"})
+        logger.info(f"DeepXSS dataset loaded: {len(df)} samples")
+        return df[["payload", "label"]]
+    except Exception as e:
+        logger.error(f"DeepXSS dataset error: {e}")
+        return pd.DataFrame()
+
+
+# ---------------------------------------------------------
+# YOUR SYNTHETIC DATASET GENERATOR (unchanged)
+# ---------------------------------------------------------
+class XSSDatasetGenerator:
+    def __init__(self):
+        self.malicious = [
+            '<script>alert(1)</script>',
+            '<img src=x onerror=alert(1)>',
+            'javascript:alert(1)',
+            '%3Cscript%3Ealert(1)%3C/script%3E',
+            '<svg onload=alert(1)>',
+            '<iframe src="javascript:alert(1)">',
+        ]
+        self.benign = [
+            'hello world',
+            'https://example.com',
+            'test123',
+            'name=John',
+            'search term',
+        ]
+
+    def generate(self):
+        return pd.DataFrame(
+            [{"payload": p, "label": 1} for p in self.malicious] +
+            [{"payload": p, "label": 0} for p in self.benign]
+        )
+
+
+# ---------------------------------------------------------
+# FEATURE EXTRACTOR (Merged + Enhanced)
+# ---------------------------------------------------------
+class FeatureExtractor:
+
+    def normalize(self, payload):
+        try:
+            payload = urllib.parse.unquote_plus(payload)
+        except:
+            pass
+        return payload.lower().strip()
+
+    def extract_features(self, payload):
+        payload = self.normalize(payload)
+
+        feats = {
+            "len": len(payload),
+            "count_lt": payload.count("<"),
+            "count_gt": payload.count(">"),
+            "count_script": len(re.findall(r"script", payload, flags=re.I)),
+            "count_encoded": len(re.findall(r"%[0-9A-Fa-f]{2}", payload)),
+            "count_entity": len(re.findall(r"&[#a-zA-Z0-9]+;", payload)),
+            "has_javascript": int("javascript:" in payload),
+            "has_onerror": int("onerror" in payload),
+            "has_onload": int("onload" in payload),
+            "has_alert": int("alert(" in payload),
+            "has_iframe": int("<iframe" in payload),
+            "has_svg": int("<svg" in payload),
+            "contains_data_uri": int("data:" in payload),
+        }
+
+        return feats
+
+    def extract_batch(self, payloads):
+        return pd.DataFrame([self.extract_features(p) for p in payloads])
+
+
+# ---------------------------------------------------------
+# FINAL TRAINING PIPELINE
+# ---------------------------------------------------------
+def train_model():
+
+    logger.info("======== TRAINING XSS MODEL =========")
+
+    # Load all sources
+    df_synth = XSSDatasetGenerator().generate()
+    df_kaggle = load_kaggle_csv("/datasets/kaggle_xss.csv")
+    df_deep = load_deepxss_csv("/datasets/deepxss.csv")
+    df_neo4j = load_from_neo4j()
+
+    # Combine them
+    df_all = pd.concat(
+        [df_synth, df_kaggle, df_deep, df_neo4j],
+        ignore_index=True
+    ).dropna()
+
+    # Deduplicate
+    df_all = df_all.drop_duplicates(subset=["payload"])
+
+    logger.info(f"Total combined dataset size: {len(df_all)}")
+
+    if len(df_all) < 50:
+        raise RuntimeError("Not enough training data available!")
+
+    # Features
+    extractor = FeatureExtractor()
+    X = extractor.extract_batch(df_all["payload"].values)
+    y = df_all["label"].astype(int).values
+
+    # Split
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.25, random_state=42, stratify=y
+    )
+
+    # Scale
+    scaler = StandardScaler()
+    X_train_s = scaler.fit_transform(X_train)
+    X_test_s = scaler.transform(X_test)
+
+    # Train Model
+    logger.info("Training XGBoost...")
+    model = xgb.XGBClassifier(
+        n_estimators=250,
+        max_depth=6,
+        learning_rate=0.08,
+        subsample=0.8,
+        colsample_bytree=0.8,
+        eval_metric="logloss",
+        use_label_encoder=False
+    )
+    model.fit(X_train_s, y_train)
+
+    # Evaluate
+    pred = model.predict(X_test_s)
+    proba = model.predict_proba(X_test_s)[:, 1]
+
+    logger.info(f"Accuracy:   {accuracy_score(y_test, pred):.4f}")
+    logger.info(f"Precision:  {precision_score(y_test, pred):.4f}")
+    logger.info(f"Recall:     {recall_score(y_test, pred):.4f}")
+    logger.info(f"F1 Score:   {f1_score(y_test, pred):.4f}")
+    logger.info(f"AUC:        {roc_auc_score(y_test, proba):.4f}")
+
+    logger.info("Confusion Matrix:")
+    logger.info(confusion_matrix(y_test, pred))
+
+    # Save Model + Scaler
+    os.makedirs("/models", exist_ok=True)
+    joblib.dump(model, "/models/xgb_model.joblib")
+    joblib.dump(scaler, "/models/xss_scaler.joblib")
+
+    logger.info("Model saved → /models/xgb_model.joblib")
+    logger.info("Scaler saved → /models/xss_scaler.joblib")
+
+    return model, scaler
+
+
+# ---------------------------------------------------------
+# RUN
+# ---------------------------------------------------------
+if __name__ == "__main__":
+    train_model()

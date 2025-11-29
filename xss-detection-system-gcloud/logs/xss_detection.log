@@ -4309,3 +4309,360 @@ Failed to establish connection to ResolvedIPv4Address(('172.18.0.2', 7687)) (rea
 2025-11-14 15:16:55,331 - __main__ - INFO - Connected to Neo4j
 2025-11-14 15:16:55,342 - werkzeug - WARNING -  * Debugger is active!
 2025-11-14 15:16:55,344 - werkzeug - INFO -  * Debugger PIN: 971-098-046
+2025-11-26 18:00:52,866 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:00:52,867 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:00:52,867 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:00:52,874 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.7:5001
+2025-11-26 18:00:52,874 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:00:52,875 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:00:53,695 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:00:53,695 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:00:53,695 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:00:53,699 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:00:53,701 - werkzeug - INFO -  * Debugger PIN: 117-989-874
+2025-11-26 18:03:10,443 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:03:10,444 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:03:10,444 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:03:10,449 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.8:5001
+2025-11-26 18:03:10,450 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:03:10,450 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:03:11,302 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:03:11,304 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:03:11,304 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:03:11,308 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:03:11,308 - werkzeug - INFO -  * Debugger PIN: 211-712-799
+2025-11-26 18:12:34,459 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:12:34,460 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:12:34,460 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:12:34,466 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.8:5001
+2025-11-26 18:12:34,466 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:12:34,466 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:12:35,263 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:12:35,264 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:12:35,264 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:12:35,267 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:12:35,268 - werkzeug - INFO -  * Debugger PIN: 127-461-477
+2025-11-26 18:13:47,267 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:13:47,268 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:13:47,268 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:13:47,275 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.7:5001
+2025-11-26 18:13:47,276 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:13:47,276 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:13:48,089 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:13:48,090 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:13:48,090 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:13:48,093 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:13:48,093 - werkzeug - INFO -  * Debugger PIN: 812-495-294
+2025-11-26 18:15:42,857 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:15:42,857 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:15:42,858 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:15:42,864 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.8:5001
+2025-11-26 18:15:42,866 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:15:42,868 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:15:43,665 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:15:43,666 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:15:43,666 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:15:43,669 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:15:43,670 - werkzeug - INFO -  * Debugger PIN: 957-054-749
+2025-11-26 18:15:46,359 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-26 18:15:46,359 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 1 times in a row, putting on 1 second timeout
+2025-11-26 18:15:46,359 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff5ed16560>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff5ed16560>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-26 18:15:46,366 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-26 18:15:46,366 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 2 times in a row, putting on 2 second timeout
+2025-11-26 18:15:46,367 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff5ed16a40>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff5ed16a40>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-26 18:15:46,370 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.003s]
+2025-11-26 18:15:46,371 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 3 times in a row, putting on 4 second timeout
+2025-11-26 18:15:46,372 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 494, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 325, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff5ed16e00>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/usr/local/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff5ed16e00>: Failed to establish a new connection: [Errno 111] Connection refused)
+2025-11-26 18:15:46,373 - elastic_transport.transport - INFO - POST http://elasticsearch:9200/xss-detections-2025.11/_doc [status:N/A duration:0.001s]
+2025-11-26 18:15:46,374 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(http://elasticsearch:9200)> has failed for 4 times in a row, putting on 8 second timeout
+2025-11-26 18:15:46,374 - __main__ - ERROR - Elasticsearch logging error: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff5ed16560>: Failed to establish a new connection: [Errno 111] Connection refused))
+2025-11-26 18:15:46,374 - __main__ - INFO - Detection completed: 20251126181546-2865 - Blocked: False
+2025-11-26 18:15:46,375 - werkzeug - INFO - 172.21.0.9 - - [26/Nov/2025 18:15:46] "POST /detect HTTP/1.1" 200 -
+2025-11-26 18:20:40,692 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:20:40,693 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:20:40,693 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:20:40,703 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.8:5001
+2025-11-26 18:20:40,703 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:20:40,703 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:20:41,486 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:20:41,487 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:20:41,487 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:20:41,490 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:20:41,490 - werkzeug - INFO -  * Debugger PIN: 110-205-656
+2025-11-26 18:23:10,701 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:23:10,702 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:23:10,702 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:23:10,709 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.8:5001
+2025-11-26 18:23:10,709 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:23:10,710 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:23:11,598 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:23:11,598 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:23:11,599 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:23:11,601 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:23:11,603 - werkzeug - INFO -  * Debugger PIN: 104-643-570
+2025-11-26 18:24:11,361 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:24:11,363 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:24:11,363 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:24:11,370 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.7:5001
+2025-11-26 18:24:11,370 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 18:24:11,370 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 18:24:12,206 - __main__ - INFO - ML models loaded successfully
+2025-11-26 18:24:12,207 - __main__ - INFO - Connected to Elasticsearch
+2025-11-26 18:24:12,208 - __main__ - INFO - Connected to Neo4j
+2025-11-26 18:24:12,211 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 18:24:12,212 - werkzeug - INFO -  * Debugger PIN: 116-856-521
+2025-11-27 14:11:49,807 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:11:49,807 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:11:49,808 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:11:49,824 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.8:5001
+2025-11-27 14:11:49,824 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:11:49,825 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:11:50,599 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:11:50,600 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:11:50,600 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:11:50,604 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:11:50,606 - werkzeug - INFO -  * Debugger PIN: 125-235-770
+2025-11-27 14:12:42,450 - __main__ - ERROR - Failed to send log to normalizer: 'Request' object has no attribute 'post'
+2025-11-27 14:12:42,451 - __main__ - INFO - Detection completed: 20251127141242-4342 - Blocked: False
+2025-11-27 14:12:42,451 - werkzeug - INFO - 172.21.0.11 - - [27/Nov/2025 14:12:42] "POST /detect HTTP/1.1" 200 -
+2025-11-27 14:14:42,468 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:14:42,469 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:14:42,470 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:14:42,476 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.10:5001
+2025-11-27 14:14:42,477 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:14:42,478 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:14:43,238 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:14:43,238 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:14:43,239 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:14:43,243 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:14:43,243 - werkzeug - INFO -  * Debugger PIN: 135-814-751
+2025-11-27 14:18:28,115 - __main__ - ERROR - Failed to send log to normalizer: 'Request' object has no attribute 'post'
+2025-11-27 14:18:28,115 - __main__ - INFO - Detection completed: 20251127141828-4490 - Blocked: False
+2025-11-27 14:18:28,117 - werkzeug - INFO - 172.21.0.11 - - [27/Nov/2025 14:18:28] "POST /detect HTTP/1.1" 200 -
+2025-11-27 14:18:28,200 - __main__ - ERROR - Failed to send log to normalizer: 'Request' object has no attribute 'post'
+2025-11-27 14:18:28,200 - __main__ - INFO - Detection completed: 20251127141828-2092 - Blocked: False
+2025-11-27 14:18:28,201 - werkzeug - INFO - 172.21.0.11 - - [27/Nov/2025 14:18:28] "POST /detect HTTP/1.1" 200 -
+2025-11-27 14:24:13,269 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:24:13,270 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:24:13,270 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:24:13,276 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.10:5001
+2025-11-27 14:24:13,276 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:24:13,276 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:24:14,000 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:24:14,001 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:24:14,002 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:24:14,005 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:24:14,006 - werkzeug - INFO -  * Debugger PIN: 657-530-713
+2025-11-27 14:40:33,323 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:40:33,324 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:40:33,324 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:40:33,330 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.9:5001
+2025-11-27 14:40:33,334 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:40:33,335 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:40:34,041 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:40:34,042 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:40:34,042 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:40:34,045 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:40:34,046 - werkzeug - INFO -  * Debugger PIN: 146-648-095
+2025-11-27 14:50:50,779 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:50:50,780 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:50:50,780 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:50:50,787 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.10:5001
+2025-11-27 14:50:50,788 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:50:50,789 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:50:51,530 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:50:51,531 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:50:51,531 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:50:51,534 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:50:51,535 - werkzeug - INFO -  * Debugger PIN: 205-866-129
+2025-11-27 14:52:37,000 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:52:37,001 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:52:37,002 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:52:37,013 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.21.0.10:5001
+2025-11-27 14:52:37,013 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 14:52:37,013 - werkzeug - INFO -  * Restarting with stat
+2025-11-27 14:52:37,908 - __main__ - INFO - ML models loaded successfully
+2025-11-27 14:52:37,909 - __main__ - INFO - Connected to Elasticsearch
+2025-11-27 14:52:37,910 - __main__ - INFO - Connected to Neo4j
+2025-11-27 14:52:37,913 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 14:52:37,914 - werkzeug - INFO -  * Debugger PIN: 665-559-396

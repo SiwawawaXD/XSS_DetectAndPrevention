@@ -1,401 +1,139 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+# ml_api.py
+from fastapi import FastAPI
+from pydantic import BaseModel
+from typing import List, Optional, Dict
+import uvicorn
 import joblib
-import numpy as np
+import math
 import re
-from datetime import datetime
-import json
-import logging
-from elasticsearch import Elasticsearch
-from neo4j import GraphDatabase
-import socket
-import urllib.parse
 import os
+from urllib.parse import unquote
 
-app = Flask(__name__)
-CORS(app)
+from feature_extractor import FeatureExtractor
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('/logs/xss_detection.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
-
-# Load ML model
+MODEL_PATH = os.getenv("MODEL_PATH", "/models/xgboost_model.joblib")
+# MODEL_PATH = os.getenv("MODEL_PATH", "/models/codeburp_model.joblib")
+# MODEL_PATH = os.getenv("MODEL_PATH", "/models/random_forest_model.joblib")
+model = None
 try:
-    model = joblib.load('/models/xss_model.pkl')
-    scaler = joblib.load('/models/scaler.pkl')
-    logger.info("ML models loaded successfully")
+    model = joblib.load(MODEL_PATH)
 except Exception as e:
-    logger.error(f"Error loading models: {e}")
-    model = None
-    scaler = None
+    print("Model not loaded:", e)
 
-# Elasticsearch connection
-try:
-    es = Elasticsearch(['http://elasticsearch:9200'])
-    logger.info("Connected to Elasticsearch")
-except Exception as e:
-    logger.error(f"Elasticsearch connection error: {e}")
-    es = None
+app = FastAPI(title="ML Payload Analysis API")
 
-# Neo4j connection
-try:
-    neo4j_uri = os.getenv('NEO4J_URI', 'bolt://neo4j:7687')
-    neo4j_user = os.getenv('NEO4J_USER', 'neo4j')
-    neo4j_password = os.getenv('NEO4J_PASSWORD', 'SecureGCPPassword123!')
-    
-    neo4j_driver = GraphDatabase.driver(
-        neo4j_uri,
-        auth=(neo4j_user, neo4j_password)
-    )
-    logger.info("Connected to Neo4j")
-except Exception as e:
-    logger.error(f"Neo4j connection error: {e}")
-    neo4j_driver = None
+extractor = FeatureExtractor()
 
 
-class XSSDetector:
-    """XSS Detection using Machine Learning"""
+class AnalyzeRequest(BaseModel):
+    payload: str
+    meta: Optional[Dict] = None
+
+class AnalyzeResponse(BaseModel):
+    is_malicious: bool
+    confidence: float
+    detected_patterns: List[str]
+    raw_payload: str
+    normalized_payload: str
+    decoded_versions: List[str]
+
+COMMON_PATTERNS = [
+    r"<\s*script\b",
+    r"javascript\s*:",
+    r"onerror\s*=",
+    r"onload\s*=",
+    r"document\.cookie",
+    r"eval\s*\(",
+    r"&#x",
+    r"&#\d+",
+    r"\\x[0-9a-f]{2}",
+    r"\\u[0-9a-f]{4}",
+]
+
+def recursive_decode(payload: str, max_iterations=5):
+    """
+    Recursively URL-decode the payload until no more decoding occurs
+    or max iterations reached. This handles double/triple encoding.
+    """
+    decoded_versions = [payload]
+    current = payload
     
-    def __init__(self, model, scaler):
-        self.model = model
-        self.scaler = scaler
-        
-    def extract_features(self, payload):
-        """Extract features from payload for ML model"""
-        features = {}
-        
-        # Decode URL encoded strings
-        decoded = urllib.parse.unquote(payload)
-        
-        # Basic features
-        features['length'] = len(payload)
-        features['num_special_chars'] = len(re.findall(r'[<>\'\"(){}[\]]', payload))
-        features['num_digits'] = len(re.findall(r'\d', payload))
-        features['num_spaces'] = payload.count(' ')
-        
-        # XSS-specific patterns
-        features['has_script'] = int(bool(re.search(r'<script', payload, re.I)))
-        features['has_javascript'] = int(bool(re.search(r'javascript:', payload, re.I)))
-        features['has_onerror'] = int(bool(re.search(r'onerror\s*=', payload, re.I)))
-        features['has_onload'] = int(bool(re.search(r'onload\s*=', payload, re.I)))
-        features['has_onclick'] = int(bool(re.search(r'onclick\s*=', payload, re.I)))
-        features['has_onfocus'] = int(bool(re.search(r'onfocus\s*=', payload, re.I)))
-        features['has_onmouseover'] = int(bool(re.search(r'onmouseover\s*=', payload, re.I)))
-        features['has_alert'] = int(bool(re.search(r'alert\s*\(', payload, re.I)))
-        features['has_eval'] = int(bool(re.search(r'eval\s*\(', payload, re.I)))
-        features['has_document_cookie'] = int(bool(re.search(r'document\.cookie', payload, re.I)))
-        features['has_document_write'] = int(bool(re.search(r'document\.write', payload, re.I)))
-        features['has_window_location'] = int(bool(re.search(r'window\.location', payload, re.I)))
-        features['has_iframe'] = int(bool(re.search(r'<iframe', payload, re.I)))
-        features['has_embed'] = int(bool(re.search(r'<embed', payload, re.I)))
-        features['has_object'] = int(bool(re.search(r'<object', payload, re.I)))
-        features['has_svg'] = int(bool(re.search(r'<svg', payload, re.I)))
-        features['has_img'] = int(bool(re.search(r'<img', payload, re.I)))
-        features['has_base64'] = int(bool(re.search(r'base64', payload, re.I)))
-        features['has_data_uri'] = int(bool(re.search(r'data:', payload, re.I)))
-        
-        # Obfuscation detection
-        features['has_hex_encoding'] = int(bool(re.search(r'\\x[0-9a-f]{2}', payload, re.I)))
-        features['has_unicode'] = int(bool(re.search(r'\\u[0-9a-f]{4}', payload, re.I)))
-        features['has_url_encoding'] = int(bool(re.search(r'%[0-9a-f]{2}', payload, re.I)))
-        features['has_html_entity'] = int(bool(re.search(r'&#\d+;', payload)))
-        
-        # Statistical features
-        features['entropy'] = self.calculate_entropy(payload)
-        features['uppercase_ratio'] = sum(1 for c in payload if c.isupper()) / max(len(payload), 1)
-        features['digit_ratio'] = features['num_digits'] / max(len(payload), 1)
-        features['special_char_ratio'] = features['num_special_chars'] / max(len(payload), 1)
-        
-        # Count dangerous functions
-        dangerous_funcs = ['eval', 'alert', 'prompt', 'confirm', 'setTimeout', 'setInterval']
-        features['dangerous_func_count'] = sum(payload.lower().count(func) for func in dangerous_funcs)
-        
-        # HTML tag count
-        features['html_tag_count'] = len(re.findall(r'<[^>]+>', payload))
-        
-        return features
-    
-    def calculate_entropy(self, text):
-        """Calculate Shannon entropy of text"""
-        if not text:
-            return 0
-        entropy = 0
-        for x in range(256):
-            p_x = float(text.count(chr(x))) / len(text)
-            if p_x > 0:
-                entropy += - p_x * np.log2(p_x)
-        return entropy
-    
-    def predict(self, payload):
-        """Predict if payload is XSS attack"""
-        if not self.model or not self.scaler:
-            return {'error': 'Model not loaded'}, None
-        
+    for _ in range(max_iterations):
         try:
-            features = self.extract_features(payload)
-            feature_vector = np.array(list(features.values())).reshape(1, -1)
-            feature_vector_scaled = self.scaler.transform(feature_vector)
-            
-            prediction = self.model.predict(feature_vector_scaled)[0]
-            probability = self.model.predict_proba(feature_vector_scaled)[0]
-            
-            return {
-                'is_malicious': bool(prediction),
-                'confidence': float(max(probability)),
-                'malicious_probability': float(probability[1]) if len(probability) > 1 else 0,
-                'features': features
-            }, features
-        except Exception as e:
-            logger.error(f"Prediction error: {e}")
-            return {'error': str(e)}, None
+            decoded = unquote(current)
+            if decoded == current:
+                # No more decoding possible
+                break
+            decoded_versions.append(decoded)
+            current = decoded
+        except Exception:
+            break
+    
+    return decoded_versions
+
+def rule_detect(payload: str):
+    """Check payload against common XSS patterns"""
+    detected = []
+    for pattern in COMMON_PATTERNS:
+        if re.search(pattern, payload, re.I):
+            detected.append(pattern)
+    return detected
 
 
-def determine_xss_type(payload):
-    """Determine XSS attack type"""
-    payload_lower = payload.lower()
+@app.post("/analyze", response_model=AnalyzeResponse)
+def analyze(req: AnalyzeRequest):
+    payload = req.payload or ""
     
-    # DOM-based indicators
-    dom_patterns = [
-        'document.write', 'document.writeln', 'innerhtml', 'outerhtml',
-        'document.location', 'window.location', 'document.url', 'document.referrer',
-        'window.name', 'location.href', 'location.hash'
-    ]
+    # 1. Decode payload multiple times to handle encoding obfuscation
+    decoded_versions = recursive_decode(payload)
     
-    if any(pattern in payload_lower for pattern in dom_patterns):
-        return 'DOM-based XSS'
+    normalized_payload = decoded_versions[-1]
     
-    # Stored/Reflected indicators
-    if '<script' in payload_lower or 'javascript:' in payload_lower:
-        return 'Stored/Reflected XSS'
+    # 2. Check all decoded versions for patterns
+    all_detected_patterns = set()
+    max_confidence = 0.0
     
-    # Event handler based
-    if re.search(r'on\w+\s*=', payload, re.I):
-        return 'Event-based XSS'
-    
-    return 'Potential XSS'
-
-
-def calculate_impact_level(confidence, features):
-    """Calculate impact level based on confidence and features"""
-    high_risk_features = [
-        features.get('has_document_cookie', 0),
-        features.get('has_eval', 0),
-        features.get('has_document_write', 0),
-        features.get('has_window_location', 0)
-    ]
-    
-    if confidence > 0.9 or sum(high_risk_features) >= 2:
-        return 'CRITICAL'
-    elif confidence > 0.75 or sum(high_risk_features) >= 1:
-        return 'HIGH'
-    elif confidence > 0.6:
-        return 'MEDIUM'
-    elif confidence > 0.4:
-        return 'LOW'
-    return 'INFO'
-
-
-def log_to_elasticsearch(detection_result):
-    """Log detection result to Elasticsearch"""
-    if not es:
-        return
-    
-    try:
-        es.index(
-            index=f"xss-detections-{datetime.now().strftime('%Y.%m')}",
-            document=detection_result
-        )
-        logger.info(f"Logged to Elasticsearch: {detection_result['request_id']}")
-    except Exception as e:
-        logger.error(f"Elasticsearch logging error: {e}")
-
-
-def log_to_neo4j(detection_result):
-    """Log attack pattern to Neo4j graph database"""
-    if not neo4j_driver:
-        return
-    
-    try:
-        with neo4j_driver.session() as session:
-            # Create attack node
-            query = """
-            CREATE (a:Attack {
-                id: $id,
-                timestamp: datetime($timestamp),
-                payload: $payload,
-                type: $type,
-                impact: $impact,
-                confidence: $confidence,
-                ip_address: $ip_address,
-                user_agent: $user_agent,
-                blocked: $blocked
-            })
-            RETURN a
-            """
-            
-            session.run(query, {
-                'id': detection_result['request_id'],
-                'timestamp': detection_result['timestamp'],
-                'payload': detection_result['payload'][:500],  # Limit length
-                'type': detection_result['xss_type'],
-                'impact': detection_result['impact_level'],
-                'confidence': detection_result['ml_detection']['confidence'],
-                'ip_address': detection_result['ip_address'],
-                'user_agent': detection_result['user_agent'],
-                'blocked': detection_result['blocked']
-            })
-            
-            # Create relationships for attack patterns
-            if detection_result['ml_detection'].get('features'):
-                features = detection_result['ml_detection']['features']
+    for decoded_payload in decoded_versions:
+        # Rule-based detection on each version
+        patterns = rule_detect(decoded_payload)
+        all_detected_patterns.update(patterns)
+        
+        # ML detection on each version
+        if model:
+            try:
+                features = extractor.extract(decoded_payload)
+                vector = extractor.vectorize(features)
                 
-                # Link to attack techniques
-                if features.get('has_script'):
-                    session.run("""
-                        MATCH (a:Attack {id: $id})
-                        MERGE (t:Technique {name: 'Script Injection'})
-                        MERGE (a)-[:USES]->(t)
-                    """, {'id': detection_result['request_id']})
+                try:
+                    confidence = float(model.predict_proba([vector])[0][1])
+                except Exception:
+                    # Fallback for models without predict_proba
+                    try:
+                        score = model.predict([vector])[0]
+                        confidence = 1 / (1 + math.exp(-score))
+                    except:
+                        confidence = 0.0
                 
-                if features.get('has_javascript'):
-                    session.run("""
-                        MATCH (a:Attack {id: $id})
-                        MERGE (t:Technique {name: 'JavaScript Protocol'})
-                        MERGE (a)-[:USES]->(t)
-                    """, {'id': detection_result['request_id']})
-                
-                if features.get('has_onerror') or features.get('has_onload'):
-                    session.run("""
-                        MATCH (a:Attack {id: $id})
-                        MERGE (t:Technique {name: 'Event Handler'})
-                        MERGE (a)-[:USES]->(t)
-                    """, {'id': detection_result['request_id']})
-            
-            logger.info(f"Logged to Neo4j: {detection_result['request_id']}")
-    except Exception as e:
-        logger.error(f"Neo4j logging error: {e}")
-
-
-# Initialize detector
-detector = XSSDetector(model, scaler) if model and scaler else None
-
-
-@app.route('/health', methods=['GET'])
-def health_check():
-    """Health check endpoint"""
-    return jsonify({
-        'status': 'healthy',
-        'model_loaded': model is not None,
-        'elasticsearch': es is not None,
-        'neo4j': neo4j_driver is not None
-    })
-
-
-@app.route('/detect', methods=['POST'])
-def detect_xss():
-    """Main XSS detection endpoint"""
-    try:
-        data = request.get_json()
-        payload = data.get('payload', '')
-        source = data.get('source', 'unknown')
-        
-        if not payload:
-            return jsonify({'error': 'No payload provided'}), 400
-        
-        # Get client information
-        ip_address = request.headers.get('X-Forwarded-For', request.remote_addr)
-        user_agent = request.headers.get('User-Agent', 'Unknown')
-        
-        # ML Detection
-        ml_result, features = detector.predict(payload) if detector else ({'error': 'Detector not initialized'}, None)
-        
-        # Determine XSS type and impact
-        xss_type = determine_xss_type(payload)
-        impact_level = calculate_impact_level(
-            ml_result.get('malicious_probability', 0),
-            features or {}
-        )
-        
-        # Create detection result
-        detection_result = {
-            'request_id': f"{datetime.now().strftime('%Y%m%d%H%M%S')}-{hash(payload) % 10000}",
-            'timestamp': datetime.now().isoformat(),
-            'payload': payload,
-            'source': source,
-            'ip_address': ip_address,
-            'user_agent': user_agent,
-            'ml_detection': ml_result,
-            'xss_type': xss_type,
-            'impact_level': impact_level,
-            'blocked': ml_result.get('is_malicious', False)
-        }
-        
-        # Log to Elasticsearch
-        log_to_elasticsearch(detection_result)
-        
-        # Log to Neo4j if malicious
-        if detection_result['blocked']:
-            log_to_neo4j(detection_result)
-        
-        logger.info(f"Detection completed: {detection_result['request_id']} - Blocked: {detection_result['blocked']}")
-        
-        return jsonify(detection_result)
+                max_confidence = max(max_confidence, confidence)
+            except Exception as e:
+                print(f"ML detection error: {e}")
     
-    except Exception as e:
-        logger.error(f"Detection error: {e}")
-        return jsonify({'error': str(e)}), 500
-
-
-@app.route('/stats', methods=['GET'])
-def get_stats():
-    """Get detection statistics from Elasticsearch"""
-    if not es:
-        return jsonify({'error': 'Elasticsearch not available'}), 500
+    # 3. Final decision
+    detected_patterns_list = list(all_detected_patterns)
+    is_malicious = len(detected_patterns_list) > 0 or max_confidence >= 0.5
     
-    try:
-        # Get today's stats
-        today = datetime.now().strftime('%Y.%m')
-        
-        # Total requests
-        total = es.count(index=f"xss-detections-{today}")
-        
-        # Blocked requests
-        blocked = es.count(
-            index=f"xss-detections-{today}",
-            body={'query': {'term': {'blocked': True}}}
-        )
-        
-        # By impact level
-        impact_agg = es.search(
-            index=f"xss-detections-{today}",
-            body={
-                'size': 0,
-                'aggs': {
-                    'by_impact': {
-                        'terms': {'field': 'impact_level.keyword'}
-                    }
-                }
-            }
-        )
-        
-        return jsonify({
-            'total_requests': total['count'],
-            'blocked_requests': blocked['count'],
-            'allowed_requests': total['count'] - blocked['count'],
-            'by_impact': impact_agg['aggregations']['by_impact']['buckets']
-        })
+    if detected_patterns_list:
+        max_confidence = max(max_confidence, 0.9)
     
-    except Exception as e:
-        logger.error(f"Stats error: {e}")
-        return jsonify({'error': str(e)}), 500
+    return AnalyzeResponse(
+        is_malicious=is_malicious,
+        confidence=round(max_confidence, 4),
+        detected_patterns=detected_patterns_list,
+        raw_payload=payload,
+        normalized_payload=normalized_payload,
+        decoded_versions=decoded_versions
+    )
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001, debug=True)
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8080)
