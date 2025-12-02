@@ -15,3 +15,7 @@ After deploy
 3.) Go to http://localhost:5601/ to use Kibana, search and choose **index management** then choose blocked-requests and create view to view log.
 
 4.) http://localhost:7474/ to use Neo4j. Log in with username **neo4j** and password **SecureGCPPassword123!**
+
+
+# Misc.
+`IMPLEMENTATION_SUMMARY.md`, `NEO4J_VISUALIZATION_QUERIES.md`, and `DETAILED_EXPLANATIONS.md` are information for **`xss-detection-system-gcloud-2`**. It explain how you can manually retrain the model and swap it. It also explain extra information of this architecture.
