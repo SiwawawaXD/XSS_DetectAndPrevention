@@ -1,0 +1,35 @@
+{
+  "active_model": "backup_20251202_120556",
+  "models": {
+    "retrained_demo_20251202_120212": {
+      "created_at": "20251202_120212",
+      "name": "retrained_demo",
+      "metrics": {
+        "accuracy": 0.9935897435897436,
+        "precision": 0.9873417721518988,
+        "recall": 1.0,
+        "f1_score": 0.9936305732484078,
+        "samples_train": 622,
+        "samples_test": 156
+      },
+      "version": "retrained_demo_20251202_120212"
+    }
+  },
+  "model_history": [
+    {
+      "version": "retrained_demo_20251202_120212",
+      "timestamp": "20251202_120212",
+      "action": "trained"
+    },
+    {
+      "version": "retrained_demo_20251202_120212",
+      "timestamp": "20251202_120556",
+      "action": "activated"
+    },
+    {
+      "version": "backup_20251202_120556",
+      "timestamp": "20251202_120941",
+      "action": "activated"
+    }
+  ]
+}
