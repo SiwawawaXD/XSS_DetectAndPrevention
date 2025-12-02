@@ -76,10 +76,10 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - MODEL_PATH=../models/xgb_model.joblib
-      - SCALER_PATH=../models/xss_scaler.joblib
+      - MODEL_PATH=/models/xgb_model.joblib       # CHANGE THIS
+      - SCALER_PATH=/models/xss_scaler.joblib     # CHANGE THIS
     volumes:
-      - ../models:/models
+      - ./models:/models                          # CHANGE THIS (remove ../)
     depends_on:
       - neo4j
     networks:
