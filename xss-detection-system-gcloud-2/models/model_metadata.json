@@ -1,34 +1,29 @@
 {
-  "active_model": "backup_20251202_120556",
+  "active_model": "initial_20251203_230931",
   "models": {
-    "retrained_demo_20251202_120212": {
-      "created_at": "20251202_120212",
-      "name": "retrained_demo",
+    "initial_20251203_230931": {
+      "created_at": "20251203_230931",
+      "name": "initial",
       "metrics": {
-        "accuracy": 0.9935897435897436,
-        "precision": 0.9873417721518988,
-        "recall": 1.0,
-        "f1_score": 0.9936305732484078,
-        "samples_train": 622,
-        "samples_test": 156
+        "accuracy": 0.9981738495252008,
+        "precision": 1.0,
+        "recall": 0.9966101694915255,
+        "f1_score": 0.99830220713073,
+        "samples_train": 10948,
+        "samples_test": 2738
       },
-      "version": "retrained_demo_20251202_120212"
+      "version": "initial_20251203_230931"
     }
   },
   "model_history": [
     {
-      "version": "retrained_demo_20251202_120212",
-      "timestamp": "20251202_120212",
+      "version": "initial_20251203_230931",
+      "timestamp": "20251203_230931",
       "action": "trained"
     },
     {
-      "version": "retrained_demo_20251202_120212",
-      "timestamp": "20251202_120556",
-      "action": "activated"
-    },
-    {
-      "version": "backup_20251202_120556",
-      "timestamp": "20251202_120941",
+      "version": "initial_20251203_230931",
+      "timestamp": "20251203_230931",
       "action": "activated"
     }
   ]
