@@ -9,3 +9,25 @@
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
 [Wed Dec 03 23:09:26.645314 2025] [mpm_event:notice] [pid 8:tid 140194658621312] AH00489: Apache/2.4.58 (Ubuntu) configured -- resuming normal operations
 [Wed Dec 03 23:09:26.645663 2025] [core:notice] [pid 8:tid 140194658621312] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Wed Dec 03 23:28:10.078335 2025] [security2:notice] [pid 8:tid 140683804841856] ModSecurity for Apache/2.9.7 (http://www.modsecurity.org/) configured.
+[Wed Dec 03 23:28:10.078641 2025] [security2:notice] [pid 8:tid 140683804841856] ModSecurity: APR compiled version="1.7.2"; loaded version="1.7.2"
+[Wed Dec 03 23:28:10.078783 2025] [security2:notice] [pid 8:tid 140683804841856] ModSecurity: PCRE2 compiled version="10.42 "; loaded version="10.42 2022-12-11"
+[Wed Dec 03 23:28:10.078923 2025] [security2:notice] [pid 8:tid 140683804841856] ModSecurity: LUA compiled version="Lua 5.1"
+[Wed Dec 03 23:28:10.079086 2025] [security2:notice] [pid 8:tid 140683804841856] ModSecurity: YAJL compiled version="2.1.0"
+[Wed Dec 03 23:28:10.079254 2025] [security2:notice] [pid 8:tid 140683804841856] ModSecurity: LIBXML compiled version="2.9.14"
+[Wed Dec 03 23:28:10.079436 2025] [security2:notice] [pid 8:tid 140683804841856] ModSecurity: Status engine is currently disabled, enable it by set SecStatusEngine to On.
+[Wed Dec 03 23:28:10.095348 2025] [so:warn] [pid 8:tid 140683804841856] AH01574: module security2_module is already loaded, skipping
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 03 23:28:10.178499 2025] [mpm_event:notice] [pid 8:tid 140683804841856] AH00489: Apache/2.4.58 (Ubuntu) configured -- resuming normal operations
+[Wed Dec 03 23:28:10.178757 2025] [core:notice] [pid 8:tid 140683804841856] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Wed Dec 03 23:31:37.440610 2025] [security2:notice] [pid 9:tid 140050014775168] ModSecurity for Apache/2.9.7 (http://www.modsecurity.org/) configured.
+[Wed Dec 03 23:31:37.440991 2025] [security2:notice] [pid 9:tid 140050014775168] ModSecurity: APR compiled version="1.7.2"; loaded version="1.7.2"
+[Wed Dec 03 23:31:37.441194 2025] [security2:notice] [pid 9:tid 140050014775168] ModSecurity: PCRE2 compiled version="10.42 "; loaded version="10.42 2022-12-11"
+[Wed Dec 03 23:31:37.441342 2025] [security2:notice] [pid 9:tid 140050014775168] ModSecurity: LUA compiled version="Lua 5.1"
+[Wed Dec 03 23:31:37.441578 2025] [security2:notice] [pid 9:tid 140050014775168] ModSecurity: YAJL compiled version="2.1.0"
+[Wed Dec 03 23:31:37.461741 2025] [security2:notice] [pid 9:tid 140050014775168] ModSecurity: LIBXML compiled version="2.9.14"
+[Wed Dec 03 23:31:37.462006 2025] [security2:notice] [pid 9:tid 140050014775168] ModSecurity: Status engine is currently disabled, enable it by set SecStatusEngine to On.
+[Wed Dec 03 23:31:37.474173 2025] [so:warn] [pid 9:tid 140050014775168] AH01574: module security2_module is already loaded, skipping
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.5. Set the 'ServerName' directive globally to suppress this message
+[Wed Dec 03 23:31:37.557585 2025] [mpm_event:notice] [pid 9:tid 140050014775168] AH00489: Apache/2.4.58 (Ubuntu) configured -- resuming normal operations
+[Wed Dec 03 23:31:37.558035 2025] [core:notice] [pid 9:tid 140050014775168] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'

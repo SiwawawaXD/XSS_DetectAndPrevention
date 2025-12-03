@@ -41,3 +41,56 @@ Failed to establish connection to ResolvedIPv4Address(('172.18.0.3', 7687)) (rea
 2025-12-03 23:10:12,726 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:10:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 2025-12-03 23:10:13,281 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:10:13] "GET /training-data/stats HTTP/1.1" 200 -
 2025-12-03 23:10:13,314 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:10:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-03 23:17:59,186 - werkzeug - INFO - 172.18.0.6 - - [03/Dec/2025 23:17:59] "POST /detect HTTP/1.1" 200 -
+2025-12-03 23:18:25,791 - werkzeug - INFO - 172.18.0.6 - - [03/Dec/2025 23:18:25] "POST /detect HTTP/1.1" 200 -
+2025-12-03 23:18:48,944 - werkzeug - INFO - 172.18.0.6 - - [03/Dec/2025 23:18:48] "POST /detect HTTP/1.1" 200 -
+2025-12-03 23:21:55,549 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:21:55] "GET /models HTTP/1.1" 200 -
+2025-12-03 23:21:55,599 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:21:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-03 23:21:57,670 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:21:57] "GET /models HTTP/1.1" 200 -
+2025-12-03 23:21:57,718 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:21:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-03 23:23:58,546 - werkzeug - INFO - 172.18.0.6 - - [03/Dec/2025 23:23:58] "POST /detect HTTP/1.1" 200 -
+2025-12-03 23:28:12,670 - __main__ - INFO - Connected to Neo4j
+2025-12-03 23:28:12,678 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.5:5001
+2025-12-03 23:28:12,679 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-03 23:28:28,762 - __main__ - INFO - Active ML model loaded successfully
+2025-12-03 23:28:28,769 - __main__ - ERROR - Error logging to Neo4j: Couldn't connect to neo4j:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv4Address(('172.18.0.3', 7687)) (reason [Errno 111] Connection refused)
+2025-12-03 23:28:28,770 - werkzeug - INFO - 172.18.0.6 - - [03/Dec/2025 23:28:28] "POST /detect HTTP/1.1" 200 -
+2025-12-03 23:28:54,953 - werkzeug - INFO - 172.18.0.6 - - [03/Dec/2025 23:28:54] "POST /detect HTTP/1.1" 200 -
+2025-12-03 23:29:13,718 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:29:13] "GET /health HTTP/1.1" 200 -
+2025-12-03 23:29:13,765 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:29:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-03 23:29:15,615 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:29:15] "GET /training-data/stats HTTP/1.1" 200 -
+2025-12-03 23:29:15,731 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:29:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-03 23:29:16,710 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:29:16] "GET /models HTTP/1.1" 200 -
+2025-12-03 23:29:16,751 - werkzeug - INFO - 172.18.0.1 - - [03/Dec/2025 23:29:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-03 23:29:33,225 - werkzeug - INFO - 172.18.0.6 - - [03/Dec/2025 23:29:33] "POST /detect HTTP/1.1" 200 -
+2025-12-03 23:31:40,186 - __main__ - WARNING - No active model found - training initial model
+2025-12-03 23:31:40,188 - __main__ - INFO - Training initial model from /training_data/kaggle_xss.csv
+2025-12-03 23:31:40,234 - __main__ - INFO - Loaded 13686 samples from Kaggle dataset
+2025-12-03 23:31:42,707 - __main__ - INFO - Training set: 10948 samples
+2025-12-03 23:31:42,707 - __main__ - INFO - Test set: 2738 samples
+2025-12-03 23:31:42,716 - __main__ - INFO - Training XGBoost model...
+2025-12-03 23:31:43,088 - __main__ - INFO - ============================================================
+2025-12-03 23:31:43,088 - __main__ - INFO - Model Performance:
+2025-12-03 23:31:43,088 - __main__ - INFO - Accuracy:  0.9982 (99.82%)
+2025-12-03 23:31:43,089 - __main__ - INFO - Precision: 1.0000 (100.00%)
+2025-12-03 23:31:43,089 - __main__ - INFO - Recall:    0.9966 (99.66%)
+2025-12-03 23:31:43,089 - __main__ - INFO - F1 Score:  0.9983 (99.83%)
+2025-12-03 23:31:43,089 - __main__ - INFO - ============================================================
+2025-12-03 23:31:43,101 - __main__ - INFO - Model saved: initial_20251203_233143
+2025-12-03 23:31:43,131 - __main__ - INFO - Activated model: initial_20251203_233143
+2025-12-03 23:31:43,141 - __main__ - INFO - Active ML model loaded successfully
+2025-12-03 23:31:43,141 - __main__ - INFO - Initial model training completed successfully
+2025-12-03 23:31:43,144 - __main__ - INFO - Connected to Neo4j
+2025-12-03 23:31:43,151 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.4:5001
+2025-12-03 23:31:43,152 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-03 23:31:51,694 - __main__ - ERROR - Error logging to Neo4j: Couldn't connect to neo4j:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv4Address(('172.18.0.2', 7687)) (reason [Errno 111] Connection refused)
+2025-12-03 23:31:51,695 - werkzeug - INFO - 172.18.0.6 - - [03/Dec/2025 23:31:51] "POST /detect HTTP/1.1" 200 -
+2025-12-03 23:32:11,159 - werkzeug - INFO - 172.18.0.6 - - [03/Dec/2025 23:32:11] "POST /detect HTTP/1.1" 200 -

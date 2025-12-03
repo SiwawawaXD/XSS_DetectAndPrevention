@@ -1,8 +1,8 @@
 {
-  "active_model": "initial_20251203_230931",
+  "active_model": "initial_20251203_233143",
   "models": {
-    "initial_20251203_230931": {
-      "created_at": "20251203_230931",
+    "initial_20251203_233143": {
+      "created_at": "20251203_233143",
       "name": "initial",
       "metrics": {
         "accuracy": 0.9981738495252008,
@@ -12,18 +12,18 @@
         "samples_train": 10948,
         "samples_test": 2738
       },
-      "version": "initial_20251203_230931"
+      "version": "initial_20251203_233143"
     }
   },
   "model_history": [
     {
-      "version": "initial_20251203_230931",
-      "timestamp": "20251203_230931",
+      "version": "initial_20251203_233143",
+      "timestamp": "20251203_233143",
       "action": "trained"
     },
     {
-      "version": "initial_20251203_230931",
-      "timestamp": "20251203_230931",
+      "version": "initial_20251203_233143",
+      "timestamp": "20251203_233143",
       "action": "activated"
     }
   ]
