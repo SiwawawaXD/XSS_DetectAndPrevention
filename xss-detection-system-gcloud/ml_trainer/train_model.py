@@ -29,6 +29,8 @@ from sklearn.metrics import (
 
 from sklearn.ensemble import RandomForestClassifier
 import xgboost as xgb
+from sklearn.svm import LinearSVC
+
 
 from feature_extractor import FeatureExtractor
 
@@ -279,22 +281,34 @@ def train_all_models():
     # =========================================================
     models = {
         "xgboost": xgb.XGBClassifier(
-            n_estimators=250,
-            max_depth=6,
-            learning_rate=0.08,
-            subsample=0.8,
-            colsample_bytree=0.8,
+            n_estimators=500,
+            learning_rate=0.03,
+
+            max_depth=12,
+            min_child_weight=1,
+
+            subsample=0.9,
+            colsample_bytree=0.9,
+
+            gamma=0.0,
+
+            reg_alpha=0.0,
+            reg_lambda=1.0,
+
+            tree_method="hist",
             eval_metric="logloss",
-            use_label_encoder=False
+            use_label_encoder=False,
+            n_jobs=-1
         ),
 
         "codeburp": CodeBurpClassifier(),
 
-        "random_forest": RandomForestClassifier(
-            n_estimators=200,
-            max_depth=12,
-            random_state=42
+        "svm": LinearSVC(
+            C=1.0,
+            dual=False,
+            max_iter=5000,
         )
+
     }
 
     # =========================================================
