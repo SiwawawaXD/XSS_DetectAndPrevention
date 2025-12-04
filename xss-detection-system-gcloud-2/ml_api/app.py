@@ -125,7 +125,7 @@ class ModelManager:
         return version_name
     
     def activate_model(self, model_name):
-        """Switch to a different model"""
+        """Switch to a different model - with backup of current active model"""
         # Find model in archive
         model_path = MODEL_ARCHIVE_DIR / f'xss_model_{model_name}.pkl'
         scaler_path = MODEL_ARCHIVE_DIR / f'scaler_{model_name}.pkl'
@@ -134,10 +134,24 @@ class ModelManager:
             raise FileNotFoundError(f"Model {model_name} not found")
         
         # Backup current active model if exists
+        # This allows you to revert back if the new model doesn't work well
         if ACTIVE_MODEL_PATH.exists():
             backup_name = f"backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-            shutil.copy(ACTIVE_MODEL_PATH, MODEL_ARCHIVE_DIR / f'xss_model_{backup_name}.pkl')
-            shutil.copy(ACTIVE_SCALER_PATH, MODEL_ARCHIVE_DIR / f'scaler_{backup_name}.pkl')
+            backup_model_path = MODEL_ARCHIVE_DIR / f'xss_model_{backup_name}.pkl'
+            backup_scaler_path = MODEL_ARCHIVE_DIR / f'scaler_{backup_name}.pkl'
+            
+            shutil.copy(ACTIVE_MODEL_PATH, backup_model_path)
+            shutil.copy(ACTIVE_SCALER_PATH, backup_scaler_path)
+            
+            # Store backup info in metadata
+            self.metadata['models'][backup_name] = {
+                'created_at': datetime.now().strftime('%Y%m%d_%H%M%S'),
+                'name': 'backup',
+                'is_backup': True,
+                'backed_up_from': self.metadata.get('active_model', 'unknown')
+            }
+            
+            logger.info(f"Current active model backed up as: {backup_name}")
         
         # Copy selected model to active
         shutil.copy(model_path, ACTIVE_MODEL_PATH)
@@ -192,20 +206,34 @@ class XSSDetector:
             
             logger.info(f"Training initial model from {kaggle_path}")
             
-            # Load dataset
+            # Load dataset - FIXED: Handle index column properly
             df = pd.read_csv(kaggle_path)
-            logger.info(f"Loaded {len(df)} samples from Kaggle dataset")
+            logger.info(f"Loaded CSV with columns: {list(df.columns)}")
+            logger.info(f"Total rows in CSV: {len(df)}")
             
-            # Assume the CSV has 'Sentence' and 'Label' columns (adjust as needed)
-            # Common formats: 'Sentence'/'Label' or 'payload'/'label' or 'text'/'target'
+            # Handle different CSV formats
+            # Format 1: Has unnamed index column + Sentence,Label
+            if 'Unnamed: 0' in df.columns or df.columns[0].startswith('Unnamed'):
+                # Drop the index column
+                df = df.drop(df.columns[0], axis=1)
+                logger.info("Dropped index column")
+            
+            # Rename columns to standard format
             if 'Sentence' in df.columns and 'Label' in df.columns:
                 df = df.rename(columns={'Sentence': 'payload', 'Label': 'label'})
             elif 'text' in df.columns and 'target' in df.columns:
                 df = df.rename(columns={'text': 'payload', 'target': 'label'})
-            
-            if 'payload' not in df.columns or 'label' not in df.columns:
-                logger.error("CSV must have 'payload' and 'label' columns (or 'Sentence'/'Label')")
+            elif 'payload' not in df.columns or 'label' not in df.columns:
+                logger.error(f"CSV must have 'payload' and 'label' columns. Found: {list(df.columns)}")
                 return False
+            
+            # Clean data
+            df = df.dropna()  # Remove any null values
+            df['payload'] = df['payload'].astype(str)  # Ensure payload is string
+            df['label'] = df['label'].astype(int)  # Ensure label is integer
+            
+            logger.info(f"After cleaning: {len(df)} samples")
+            logger.info(f"Label distribution: {df['label'].value_counts().to_dict()}")
             
             # Extract features
             extractor = FeatureExtractor()
@@ -229,6 +257,8 @@ class XSSDetector:
             
         except Exception as e:
             logger.error(f"Error training initial model: {e}")
+            import traceback
+            logger.error(traceback.format_exc())
             return False
     
     def _train_model(self, X, y):
@@ -469,13 +499,13 @@ def fetch_modsecurity_blocked_payloads(limit=1000):
                   AND d.is_blocked = true
                   AND d.payload IS NOT NULL
                   AND d.payload <> ''
-                RETURN d.payload as payload
+                RETURN DISTINCT d.payload as payload
                 ORDER BY d.timestamp DESC
                 LIMIT $limit
             """, limit=limit)
             
             payloads = [record['payload'] for record in result]
-            logger.info(f"Fetched {len(payloads)} blocked payloads from Neo4j")
+            logger.info(f"Fetched {len(payloads)} unique blocked payloads from Neo4j")
             return payloads
     except Exception as e:
         logger.error(f"Error fetching payloads from Neo4j: {e}")
@@ -545,7 +575,7 @@ def retrain_model():
         
         logger.info(f"Starting manual retrain with model name: {model_name}")
         
-        # Fetch blocked payloads from Neo4j
+        # Fetch blocked payloads from Neo4j (these are malicious)
         blocked_payloads = fetch_modsecurity_blocked_payloads(limit)
         
         if len(blocked_payloads) < 10:
@@ -559,19 +589,35 @@ def retrain_model():
         # All blocked payloads are malicious (label=1)
         malicious_data = [{'payload': p, 'label': 1} for p in blocked_payloads]
         
-        # Load some benign samples from kaggle dataset for balance
+        # Load benign samples from kaggle dataset to balance the training
+        # This is important because we need both malicious and benign examples
         kaggle_path = TRAINING_DATA_DIR / 'kaggle_xss.csv'
         benign_data = []
         
         if kaggle_path.exists():
             df = pd.read_csv(kaggle_path)
+            
+            # Handle index column
+            if 'Unnamed: 0' in df.columns or df.columns[0].startswith('Unnamed'):
+                df = df.drop(df.columns[0], axis=1)
+            
+            # Rename columns
             if 'Sentence' in df.columns and 'Label' in df.columns:
                 df = df.rename(columns={'Sentence': 'payload', 'Label': 'label'})
             elif 'text' in df.columns and 'target' in df.columns:
                 df = df.rename(columns={'text': 'payload', 'target': 'label'})
             
-            benign_samples = df[df['label'] == 0].sample(n=min(len(blocked_payloads), len(df[df['label'] == 0])))
+            # Get same number of benign samples as malicious to balance the dataset
+            benign_samples_df = df[df['label'] == 0]
+            num_benign_needed = len(blocked_payloads)  # Match the number of malicious samples
+            
+            if len(benign_samples_df) >= num_benign_needed:
+                benign_samples = benign_samples_df.sample(n=num_benign_needed, random_state=42)
+            else:
+                benign_samples = benign_samples_df  # Use all available benign samples
+            
             benign_data = benign_samples[['payload', 'label']].to_dict('records')
+            logger.info(f"Loaded {len(benign_data)} benign samples from Kaggle dataset")
         
         # Combine datasets
         training_data = malicious_data + benign_data
@@ -604,6 +650,8 @@ def retrain_model():
         
     except Exception as e:
         logger.error(f"Retrain error: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
         return jsonify({'error': str(e)}), 500
 
 @app.route('/models', methods=['GET'])
@@ -652,12 +700,16 @@ def training_data_stats():
     try:
         stats = {
             'neo4j_blocked_payloads': 0,
-            'kaggle_dataset_size': 0
+            'neo4j_unique_payloads': 0,
+            'kaggle_dataset_size': 0,
+            'kaggle_malicious': 0,
+            'kaggle_benign': 0
         }
         
         # Count blocked payloads in Neo4j
         if neo4j_driver:
             with neo4j_driver.session() as session:
+                # Total blocked
                 result = session.run("""
                     MATCH (d:Detection)
                     WHERE d.detection_method = 'ModSecurity' 
@@ -667,12 +719,37 @@ def training_data_stats():
                 record = result.single()
                 if record:
                     stats['neo4j_blocked_payloads'] = record['count']
+                
+                # Unique payloads
+                result = session.run("""
+                    MATCH (d:Detection)
+                    WHERE d.detection_method = 'ModSecurity' 
+                      AND d.is_blocked = true
+                      AND d.payload IS NOT NULL
+                    RETURN count(DISTINCT d.payload) as count
+                """)
+                record = result.single()
+                if record:
+                    stats['neo4j_unique_payloads'] = record['count']
         
         # Check Kaggle dataset
         kaggle_path = TRAINING_DATA_DIR / 'kaggle_xss.csv'
         if kaggle_path.exists():
             df = pd.read_csv(kaggle_path)
+            
+            # Handle index column
+            if 'Unnamed: 0' in df.columns or df.columns[0].startswith('Unnamed'):
+                df = df.drop(df.columns[0], axis=1)
+            
+            # Rename columns
+            if 'Sentence' in df.columns and 'Label' in df.columns:
+                df = df.rename(columns={'Sentence': 'payload', 'Label': 'label'})
+            elif 'text' in df.columns and 'target' in df.columns:
+                df = df.rename(columns={'text': 'payload', 'target': 'label'})
+            
             stats['kaggle_dataset_size'] = len(df)
+            stats['kaggle_malicious'] = int((df['label'] == 1).sum())
+            stats['kaggle_benign'] = int((df['label'] == 0).sum())
         
         return jsonify(stats)
         

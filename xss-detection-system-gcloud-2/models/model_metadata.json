@@ -13,6 +13,32 @@
         "samples_test": 2738
       },
       "version": "initial_20251203_233143"
+    },
+    "live_demo_20251203_234030": {
+      "created_at": "20251203_234030",
+      "name": "live_demo",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "samples_train": 44,
+        "samples_test": 12
+      },
+      "version": "live_demo_20251203_234030"
+    },
+    "demo_model_20251203_234205": {
+      "created_at": "20251203_234205",
+      "name": "demo_model",
+      "metrics": {
+        "accuracy": 0.9166666666666666,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1_score": 0.9090909090909091,
+        "samples_train": 44,
+        "samples_test": 12
+      },
+      "version": "demo_model_20251203_234205"
     }
   },
   "model_history": [
@@ -24,6 +50,26 @@
     {
       "version": "initial_20251203_233143",
       "timestamp": "20251203_233143",
+      "action": "activated"
+    },
+    {
+      "version": "live_demo_20251203_234030",
+      "timestamp": "20251203_234030",
+      "action": "trained"
+    },
+    {
+      "version": "demo_model_20251203_234205",
+      "timestamp": "20251203_234205",
+      "action": "trained"
+    },
+    {
+      "version": "demo_model_20251203_234205",
+      "timestamp": "20251203_234335",
+      "action": "activated"
+    },
+    {
+      "version": "initial_20251203_233143",
+      "timestamp": "20251203_234613",
       "action": "activated"
     }
   ]
