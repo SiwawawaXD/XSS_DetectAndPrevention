@@ -12484,3 +12484,120 @@ Failed to establish connection to ResolvedIPv4Address(('172.18.0.3', 7687)) (rea
  * Running on http://127.0.0.1:8000
  * Running on http://172.18.0.5:8000
 2025-12-04 16:45:23,949 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 18:10:29,421 - __main__ - INFO - [42295bc2-9124-4edd-9d2a-2f8482a54c93] Checking ModSecurity for GET /login.php
+2025-12-04 18:10:31,185 - __main__ - INFO - Logged to Neo4j: 42295bc2-9124-4edd-9d2a-2f8482a54c93
+2025-12-04 18:10:31,309 - __main__ - INFO - [42295bc2-9124-4edd-9d2a-2f8482a54c93] ALLOWED - returning bWAPP response
+2025-12-04 18:10:31,313 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:31] "GET /login.php HTTP/1.1" 200 -
+2025-12-04 18:10:31,352 - __main__ - INFO - [d78fc445-4455-4ac7-a251-86ec3c0c1bbf] Checking ModSecurity for GET /images/owasp.png
+2025-12-04 18:10:31,353 - __main__ - INFO - [d8444ffa-ff80-4b79-8292-fc0f306cea26] Checking ModSecurity for GET /images/zap.png
+2025-12-04 18:10:31,354 - __main__ - INFO - [1f657e70-12da-4e90-82da-e25570b556dc] Checking ModSecurity for GET /images/mk.png
+2025-12-04 18:10:31,356 - __main__ - INFO - [77aa0441-7564-475f-9403-5209b5562813] Checking ModSecurity for GET /images/netsparker.png
+2025-12-04 18:10:31,360 - __main__ - INFO - [e8a85732-0897-4a27-bd9b-50348e3f1a41] Checking ModSecurity for GET /images/mme.png
+2025-12-04 18:10:31,362 - __main__ - INFO - [623db302-19ad-4b88-86cf-1fbad1f4e08d] Checking ModSecurity for GET /images/netsparker.gif
+2025-12-04 18:10:32,325 - __main__ - INFO - Logged to Neo4j: 623db302-19ad-4b88-86cf-1fbad1f4e08d
+2025-12-04 18:10:32,331 - __main__ - INFO - Logged to Neo4j: 1f657e70-12da-4e90-82da-e25570b556dc
+2025-12-04 18:10:32,333 - __main__ - INFO - [623db302-19ad-4b88-86cf-1fbad1f4e08d] ALLOWED - returning bWAPP response
+2025-12-04 18:10:32,334 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:32] "GET /images/netsparker.gif HTTP/1.1" 200 -
+2025-12-04 18:10:32,420 - __main__ - INFO - [1f657e70-12da-4e90-82da-e25570b556dc] ALLOWED - returning bWAPP response
+2025-12-04 18:10:32,421 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:32] "GET /images/mk.png HTTP/1.1" 200 -
+2025-12-04 18:10:32,427 - __main__ - INFO - Logged to Neo4j: e8a85732-0897-4a27-bd9b-50348e3f1a41
+2025-12-04 18:10:32,430 - __main__ - INFO - Logged to Neo4j: d78fc445-4455-4ac7-a251-86ec3c0c1bbf
+2025-12-04 18:10:32,518 - __main__ - INFO - Logged to Neo4j: 77aa0441-7564-475f-9403-5209b5562813
+2025-12-04 18:10:32,523 - __main__ - INFO - [e8a85732-0897-4a27-bd9b-50348e3f1a41] ALLOWED - returning bWAPP response
+2025-12-04 18:10:32,523 - __main__ - INFO - [77aa0441-7564-475f-9403-5209b5562813] ALLOWED - returning bWAPP response
+2025-12-04 18:10:32,523 - __main__ - INFO - [d78fc445-4455-4ac7-a251-86ec3c0c1bbf] ALLOWED - returning bWAPP response
+2025-12-04 18:10:32,524 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:32] "GET /images/mme.png HTTP/1.1" 200 -
+2025-12-04 18:10:32,525 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:32] "GET /images/netsparker.png HTTP/1.1" 200 -
+2025-12-04 18:10:32,525 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:32] "GET /images/owasp.png HTTP/1.1" 200 -
+2025-12-04 18:10:32,539 - __main__ - INFO - Logged to Neo4j: d8444ffa-ff80-4b79-8292-fc0f306cea26
+2025-12-04 18:10:32,618 - __main__ - INFO - [d8444ffa-ff80-4b79-8292-fc0f306cea26] ALLOWED - returning bWAPP response
+2025-12-04 18:10:32,619 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:32] "GET /images/zap.png HTTP/1.1" 200 -
+2025-12-04 18:10:33,610 - __main__ - INFO - [3695f1bd-427f-4061-a03d-789564960f27] Checking ModSecurity for GET /images/twitter.png
+2025-12-04 18:10:33,611 - __main__ - INFO - [fbcceda6-dd4c-4832-9af9-f49eaf56542e] Checking ModSecurity for GET /images/bee_1.png
+2025-12-04 18:10:33,611 - __main__ - INFO - [c9d79032-f8de-4732-b649-4a5caf2e73c6] Checking ModSecurity for GET /images/cc.png
+2025-12-04 18:10:33,612 - __main__ - INFO - [1d328529-1680-417b-b128-a060a8a527f8] Checking ModSecurity for GET /images/blogger.png
+2025-12-04 18:10:33,612 - __main__ - INFO - [932a0336-ce75-4be7-9d02-b9061f2832b2] Checking ModSecurity for GET /images/linkedin.png
+2025-12-04 18:10:33,614 - __main__ - INFO - [6b4e98af-9b9b-4106-869b-07a063ec3a0f] Checking ModSecurity for GET /images/facebook.png
+2025-12-04 18:10:33,715 - __main__ - INFO - Logged to Neo4j: 3695f1bd-427f-4061-a03d-789564960f27
+2025-12-04 18:10:33,717 - __main__ - INFO - Logged to Neo4j: 932a0336-ce75-4be7-9d02-b9061f2832b2
+2025-12-04 18:10:33,718 - __main__ - INFO - [3695f1bd-427f-4061-a03d-789564960f27] ALLOWED - returning bWAPP response
+2025-12-04 18:10:33,718 - __main__ - INFO - Logged to Neo4j: 1d328529-1680-417b-b128-a060a8a527f8
+2025-12-04 18:10:33,718 - __main__ - INFO - Logged to Neo4j: c9d79032-f8de-4732-b649-4a5caf2e73c6
+2025-12-04 18:10:33,718 - __main__ - INFO - [932a0336-ce75-4be7-9d02-b9061f2832b2] ALLOWED - returning bWAPP response
+2025-12-04 18:10:33,719 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:33] "GET /images/twitter.png HTTP/1.1" 200 -
+2025-12-04 18:10:33,719 - __main__ - INFO - [1d328529-1680-417b-b128-a060a8a527f8] ALLOWED - returning bWAPP response
+2025-12-04 18:10:33,720 - __main__ - INFO - [c9d79032-f8de-4732-b649-4a5caf2e73c6] ALLOWED - returning bWAPP response
+2025-12-04 18:10:33,728 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:33] "GET /images/linkedin.png HTTP/1.1" 200 -
+2025-12-04 18:10:33,729 - __main__ - INFO - Logged to Neo4j: fbcceda6-dd4c-4832-9af9-f49eaf56542e
+2025-12-04 18:10:33,729 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:33] "GET /images/blogger.png HTTP/1.1" 200 -
+2025-12-04 18:10:33,730 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:33] "GET /images/cc.png HTTP/1.1" 200 -
+2025-12-04 18:10:33,731 - __main__ - INFO - [fbcceda6-dd4c-4832-9af9-f49eaf56542e] ALLOWED - returning bWAPP response
+2025-12-04 18:10:33,734 - __main__ - INFO - [7b1ef509-a3e7-4266-b329-758d39ceda02] Checking ModSecurity for GET /images/bg_3.jpg
+2025-12-04 18:10:33,735 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:33] "GET /images/bee_1.png HTTP/1.1" 200 -
+2025-12-04 18:10:33,737 - __main__ - INFO - Logged to Neo4j: 6b4e98af-9b9b-4106-869b-07a063ec3a0f
+2025-12-04 18:10:33,741 - __main__ - INFO - [6b4e98af-9b9b-4106-869b-07a063ec3a0f] ALLOWED - returning bWAPP response
+2025-12-04 18:10:33,741 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:33] "GET /images/facebook.png HTTP/1.1" 200 -
+2025-12-04 18:10:33,815 - __main__ - INFO - Logged to Neo4j: 7b1ef509-a3e7-4266-b329-758d39ceda02
+2025-12-04 18:10:33,815 - __main__ - INFO - [7b1ef509-a3e7-4266-b329-758d39ceda02] ALLOWED - returning bWAPP response
+2025-12-04 18:10:33,816 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:33] "GET /images/bg_3.jpg HTTP/1.1" 200 -
+2025-12-04 18:10:33,830 - __main__ - INFO - [13717d19-b5c7-43e2-868d-3a523c3d78fe] Checking ModSecurity for GET /images/bg_2.jpg
+2025-12-04 18:10:33,830 - __main__ - INFO - [3afdc6b7-42f6-4257-b069-e61398b560a4] Checking ModSecurity for GET /images/sb_1.jpg
+2025-12-04 18:10:33,831 - __main__ - INFO - [f816ec8e-7422-4b35-a4ca-9fa242eff7fc] Checking ModSecurity for GET /images/bg_1.jpg
+2025-12-04 18:10:33,836 - __main__ - INFO - [500fb6f8-9de2-4824-8980-a5836df27715] Checking ModSecurity for GET /fonts/architectsdaughter.ttf
+2025-12-04 18:10:34,026 - __main__ - INFO - Logged to Neo4j: 13717d19-b5c7-43e2-868d-3a523c3d78fe
+2025-12-04 18:10:34,027 - __main__ - INFO - Logged to Neo4j: 3afdc6b7-42f6-4257-b069-e61398b560a4
+2025-12-04 18:10:34,044 - __main__ - INFO - [13717d19-b5c7-43e2-868d-3a523c3d78fe] ALLOWED - returning bWAPP response
+2025-12-04 18:10:34,065 - __main__ - INFO - Logged to Neo4j: 500fb6f8-9de2-4824-8980-a5836df27715
+2025-12-04 18:10:34,065 - __main__ - INFO - [3afdc6b7-42f6-4257-b069-e61398b560a4] ALLOWED - returning bWAPP response
+2025-12-04 18:10:34,118 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:34] "GET /images/bg_2.jpg HTTP/1.1" 200 -
+2025-12-04 18:10:34,119 - __main__ - INFO - [500fb6f8-9de2-4824-8980-a5836df27715] ALLOWED - returning bWAPP response
+2025-12-04 18:10:34,120 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:34] "GET /images/sb_1.jpg HTTP/1.1" 200 -
+2025-12-04 18:10:34,120 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:34] "GET /fonts/architectsdaughter.ttf HTTP/1.1" 200 -
+2025-12-04 18:10:34,125 - __main__ - INFO - Logged to Neo4j: f816ec8e-7422-4b35-a4ca-9fa242eff7fc
+2025-12-04 18:10:34,132 - __main__ - INFO - [f816ec8e-7422-4b35-a4ca-9fa242eff7fc] ALLOWED - returning bWAPP response
+2025-12-04 18:10:34,133 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:34] "GET /images/bg_1.jpg HTTP/1.1" 200 -
+2025-12-04 18:10:34,153 - __main__ - INFO - [c8b8bf38-c11e-4c29-98d2-18c426ba5fc7] Checking ModSecurity for GET /images/favicon.ico
+2025-12-04 18:10:34,215 - __main__ - INFO - Logged to Neo4j: c8b8bf38-c11e-4c29-98d2-18c426ba5fc7
+2025-12-04 18:10:34,221 - __main__ - INFO - [c8b8bf38-c11e-4c29-98d2-18c426ba5fc7] ALLOWED - returning bWAPP response
+2025-12-04 18:10:34,223 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 18:10:34] "GET /images/favicon.ico HTTP/1.1" 200 -
+2025-12-04 19:56:04,190 - __main__ - INFO - Gateway connected to Neo4j
+2025-12-04 19:56:04,199 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.5:8000
+2025-12-04 19:56:04,200 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 20:03:37,006 - __main__ - INFO - [f39478d9-8c8b-4e41-9818-a62c805a47df] Checking ModSecurity for GET /
+2025-12-04 20:03:41,797 - __main__ - INFO - Logged to Neo4j: f39478d9-8c8b-4e41-9818-a62c805a47df
+2025-12-04 20:03:41,913 - __main__ - INFO - [f39478d9-8c8b-4e41-9818-a62c805a47df] ALLOWED - returning bWAPP response
+2025-12-04 20:03:41,915 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 20:03:41] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-04 20:03:41,937 - __main__ - INFO - [e6b9793f-94ba-4e07-9c55-0fd493d0f478] Checking ModSecurity for GET /portal.php
+2025-12-04 20:03:42,362 - __main__ - INFO - Logged to Neo4j: e6b9793f-94ba-4e07-9c55-0fd493d0f478
+2025-12-04 20:03:42,446 - __main__ - INFO - [e6b9793f-94ba-4e07-9c55-0fd493d0f478] ALLOWED - returning bWAPP response
+2025-12-04 20:03:42,447 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 20:03:42] "[32mGET /portal.php HTTP/1.1[0m" 302 -
+2025-12-04 20:03:42,464 - __main__ - INFO - [ec67fe76-6bbb-4b58-a27b-9092690d1cad] Checking ModSecurity for GET /login.php
+2025-12-04 20:03:42,938 - __main__ - INFO - Logged to Neo4j: ec67fe76-6bbb-4b58-a27b-9092690d1cad
+2025-12-04 20:03:42,947 - __main__ - INFO - [ec67fe76-6bbb-4b58-a27b-9092690d1cad] ALLOWED - returning bWAPP response
+2025-12-04 20:03:42,948 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 20:03:42] "GET /login.php HTTP/1.1" 200 -
+2025-12-04 20:11:38,376 - __main__ - INFO - Gateway connected to Neo4j
+2025-12-04 20:11:38,391 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.2:8000
+2025-12-04 20:11:38,392 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 20:27:09,530 - __main__ - INFO - Gateway connected to Neo4j
+2025-12-04 20:27:09,534 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.6:8000
+2025-12-04 20:27:09,534 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 21:51:33,725 - __main__ - INFO - Gateway connected to Neo4j
+2025-12-04 21:51:33,775 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.6:8000
+2025-12-04 21:51:33,776 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 22:08:28,775 - __main__ - INFO - [828e2141-0d9a-40b0-9d7e-77cd2d14aaba] Checking ModSecurity for GET /login.php
+2025-12-04 22:08:31,767 - __main__ - INFO - Logged to Neo4j: 828e2141-0d9a-40b0-9d7e-77cd2d14aaba
+2025-12-04 22:08:31,787 - __main__ - INFO - [828e2141-0d9a-40b0-9d7e-77cd2d14aaba] ALLOWED - returning bWAPP response
+2025-12-04 22:08:31,789 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 22:08:31] "GET /login.php HTTP/1.1" 200 -
+2025-12-04 22:08:32,125 - werkzeug - INFO - 172.18.0.1 - - [04/Dec/2025 22:08:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

@@ -1,7 +1,7 @@
 version: '3.8'
 
-# Simplified Configuration - Neo4j only for logging
-# Removed Elasticsearch, Kibana, and Logstash
+# GPU-Enabled Configuration for xss_detection_api
+# Requires NVIDIA Container Toolkit installed on host
 
 services:
   gateway:
@@ -74,8 +74,8 @@ services:
     networks:
       - xss_network
     restart: always
-    mem_limit: 2g
-    cpus: 1.5
+    mem_limit: 4g  # Increased for GPU operations
+    cpus: 2.0
 
   neo4j:
     image: neo4j:5.13.0

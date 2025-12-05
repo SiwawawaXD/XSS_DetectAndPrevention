@@ -1,76 +1,350 @@
 {
-  "active_model": "initial_20251203_233143",
+  "active_model": "xgboost_initial_20251204_215139",
+  "active_model_type": "xgboost",
   "models": {
-    "initial_20251203_233143": {
-      "created_at": "20251203_233143",
+    "xgboost_initial_20251204_192602": {
+      "created_at": "20251204_192602",
       "name": "initial",
+      "model_type": "xgboost",
       "metrics": {
-        "accuracy": 0.9981738495252008,
-        "precision": 1.0,
+        "accuracy": 0.997808619430241,
+        "precision": 0.9993201903467029,
         "recall": 0.9966101694915255,
-        "f1_score": 0.99830220713073,
+        "f1_score": 0.9979633401221996,
         "samples_train": 10948,
         "samples_test": 2738
       },
-      "version": "initial_20251203_233143"
+      "version": "xgboost_initial_20251204_192602",
+      "has_tokenizer": false
     },
-    "live_demo_20251203_234030": {
-      "created_at": "20251203_234030",
-      "name": "live_demo",
+    "svm_initial_20251204_192605": {
+      "created_at": "20251204_192605",
+      "name": "initial",
+      "model_type": "svm",
       "metrics": {
-        "accuracy": 1.0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
-        "samples_train": 44,
-        "samples_test": 12
+        "accuracy": 0.9945215485756026,
+        "precision": 0.9986338797814208,
+        "recall": 0.9911864406779661,
+        "f1_score": 0.9948962232051719,
+        "samples_train": 10948,
+        "samples_test": 2738
       },
-      "version": "live_demo_20251203_234030"
+      "version": "svm_initial_20251204_192605",
+      "has_tokenizer": false
     },
-    "demo_model_20251203_234205": {
-      "created_at": "20251203_234205",
-      "name": "demo_model",
+    "randomforest_initial_20251204_192608": {
+      "created_at": "20251204_192608",
+      "name": "initial",
+      "model_type": "randomforest",
       "metrics": {
-        "accuracy": 0.9166666666666666,
+        "accuracy": 0.9974433893352812,
         "precision": 1.0,
-        "recall": 0.8333333333333334,
-        "f1_score": 0.9090909090909091,
-        "samples_train": 44,
-        "samples_test": 12
+        "recall": 0.9952542372881356,
+        "f1_score": 0.997621474685695,
+        "samples_train": 10948,
+        "samples_test": 2738
       },
-      "version": "demo_model_20251203_234205"
+      "version": "randomforest_initial_20251204_192608",
+      "has_tokenizer": false
+    },
+    "xgboost_initial_20251204_195611": {
+      "created_at": "20251204_195611",
+      "name": "initial",
+      "model_type": "xgboost",
+      "metrics": {
+        "accuracy": 0.997808619430241,
+        "precision": 0.9993201903467029,
+        "recall": 0.9966101694915255,
+        "f1_score": 0.9979633401221996,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "xgboost_initial_20251204_195611",
+      "has_tokenizer": false
+    },
+    "svm_initial_20251204_195614": {
+      "created_at": "20251204_195614",
+      "name": "initial",
+      "model_type": "svm",
+      "metrics": {
+        "accuracy": 0.9945215485756026,
+        "precision": 0.9986338797814208,
+        "recall": 0.9911864406779661,
+        "f1_score": 0.9948962232051719,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "svm_initial_20251204_195614",
+      "has_tokenizer": false
+    },
+    "randomforest_initial_20251204_195616": {
+      "created_at": "20251204_195616",
+      "name": "initial",
+      "model_type": "randomforest",
+      "metrics": {
+        "accuracy": 0.9974433893352812,
+        "precision": 1.0,
+        "recall": 0.9952542372881356,
+        "f1_score": 0.997621474685695,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "randomforest_initial_20251204_195616",
+      "has_tokenizer": false
+    },
+    "xgboost_initial_20251204_201148": {
+      "created_at": "20251204_201148",
+      "name": "initial",
+      "model_type": "xgboost",
+      "metrics": {
+        "accuracy": 0.997808619430241,
+        "precision": 0.9993201903467029,
+        "recall": 0.9966101694915255,
+        "f1_score": 0.9979633401221996,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "xgboost_initial_20251204_201148",
+      "has_tokenizer": false
+    },
+    "svm_initial_20251204_201151": {
+      "created_at": "20251204_201151",
+      "name": "initial",
+      "model_type": "svm",
+      "metrics": {
+        "accuracy": 0.9945215485756026,
+        "precision": 0.9986338797814208,
+        "recall": 0.9911864406779661,
+        "f1_score": 0.9948962232051719,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "svm_initial_20251204_201151",
+      "has_tokenizer": false
+    },
+    "randomforest_initial_20251204_201154": {
+      "created_at": "20251204_201154",
+      "name": "initial",
+      "model_type": "randomforest",
+      "metrics": {
+        "accuracy": 0.9974433893352812,
+        "precision": 1.0,
+        "recall": 0.9952542372881356,
+        "f1_score": 0.997621474685695,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "randomforest_initial_20251204_201154",
+      "has_tokenizer": false
+    },
+    "xgboost_initial_20251204_202714": {
+      "created_at": "20251204_202714",
+      "name": "initial",
+      "model_type": "xgboost",
+      "metrics": {
+        "accuracy": 0.997808619430241,
+        "precision": 0.9993201903467029,
+        "recall": 0.9966101694915255,
+        "f1_score": 0.9979633401221996,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "xgboost_initial_20251204_202714",
+      "has_tokenizer": false
+    },
+    "svm_initial_20251204_202717": {
+      "created_at": "20251204_202717",
+      "name": "initial",
+      "model_type": "svm",
+      "metrics": {
+        "accuracy": 0.9945215485756026,
+        "precision": 0.9986338797814208,
+        "recall": 0.9911864406779661,
+        "f1_score": 0.9948962232051719,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "svm_initial_20251204_202717",
+      "has_tokenizer": false
+    },
+    "randomforest_initial_20251204_202719": {
+      "created_at": "20251204_202719",
+      "name": "initial",
+      "model_type": "randomforest",
+      "metrics": {
+        "accuracy": 0.9974433893352812,
+        "precision": 1.0,
+        "recall": 0.9952542372881356,
+        "f1_score": 0.997621474685695,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "randomforest_initial_20251204_202719",
+      "has_tokenizer": false
+    },
+    "xgboost_initial_20251204_215139": {
+      "created_at": "20251204_215139",
+      "name": "initial",
+      "model_type": "xgboost",
+      "metrics": {
+        "accuracy": 0.997808619430241,
+        "precision": 0.9993201903467029,
+        "recall": 0.9966101694915255,
+        "f1_score": 0.9979633401221996,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "xgboost_initial_20251204_215139",
+      "has_tokenizer": false
+    },
+    "svm_initial_20251204_215142": {
+      "created_at": "20251204_215142",
+      "name": "initial",
+      "model_type": "svm",
+      "metrics": {
+        "accuracy": 0.9945215485756026,
+        "precision": 0.9986338797814208,
+        "recall": 0.9911864406779661,
+        "f1_score": 0.9948962232051719,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "svm_initial_20251204_215142",
+      "has_tokenizer": false
+    },
+    "randomforest_initial_20251204_215144": {
+      "created_at": "20251204_215144",
+      "name": "initial",
+      "model_type": "randomforest",
+      "metrics": {
+        "accuracy": 0.9974433893352812,
+        "precision": 1.0,
+        "recall": 0.9952542372881356,
+        "f1_score": 0.997621474685695,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "randomforest_initial_20251204_215144",
+      "has_tokenizer": false
+    },
+    "codebert_initial_20251204_230711": {
+      "created_at": "20251204_230711",
+      "name": "initial",
+      "model_type": "codebert",
+      "metrics": {
+        "accuracy": 0.9970781592403214,
+        "precision": 0.9993192648059904,
+        "recall": 0.9952542372881356,
+        "f1_score": 0.9972826086956521,
+        "samples_train": 10948,
+        "samples_test": 2738
+      },
+      "version": "codebert_initial_20251204_230711",
+      "has_tokenizer": true
     }
   },
   "model_history": [
     {
-      "version": "initial_20251203_233143",
-      "timestamp": "20251203_233143",
-      "action": "trained"
+      "version": "xgboost_initial_20251204_192602",
+      "timestamp": "20251204_192602",
+      "action": "trained",
+      "model_type": "xgboost"
     },
     {
-      "version": "initial_20251203_233143",
-      "timestamp": "20251203_233143",
-      "action": "activated"
+      "version": "svm_initial_20251204_192605",
+      "timestamp": "20251204_192605",
+      "action": "trained",
+      "model_type": "svm"
     },
     {
-      "version": "live_demo_20251203_234030",
-      "timestamp": "20251203_234030",
-      "action": "trained"
+      "version": "randomforest_initial_20251204_192608",
+      "timestamp": "20251204_192608",
+      "action": "trained",
+      "model_type": "randomforest"
     },
     {
-      "version": "demo_model_20251203_234205",
-      "timestamp": "20251203_234205",
-      "action": "trained"
+      "version": "xgboost_initial_20251204_195611",
+      "timestamp": "20251204_195611",
+      "action": "trained",
+      "model_type": "xgboost"
     },
     {
-      "version": "demo_model_20251203_234205",
-      "timestamp": "20251203_234335",
-      "action": "activated"
+      "version": "svm_initial_20251204_195614",
+      "timestamp": "20251204_195614",
+      "action": "trained",
+      "model_type": "svm"
     },
     {
-      "version": "initial_20251203_233143",
-      "timestamp": "20251203_234613",
-      "action": "activated"
+      "version": "randomforest_initial_20251204_195616",
+      "timestamp": "20251204_195616",
+      "action": "trained",
+      "model_type": "randomforest"
+    },
+    {
+      "version": "xgboost_initial_20251204_201148",
+      "timestamp": "20251204_201148",
+      "action": "trained",
+      "model_type": "xgboost"
+    },
+    {
+      "version": "svm_initial_20251204_201151",
+      "timestamp": "20251204_201151",
+      "action": "trained",
+      "model_type": "svm"
+    },
+    {
+      "version": "randomforest_initial_20251204_201154",
+      "timestamp": "20251204_201154",
+      "action": "trained",
+      "model_type": "randomforest"
+    },
+    {
+      "version": "xgboost_initial_20251204_202714",
+      "timestamp": "20251204_202714",
+      "action": "trained",
+      "model_type": "xgboost"
+    },
+    {
+      "version": "svm_initial_20251204_202717",
+      "timestamp": "20251204_202717",
+      "action": "trained",
+      "model_type": "svm"
+    },
+    {
+      "version": "randomforest_initial_20251204_202719",
+      "timestamp": "20251204_202719",
+      "action": "trained",
+      "model_type": "randomforest"
+    },
+    {
+      "version": "xgboost_initial_20251204_215139",
+      "timestamp": "20251204_215139",
+      "action": "trained",
+      "model_type": "xgboost"
+    },
+    {
+      "version": "svm_initial_20251204_215142",
+      "timestamp": "20251204_215142",
+      "action": "trained",
+      "model_type": "svm"
+    },
+    {
+      "version": "randomforest_initial_20251204_215144",
+      "timestamp": "20251204_215144",
+      "action": "trained",
+      "model_type": "randomforest"
+    },
+    {
+      "version": "codebert_initial_20251204_230711",
+      "timestamp": "20251204_230711",
+      "action": "trained",
+      "model_type": "codebert"
+    },
+    {
+      "version": "xgboost_initial_20251204_215139",
+      "timestamp": "20251204_230711",
+      "action": "activated",
+      "model_type": "xgboost"
     }
   ]
 }
