@@ -786,6 +786,133 @@ def training_data_stats():
     except Exception as e:
         logger.error(f"Error getting stats: {e}")
         return jsonify({'error': str(e)}), 500
+    
+@app.route('/retrain', methods=['POST'])
+def retrain_from_neo4j():
+    """
+    Retrain model using blocked payloads from Neo4j
+    This creates a feedback loop where ML learns from ModSecurity's expert decisions
+    """
+    try:
+        data = request.get_json() or {}
+        model_name = data.get('model_name', 'retrained')
+        model_type = data.get('model_type', 'xgboost')
+        
+        if model_type not in MODEL_TYPES:
+            return jsonify({
+                'error': f'Invalid model_type. Must be one of: {list(MODEL_TYPES.keys())}'
+            }), 400
+        
+        logger.info(f"Starting manual retrain with model name: {model_name}")
+        
+        # Fetch blocked payloads from Neo4j
+        if not neo4j_driver:
+            return jsonify({'error': 'Neo4j not connected'}), 500
+        
+        blocked_payloads = []
+        with neo4j_driver.session() as session:
+            # Query for Detection nodes where attacks were blocked
+            # This matches the actual schema used by the gateway
+            result = session.run("""
+                MATCH (d:Detection)
+                WHERE d.payload IS NOT NULL 
+                AND d.payload <> ''
+                AND (d.modsecurity_blocked = true OR d.is_blocked = true)
+                RETURN DISTINCT d.payload as payload
+                LIMIT 1000
+            """)
+            
+            for record in result:
+                payload = record['payload']
+                if payload and len(payload) > 3:  # Filter out very short payloads
+                    blocked_payloads.append(payload)
+        
+        logger.info(f"Fetched {len(blocked_payloads)} blocked payloads from Neo4j")
+        
+        if len(blocked_payloads) < 5:
+            return jsonify({
+                'error': f'Insufficient training data. Only found {len(blocked_payloads)} blocked payloads. Need at least 5.',
+                'hint': 'Try injecting some XSS attacks first: curl "http://localhost/xss_get.php?firstname=<script>alert(1)</script>&form=submit"'
+            }), 400
+        
+        # Generate benign samples to balance the dataset
+        benign_samples = [
+            'https://example.com',
+            'search query',
+            'user input text',
+            'normal@email.com',
+            'Product Name',
+            'SELECT * FROM users',
+            'function test() { return true; }',
+            'hello world',
+            'test123',
+            'Category: Electronics',
+            'Price: $99.99',
+            'Contact us',
+            'username',
+            'password123',
+            'https://site.com/page?id=123',
+            'This is normal text',
+            'Welcome to our site',
+            'Search results for: python',
+            'User profile',
+            'Settings page',
+            'C++ programming',
+            'JSON: {"key": "value"}',
+            'Article title',
+            'Comment text',
+            'File: document.pdf',
+            'Date: 2024-01-01',
+            'Time: 10:30 AM',
+            'Status: Active',
+            'Login successful',
+            'Order #12345',
+            'Shopping cart',
+            'Customer name',
+            'Address: 123 Main St',
+            'Phone: 555-1234'
+        ]
+        
+        # Match the number of benign samples to malicious samples
+        num_benign_needed = len(blocked_payloads)
+        benign_payloads = []
+        while len(benign_payloads) < num_benign_needed:
+            benign_payloads.extend(benign_samples)
+        benign_payloads = benign_payloads[:num_benign_needed]
+        
+        # Create dataset
+        malicious_data = [{'payload': p, 'label': 1} for p in blocked_payloads]
+        benign_data = [{'payload': p, 'label': 0} for p in benign_payloads]
+        
+        all_data = malicious_data + benign_data
+        df = pd.DataFrame(all_data)
+        
+        logger.info(f"Training dataset: {len(df)} samples ({len(malicious_data)} malicious, {len(benign_data)} benign)")
+        
+        # Train the model
+        version = detector.train_model(df, model_type, model_name)
+        
+        if version:
+            return jsonify({
+                'success': True,
+                'message': f'Model retrained successfully from Neo4j data',
+                'model_version': version,
+                'model_type': model_type,
+                'training_stats': {
+                    'total_samples': len(df),
+                    'malicious_samples': len(malicious_data),
+                    'benign_samples': len(benign_data),
+                    'source': 'Neo4j (Detection nodes) + Generated Benign'
+                }
+            })
+        else:
+            return jsonify({'error': 'Training failed'}), 500
+            
+    except Exception as e:
+        logger.error(f"Retrain error: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
+        return jsonify({'error': str(e)}), 500
 
 
 if __name__ == '__main__':

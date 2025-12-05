@@ -1,5 +1,5 @@
 {
-  "active_model": "xgboost_initial_20251204_215139",
+  "active_model": "xgboost_my_retrained_model123_20251205_021644",
   "active_model_type": "xgboost",
   "models": {
     "xgboost_initial_20251204_192602": {
@@ -241,6 +241,21 @@
       },
       "version": "codebert_initial_20251204_230711",
       "has_tokenizer": true
+    },
+    "xgboost_my_retrained_model123_20251205_021644": {
+      "created_at": "20251205_021644",
+      "name": "my_retrained_model123",
+      "model_type": "xgboost",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "samples_train": 1600,
+        "samples_test": 400
+      },
+      "version": "xgboost_my_retrained_model123_20251205_021644",
+      "has_tokenizer": false
     }
   },
   "model_history": [
@@ -343,6 +358,18 @@
     {
       "version": "xgboost_initial_20251204_215139",
       "timestamp": "20251204_230711",
+      "action": "activated",
+      "model_type": "xgboost"
+    },
+    {
+      "version": "xgboost_my_retrained_model123_20251205_021644",
+      "timestamp": "20251205_021644",
+      "action": "trained",
+      "model_type": "xgboost"
+    },
+    {
+      "version": "xgboost_my_retrained_model123_20251205_021644",
+      "timestamp": "20251205_021915",
       "action": "activated",
       "model_type": "xgboost"
     }
